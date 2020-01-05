@@ -9,7 +9,11 @@
     "dist": "electron-builder"
   },
   "build": {
-    "appId": "simpleMusicPlayer",
+    "appId": "tools",
+    "asar":false,
+    "files": [
+      "**/*"
+    ],
     "mac": {
       "category": "public.app-category.productivity"
     },
@@ -36,7 +40,12 @@
       }
     },
     "win": {
-      "target": "squirrel",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
       "icon": "build/icon.ico"
     }
   },
