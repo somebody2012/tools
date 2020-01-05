@@ -1,0 +1,16 @@
+<html>
+  <div>
+    <div>main</div>
+    <script>
+      const { ipcRenderer } = require('electron')
+      ipcRenderer.on("message",(e,m)=>{
+        document.write("renderer receive message" + m)
+      })
+      window.addEventListener("DOMContentLoaded",()=>{
+        document.write("dddddd")
+        ipcRenderer.send("message","from render process")
+      })
+    </script>
+  </div>
+  
+</html>

@@ -2,9 +2,42 @@
   "name": "tools",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --watch main.js --exec 'electron .'",
+    "dist":"electron-builder"
+  },
+  "build": {
+    "appId": "simpleMusicPlayer",
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "dmg": {
+      "background": "build/appdmg.png",
+      "icon": "build/icon.icns",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 380,
+          "y": 280,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 110,
+          "y": 280,
+          "type": "file"
+        }
+      ],
+      "window": {
+        "width": 500,
+        "height": 500
+      }
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
   },
   "repository": {
     "type": "git",
@@ -15,5 +48,10 @@
   "bugs": {
     "url": "https://github.com/caveman1234/tools/issues"
   },
-  "homepage": "https://github.com/caveman1234/tools#readme"
+  "homepage": "https://github.com/caveman1234/tools#readme",
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0",
+    "nodemon": "^2.0.2"
+  }
 }
