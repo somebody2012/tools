@@ -1,15 +1,82 @@
 <html>
   <div>
-    <div>main</div>
+    <div onclick="func()">main</div>
+    <div id="abc">abc</div>
     <script>
-      const { ipcRenderer } = require('electron')
-      ipcRenderer.on("message",(e,m)=>{
-        document.write("renderer receive message" + m)
-      })
-      window.addEventListener("DOMContentLoaded",()=>{
-        document.write("dddddd")
-        ipcRenderer.send("message","from render process")
-      })
+      var axios = require("axios");
+      debugger
+      function func(){
+        var data = {
+          "SYS_HEAD": {
+            "BIZ_FOLN_NO": "",
+            "SYS_FOLN_NO": "",
+            "CLIENT_TYP": "110064",
+            "BIZ_ACCESS_CHNL_CD": "0101",
+            "SCENE_CD": "DBComm",
+            "SERV_PTY_PROD_CD": "067",
+            "SERV_CD": "DB",
+            "REQE_PTY_PROD_CD": "066",
+            "REQE_PTY_REQE_TS": "2020-01-10 19:14:03.966",
+            "REQE_PTY_IP": "20.3.15.151",
+            "RequestDate": "20200110",
+            "RequestTime": "191403",
+            "BagSeqNo": "",
+            "AppNum": "TE",
+            "Reserve": ""
+          },
+          "APP_HEAD": {
+            "UserNum": "204217",
+            "UserName": "俸馨",
+            "BranchNum": "2039",
+            "BranchName": "四川广汉农村商业银行股份有限公司对公专柜",
+            "DvcNum": "",
+            "MacValue": "8C-EC-4B-B7-10-91",
+            "DeviceNum": "",
+            "DeviceModel": "",
+            "Tlr": "",
+            "AhrTlr": "",
+            "AhrTaskNum": "",
+            "AhrBrah": "",
+            "chcekTlr": "",
+            "LUNCH_EMPNBR": "",
+            "checkOrgNo": "",
+            "BsnTranCode": "",
+            "FictTellerNum": "",
+            "LegalPersonNum": "2105",
+            "TranCode": "",
+            "TranNm": ""
+          },
+          "Body": {
+            "CommCode": "DB",
+            "SceneCode": "DBComm",
+            "TradeData": "{\"_busidatakey_\":\"queryStandardFields\",\"PB_PRIVATE_KEY\":\"000000000000000A\"}"
+          }
+        }
+        var headers = {
+          "BranchNum":"2039",
+          "ConsumerId":"066",
+          "ConsumerIP":"20.3.15.151",
+          "Content-Type":"application/json",
+          "LegalNum":"2105",
+          "Origin":"http://localhost:53008",
+          "Referer":"http://localhost:53008/FCClient/modules/frame/custom-service/index.html",
+          "Reserve":"",
+          "TraceId":"01157865416332746708",
+          "User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36",
+          "UserNum":"204217",
+          "X-AmebaCloud-RandomNumber":"0.1513719200156629",
+          "X-AmebaCloud-VerifyTime":"1578654163332",
+        }
+        
+      
+      axios({
+          method: 'post',
+          url: 'http://10.16.2.228/abside/abs-ib-dbcomm/dbComm',
+          headers:headers,
+          data: data
+        });
+      }
+      
     </script>
   </div>
   

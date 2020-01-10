@@ -1,15 +1,6 @@
 const { app,dialog,ipcMain,globalShortcut,BrowserWindow,Menu} = require('electron')
 let fs = require("fs");
-function createWindow () { 
-  // let testContent = fs.readFileSync("configs/config.config",{encoding:"utf-8"});
-  console.log(testContent)
-  // app.addRecentDocument("/Users/apple/web/electron/tools/main.js")
-  globalShortcut.register("ctrl+x",(a,b)=>{
-    console.log("ctrl+x")
-  }) 
-  const menu = Menu.buildFromTemplate([])
-  Menu.setApplicationMenu(menu)
-  // 创建浏览器窗口
+function createWindow () {
   let win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -17,10 +8,8 @@ function createWindow () {
       nodeIntegration: true
     }
   })
-  
-  // 加载index.html文件
-  // win.loadFile('./index.html')
-  win.loadURL('http:www.baidu.com')
+  win.loadFile('./index.html')
+  // win.loadURL('http:www.baidu.com')
   win.webContents.on("dom-ready",event => {
     
   })
