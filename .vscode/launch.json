@@ -26,7 +26,7 @@
       "windows": {
         "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cwd"
       },
-      "program": "${workspaceFolder}/main.js",
+      "program": "${workspaceFolder}/src/main/index.js",
       "protocol": "auto"
     }
   ]

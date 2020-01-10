@@ -2,18 +2,16 @@
   "name": "tools",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main/index.js",
   "scripts": {
-    "start": "nodemon --watch main.js --exec 'electron .'",
+    "start": "nodemon --watch src/main/index.js --exec 'electron .'",
     "electron": "electron .",
-    "dist": "electron-builder"
+    "build": "electron-builder"
   },
   "build": {
     "appId": "tools",
     "asar": true,
-    "files": [
-      "**/*"
-    ],
+    "files": [],
     "mac": {
       "category": "public.app-category.productivity"
     },
@@ -68,6 +66,7 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
-    "axios": "^0.19.1"
+    "fs-extra": "^8.1.0",
+    "node-excel": "^0.5.0"
   }
 }
