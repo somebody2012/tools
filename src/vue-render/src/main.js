@@ -7,13 +7,10 @@ import "./styles/global-style.css"
 import 'element-ui/lib/theme-chalk/index.css';
 import Element from 'element-ui';
 import "./styles/element-variables.scss"
+import globalMixins from "./glogal-mixins.js"
 Vue.use(Element, { size: 'small', zIndex: 3000 });
 Vue.config.productionTip = false
-Vue.mixin({
-  mounted(){
-    (window.comps || (window.comps = {}))[this.$options.name || "anonymous"] = this;
-  }
-});
+Vue.mixin(globalMixins);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

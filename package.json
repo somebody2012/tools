@@ -1,7 +1,7 @@
 {
   "name": "tools",
   "version": "1.0.0",
-  "description": "",
+  "description": "tools",
   "main": "src/main/index.js",
   "scripts": {
     "start": "nodemon --watch src/main/index.js --exec 'electron .'",
@@ -11,7 +11,10 @@
   "build": {
     "appId": "tools",
     "asar": true,
-    "files": [],
+    "files": [
+      "**/*",
+      "!src/vue-render/node_modules/*"
+    ],
     "mac": {
       "category": "public.app-category.productivity"
     },
@@ -67,6 +70,7 @@
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "node-excel": "^0.5.0"
+    "node-xlsx": "^0.15.0",
+    "xlsx": "^0.15.4"
   }
 }

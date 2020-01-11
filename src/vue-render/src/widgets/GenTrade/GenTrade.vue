@@ -8,12 +8,12 @@
 </template>
 
 <script>
-
+import GenTradeConfig from "./GenTradeUtils/GenTradeConfig.js"
 export default {
   name: 'GenTrade',
   data () {
     return {
-      msg: JSON.stringify(nodeModules.process.argv,null,2)
+      msg: JSON.stringify(window.m.process.argv,null,2)
     }
   }
 }
