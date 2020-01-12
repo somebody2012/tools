@@ -36,6 +36,7 @@ export default {
       }
       let standardFields = res.data;
       /**
+       * excelData 和界面绑定
       [
         {
           :requisite: true
