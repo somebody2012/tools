@@ -1,0 +1,57 @@
+<template>
+  <div class="<%=tradeCode%>">
+    <%_ groups.forEach(function(group){ _%>
+      <trade-group title="<%-group[0][0].groupTitle%>">
+        <%_ group.forEach(function(row){ _%>
+          <aui-row>
+            <%_ row.forEach(function(comps,index){ _%>
+              <%_ if (comps.isFullRow) { _%>
+                <aui-col :span="22" :offset="0">
+                  <%-comps.compTpl%>
+                </aui-col>
+              <%_ } _%>
+              <%_ if (!comps.isFullRow) { _%>
+                <aui-col :span="10" :offset="<%=index==0?0:2%>">
+                  <%-comps.compTpl%>
+                </aui-col>
+              <%_ } _%>
+            <%_ }); _%>
+          </aui-row>
+        <%_ }); _%>
+      </trade-group>
+    <%_ }); _%>
+    
+  </div>
+</template>
+
+<script>
+import {TradeFlow,ServiceConfig,TradeMessage} from "@/FCClient/common/constants/trade-import.js";
+export default {
+  mixins: [TradeFlow,TradeMessage],
+  validators: {},
+  props:{},
+  data(){
+    return {
+      TradeData:{
+        <%_ dataFieldsAll.forEach(function(field){ _%>
+        <%-field%>:"",
+        <%_ }); _%>
+      }
+    };
+  },
+  computed(){},
+  methods:{
+    <%_ methodsAll.forEach(function(method){ _%>
+    <%-method%>,
+    <%_ }); _%>
+  },
+  mounted(){},
+};
+</script>
+
+
+<style lang="sass" scoped>
+.<%=tradeCode%>{
+  display:block;
+}
+</style>
