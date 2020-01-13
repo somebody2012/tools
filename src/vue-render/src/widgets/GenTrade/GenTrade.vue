@@ -247,7 +247,7 @@ export default {
       // window.m.fs.writeFileSync(outDir,this.tplsStr);
       let renderData = {
         tradeCode:"t00101001",
-        Author:`${this.tradeAttrArea.userName}   ${this.tradeAttrArea.email}`:,
+        Author:`${this.tradeAttrArea.userName}   ${this.tradeAttrArea.email}`,
         time:new Date(),
         tradeName:this.tradeAttrArea.tradeName,
         groups:distTplData,
@@ -262,6 +262,7 @@ export default {
       let tradeDirPath = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade",this.tradeAttrArea.devGroup,`t${this.tradeAttrArea.tradeCode}`);
       fs.mkdirpSync(tradeDirPath);
       let distAppPath = path.resolve(tradeDirPath,"App.vue");
+      console.log(tradeDirPath,"App.vue","写入成功");
 
 
       let tplStr = fs.readFileSync(srcAppPath,{encoding:"utf-8"});
