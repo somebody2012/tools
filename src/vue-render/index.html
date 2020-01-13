@@ -8,6 +8,7 @@
       let fs = require("fs-extra");
       let path = require("path");
       let ejs = require("ejs");
+      let {ipcRenderer} = require('electron');
       window.m = {
         fs:fs,
         path:path,
@@ -16,6 +17,9 @@
         __dirname:__dirname,
         __filename:__filename
       };
+      ipcRenderer.on("config-msg",function(event,msg){
+        window.m.isDev = msg.isDev;
+      })
     </script>
   </head>
   <body>

@@ -27,6 +27,15 @@ export default {
     },
     repeat(count=0,c="\t"){
       return c.repeat(count);
+    },
+    buildPath(p=""){
+      let {isDev,path,process} = window.m;
+      let root = window.m.process.cwd();
+      if(isDev){
+        return path.resolve(root,p);
+      }else{
+        return path.resolve(root,"resources/app/",p);
+      }
     }
   },
   mounted(){

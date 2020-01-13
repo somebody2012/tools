@@ -98,16 +98,12 @@ export default {
       // debugger
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();
-      let srcAppPath = path.resolve(root,"src/vue-render/tpls","App.ejs");
-      let distAppPath = path.resolve(root,"src/vue-render/tpls","App.vue");
-      ejs.renderFile(srcAppPath,renderData,function(err,data){
-        if(err){
-          _this.alert(`写入文件${srcAppPath}失败`);
-        }else{
-          // data = data.replace(/\n\s+$/gm,"");
-          fs.writeFileSync(distAppPath,data,{pretty:true});
-        }
-      })
+      let srcAppPath = this.buildPath("src/vue-render/tpls/App.ejs");
+      let distAppPath = this.buildPath("src/vue-render/tpls/App.vue");
+      let tplStr = fs.readFileSync(srcAppPath,{encoding:"utf-8"});
+      let appTpl = ejs.render(tplStr,renderData);
+      fs.writeFileSync(distAppPath,appTpl,{encoding:"utf-8"});
+      debugger
     }
   }
 }

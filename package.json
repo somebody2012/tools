@@ -4,13 +4,13 @@
   "description": "tools",
   "main": "src/main/index.js",
   "scripts": {
-    "start": "nodemon --watch src/main/index.js --exec 'electron .'",
+    "start": "nodemon --watch src/main/index.js --exec electron .",
     "electron": "electron .",
     "build": "electron-builder"
   },
   "build": {
     "appId": "tools",
-    "asar": true,
+    "asar": false,
     "files": [
       "**/*",
       "!src/vue-render/node_modules/*"
