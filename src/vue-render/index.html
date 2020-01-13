@@ -8,12 +8,16 @@
       let fs = require("fs-extra");
       let path = require("path");
       let ejs = require("ejs");
+      let xlsx = require("xlsx");
       let {ipcRenderer} = require('electron');
+      let child_process = require("child_process");
       window.m = {
         fs:fs,
         path:path,
         process:process,
         ejs:ejs,
+        xlsx:xlsx,
+        child_process:child_process,
         __dirname:__dirname,
         __filename:__filename
       };

@@ -14,7 +14,7 @@ let compAttr = [
   {
     name:":disabled",
     attrPosition:"tag",//tag data methods 属性所在位置
-    value:true
+    // value:"true"
   },
   {
     name:"parafile",
@@ -61,10 +61,10 @@ let standardFields = [
 ];
 // excel导入的数据
 let excelData1 = [
-  {groupTitle:"客户信息",label:"账号",":requisite":true,},
-  {groupTitle:"客户信息",label:"账号1",":requisite":true,},
-  {groupTitle:"客户信息",label:"账号2",":requisite":true,},
-  {groupTitle:"客户信息1",label:"账号3",":requisite":true,},
+  {groupTitle:"客户信息",label:"账号",":requisite":"true",},
+  {groupTitle:"客户信息",label:"账号1",":requisite":"true",},
+  {groupTitle:"客户信息",label:"账号2",":requisite":"true",},
+  {groupTitle:"客户信息1",label:"账号3",":requisite":"true",},
 ];
 export default {
   // 数据库 获取标准字段
@@ -114,6 +114,9 @@ export default {
         let tagName = rowObj.tagName;
         if(rowObj.hasOwnProperty(":requisite")){
           compAttr.push({name:":requisite",attrPosition:"tag",value:rowObj[":requisite"]});
+        }
+        if(rowObj.hasOwnProperty(":disabled")){
+          compAttr.push({name:":disabled",attrPosition:"tag",value:rowObj[":disabled"]});
         }
         let refAttr = {name:"ref",value:rowObj.value,attrPosition:"tag"};
         let propertyAttr = {name:"property",value:rowObj.value,attrPosition:"tag"};

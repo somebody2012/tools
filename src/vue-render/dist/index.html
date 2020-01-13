@@ -1,15 +1,19 @@
 <!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>tools</title><script type=text/javascript>let fs = require("fs-extra");
       let path = require("path");
       let ejs = require("ejs");
+      let xlsx = require("xlsx");
       let {ipcRenderer} = require('electron');
+      let child_process = require("child_process");
       window.m = {
         fs:fs,
         path:path,
         process:process,
         ejs:ejs,
+        xlsx:xlsx,
+        child_process:child_process,
         __dirname:__dirname,
         __filename:__filename
       };
       ipcRenderer.on("config-msg",function(event,msg){
         window.m.isDev = msg.isDev;
-      })</script><link href=./static/css/app.de676bfdfa8d4ef8231427182051a9cc.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.js></script><script type=text/javascript src=./static/js/vendor.js></script><script type=text/javascript src=./static/js/app.js></script></body></html>
+      })</script><link href=./static/css/app.31cfcf5b8993c607e637ec2cee72552f.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.js></script><script type=text/javascript src=./static/js/vendor.js></script><script type=text/javascript src=./static/js/app.js></script></body></html>
