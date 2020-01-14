@@ -48,6 +48,7 @@
       <el-button @click="genTradeTpl" type="primary" icon="el-icon-document">生成交易</el-button>
       <el-button @click="chooseExcel" icon="el-icon-upload2">导入交易统计excel</el-button>
       <el-button @click="saveTmpExcel" icon="el-icon-download">生成交易统计模板excel</el-button>
+      <el-button @click="fetchStandardFields" icon="el-icon-download">获取标准字段</el-button>
     </el-row>
     <el-divider content-position="left">交易内容</el-divider>
     <div>
@@ -63,16 +64,32 @@
                 <el-row>
                   <div v-for="(compo,index1) in group.compAttr" :key="index1">
                     <el-col :span="6">
-                      <el-form-item :label="compo.name" :rules="rules">
-                        <!-- <el-input v-model="compo.value" type="text"></el-input> -->
-                        <input v-model="compo.value">
-                      </el-form-item>
+                      <template v-if="compo.name=='paraFile'">
+                        <el-form-item :label="compo.name" :rules="rules">
+                          <el-select @change="paraFileOptionsChange(compo.value,group.compAttr)" v-model="compo.value" placeholder="请选择" filterable style="width:100%;">
+                            <el-option v-for="item in paraFileOptions" :key="item.value" :label="item.label" :value="item.value"> </el-option>
+                          </el-select>
+                        </el-form-item>
+                      </template>
+                      <template v-else-if="compo.name=='listName'">
+                        <el-form-item :label="compo.name" :rules="rules">
+                          <el-select v-model="compo.value" placeholder="请选择" filterable style="width:100%;">
+                            <el-option v-for="item in compo.listNameOptions" :key="item.value" :label="item.label" :value="item.value"> </el-option>
+                          </el-select>
+                        </el-form-item>
+                      </template>
+                      <template v-else>
+                        <el-form-item :label="compo.name" :rules="rules">
+                          <input v-model="compo.value" style="width:100%;">
+                        </el-form-item>
+                      </template>
+                      
                     </el-col>
                   </div>
                 </el-row>
               </el-collapse-item>
             </div>
-            </el-collapse>
+          </el-collapse>
         </div>
         
       </el-form>
@@ -85,6 +102,7 @@
 import GenTradeConfig from "./GenTradeUtils/GenTradeConfig.js"
 import genTpls from "./GenTradeUtils/genTpls.js";
 import FileUtils from "@/utils/file-utils.js";
+import commRequest from "@/utils/comm-request.js"
 export default {
   name: 'GenTrade',
   data () {
@@ -119,7 +137,8 @@ export default {
       methodsAll:[],
       distTplData:[],
       standardFields:[],
-      excelData:[]
+      excelData:[],
+      paraFileOptions:[],//下拉框
     }
   },
   methods:{
@@ -133,6 +152,10 @@ export default {
       FileUtils.exportJsonToExcel(dataArr,"生成交易模板.xls");
     },
     chooseExcel(){
+      let isExists = this.tradeRootChange();
+      if(!isExists) return;
+      // 获取下拉框
+      this.fetchParaFileOptions();
       this.$refs.inputFile.value = "";
       this.$refs.inputFile.click();
     },
@@ -247,7 +270,7 @@ export default {
       // window.m.fs.writeFileSync(outDir,this.tplsStr);
       let renderData = {
         tradeCode:"t00101001",
-        Author:`${this.tradeAttrArea.userName}   ${this.tradeAttrArea.email}`,
+        Author:`${this.tradeAttrArea.userName}   ${this.tradeAttrArea.email}`.replace(/\n/g,''),
         time:new Date(),
         tradeName:this.tradeAttrArea.tradeName,
         groups:distTplData,
@@ -271,6 +294,10 @@ export default {
       this.$notify({type:"success",title:"成功",message:"写入模板成功"});
     },
     tradeRootChange(){
+      if(!/FCClient$/.test(this.tradeAttrArea.tradeRoot)){
+        this.alert("必须以FCClient结尾");
+        return;
+      }
       let isExists = window.m.fs.existsSync(this.tradeAttrArea.tradeRoot);
       if(!isExists){
         this.alert(`FCClient项目根目录不存在:${this.tradeAttrArea.tradeRoot}`);
@@ -297,6 +324,30 @@ export default {
           resolve(valid && rootExist);
         });
       });
+    },
+    fetchParaFileOptions(){
+      let {fs,path} = window.m;
+      let paraFilePath = path.resolve(this.tradeAttrArea.tradeRoot,"static/para/selector-config");
+      let jsonFiles = fs.readdirSync(paraFilePath);
+      jsonFiles = jsonFiles.filter(v => /\.json/.test(v));
+      this.paraFileOptions = jsonFiles.map(v=>({label:v,value:v}))
+    },
+    //下拉框change
+    paraFileOptionsChange(value,compAttr){
+      let {fs,path} = window.m;
+      let listNameObj = compAttr.find(v => v.name === "listName");
+      if(!listNameObj){
+        console.log("不存在listName",compAttr);
+        return;
+      }
+      let listNamePath = path.resolve(this.tradeAttrArea.tradeRoot,"static/para/selector-config",value);
+      let jsonStr = fs.readFileSync(listNamePath);
+      let itemKeys = Object.keys(JSON.parse(jsonStr));
+      listNameObj.listNameOptions = itemKeys.map(v => ({label:v,value:v}));
+      listNameObj.value = "";
+    },
+    async fetchStandardFields(){
+      let res = await commRequest.fetchStandardFields();
     }
   },
   computed:{
@@ -304,8 +355,9 @@ export default {
   },
   mounted(){
     this.genStandardField();
-
+    // 获取邮件
     this.getUsernameEmail();
+    
   }
 }
 </script>

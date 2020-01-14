@@ -1,7 +1,7 @@
 <!--
-Author: <%=Author%>
-Trade Name: <%=tradeName%>
-Created Date: <%=time%>
+Author:        <%-Author%>
+Trade Name:    <%=tradeName%>
+Created Date:  <%=time%>
 Last Modified: <%=time%>
 HISTORY:
 | Date | By | Comments |
@@ -49,6 +49,7 @@ export default {
     };
   },
   computed(){},
+  watch:{},
   methods:{
     <%_ methodsAll.forEach(function(method){ _%>
     <%-method%>,

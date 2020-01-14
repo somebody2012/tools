@@ -12,7 +12,6 @@ const exportJsonToExcel = (dataArr,fileName) => {
     {wch:20},
     {wch:20},
   ]
-  debugger
   fileName = fileName || "模板.xls";
   saveAs(new Blob([s2ab(XLSX.write(wb, wopts))], { type: "application/octet-stream" }), fileName);
 }

@@ -17,7 +17,12 @@ let compAttr = [
     // value:"true"
   },
   {
-    name:"parafile",
+    name:"paraFile",
+    attrPosition:"tag",//tag data methods 属性所在位置
+    value:"",
+  },
+  {
+    name:"listName",
     attrPosition:"tag",//tag data methods 属性所在位置
     value:""
   },
@@ -109,6 +114,10 @@ export default {
               compAttrItem.value = standardFieldObj.value;
             }
           }
+          //listNameOptions
+          if(["paraFile","listName"].includes(compAttrItem.name)){
+            compAttrItem.listNameOptions = [];
+          }
         }
         let compAttr = rowObj.compAttr;
         let tagName = rowObj.tagName;
@@ -116,7 +125,12 @@ export default {
           compAttr.push({name:":requisite",attrPosition:"tag",value:rowObj[":requisite"]});
         }
         if(rowObj.hasOwnProperty(":disabled")){
-          compAttr.push({name:":disabled",attrPosition:"tag",value:rowObj[":disabled"]});
+          let disabledObj = rowObj.compAttr.find(v => v.name==":disabled");
+          if(disabledObj){
+            disabledObj.value = rowObj[":disabled"];
+          }else{
+            compAttr.push({name:":disabled",attrPosition:"tag",value:rowObj[":disabled"]});
+          }
         }
         let refAttr = {name:"ref",value:rowObj.value,attrPosition:"tag"};
         let propertyAttr = {name:"property",value:rowObj.value,attrPosition:"tag"};
