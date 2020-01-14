@@ -102,7 +102,7 @@
 import GenTradeConfig from "./GenTradeUtils/GenTradeConfig.js"
 import genTpls from "./GenTradeUtils/genTpls.js";
 import FileUtils from "@/utils/file-utils.js";
-import commRequest from "@/utils/comm-request.js"
+import commRequest from "@/utils/comm-request.js";
 export default {
   name: 'GenTrade',
   data () {
