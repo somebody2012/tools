@@ -11,24 +11,24 @@ let compAttr = [
     name:"v-model",
     attrPosition:"data",//tag data methods 属性所在位置
   },
-  {
-    name:":disabled",
-    attrPosition:"tag",//tag data methods 属性所在位置
-    // value:"true"
-  },
+  // {
+  //   name:":disabled",
+  //   attrPosition:"tag",
+  //   // value:"true"
+  // },
   {
     name:"paraFile",
-    attrPosition:"tag",//tag data methods 属性所在位置
+    attrPosition:"tag",
     value:"",
   },
   {
     name:"listName",
-    attrPosition:"tag",//tag data methods 属性所在位置
+    attrPosition:"tag",
     value:""
   },
   {
     name:":success",
-    attrPosition:"methods",//tag data methods 属性所在位置
+    attrPosition:"methods",
     args:["name","age"]
   },
   

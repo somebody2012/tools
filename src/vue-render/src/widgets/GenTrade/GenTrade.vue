@@ -202,20 +202,30 @@ export default {
       
       /**
        * excelData 和界面绑定
-      [
-        {
-          :requisite: true
-          compAttr: (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}] {name:"",value:""}
-          groupId: 0
-          groupTitle: "客户信息"
-          isFullRow: false
-          label: "账号"
-          tagName: "custom-input"
-          value: "ACC"
-        }
-      ]
+        [
+          {
+            :requisite: true
+            compAttr: (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}] {name:"",value:""}
+            groupId: 0
+            groupTitle: "客户信息"
+            isFullRow: false
+            label: "账号"
+            tagName: "custom-input"
+            value: "ACC"
+          }
+        ]
        */
+
+
+      /**
+       * tableInfo [{groupTitle:"","label":"账号|姓名|年龄"}]
+       */
+      let tableInfo = excelData1.filter(v => v.label.includes("|"));
+      let {tMsgs,tMethods,tDataFields,tableTpls} = genTpls.handleTableInfo(tableInfo);
+
+      excelData1 = excelData1.filter(v => !v.label.includes("|"));
       let {excelData,msgs} = GenTradeConfig.transformExcelData(this,this.standardFields,excelData1);
+      msgs = msgs.concat(tMsgs)
       if(msgs.length > 0){
         msgs = msgs.map(v => ` ${v} `);
         msgs.unshift(`<div style="font-weight:bold;font-size:17px;">请联系标准组添加以下字段后再生成交易</div>`);
@@ -268,13 +278,17 @@ export default {
       // let outDir = m.path.resolve(root,"dist/trade-out/","App.vue");
       // window.m.fs.writeFileSync(outDir,this.tplsStr);
       let renderData = {
-        tradeCode:"t00101001",
+        tradeCode:`t${this.tradeAttrArea.tradeCode}`,
         Author:`${this.tradeAttrArea.userName}   ${this.tradeAttrArea.email}`.replace(/\n/g,''),
         time:new Date(),
         tradeName:this.tradeAttrArea.tradeName,
         groups:distTplData,
         dataFieldsAll:dataFieldsAll,
-        methodsAll:methodsAll
+        methodsAll:methodsAll,
+        //表格
+        tMethods:tMethods,
+        tDataFields:tDataFields,
+        tableTpls:tableTpls
       };
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();

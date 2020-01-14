@@ -178,6 +178,26 @@ function twoDimensionalArray(vueIns,excelFieldsAll=[]){
   groups = groups.map(v => twoDimensionalArrayItem(v));
   return groups;
 }
+/**
+ * 处理表格
+ * @param {*} tableInfo [{groupTitle:"","label":"账号|姓名|年龄"}]
+ * @returns {*} {tMsgs:[],tMethods:[],tDataFields:[{label:"",value:""}]}
+ */
+function handleTableInfo(tableInfo){
+  /**
+   <custom-table
+      :tableHeadData="tableHeadData" 
+      :tableData="tableData_3" 
+      :btnGroup="btnGroup"
+    />
+   */
+  return {
+    tMsgs:[],
+    tMethods:[],
+    tDataFields:[],
+    tableTpls:[]
+  }
+}
 
 export default {
   genAll:genAll,
