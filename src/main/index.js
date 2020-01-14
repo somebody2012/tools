@@ -23,11 +23,6 @@ function createWindow () {
 
 
 
-
-
-
-
-
   if(isDev){
     win.loadURL('http://localhost:8080/#/')
   }else{

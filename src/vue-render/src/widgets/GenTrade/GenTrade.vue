@@ -223,7 +223,6 @@ export default {
         this.alert(msgHtml,"提示");
         return;
       }
-      // debugger
       this.excelData = [];
       this.excelData = excelData;
       this.calcCollapseValues();
@@ -277,11 +276,9 @@ export default {
         dataFieldsAll:dataFieldsAll,
         methodsAll:methodsAll
       };
-      // debugger
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();
       let srcAppPath = this.buildPath("src/vue-render/tpls/App.ejs");
-      debugger
       let tradeDirPath = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade",this.tradeAttrArea.devGroup,`t${this.tradeAttrArea.tradeCode}`);
       fs.mkdirpSync(tradeDirPath);
       let distAppPath = path.resolve(tradeDirPath,"App.vue");
