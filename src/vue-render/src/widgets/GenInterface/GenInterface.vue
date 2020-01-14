@@ -47,11 +47,11 @@ export default {
       
       let excelBuffer = fs.readFileSync(filepath);
       let WorkBook = xlsx.read(excelBuffer,{type:"array"})
-      this.genNewExcel(jsonData,WorkBook,newFilepath);
+      await this.genNewExcel(jsonData,WorkBook,newFilepath);
     },
-    genNewExcel(jsonData,WorkBook,newFilepath){
+    async genNewExcel(jsonData,WorkBook,newFilepath){
       this.genStyle(WorkBook);
-      let res = this.handleData(jsonData,WorkBook);
+      let res = await this.handleData(jsonData,WorkBook);
       if(!res) return;
       let result = xlsx.write(WorkBook,{
         type:"buffer",
@@ -72,7 +72,7 @@ export default {
         }
       }
     },
-    handleData(jsonData,WorkBook){
+    async handleData(jsonData,WorkBook){
       let notStandardFields = [];
       let distData = {};
       for(let name in jsonData){
@@ -87,7 +87,7 @@ export default {
           if(String(row.B).trim()){
             let key = "G"+(i + 1);
             if(i > 5){
-              let enField = this.findEnField(row.B,notStandardFields);
+              let enField = await this.findEnField(row.B,notStandardFields);
               distData[name][key] = enField;
             }
             
@@ -108,7 +108,7 @@ export default {
       }
       return notStandardFields.length == 0;
     },
-    findEnField(cnField,notStandardFields=[]){
+    async findEnField(cnField,notStandardFields=[]){
       let excludeKey = ["中文名称"];
       if(excludeKey.includes(cnField)){
         return "";
