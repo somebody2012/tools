@@ -201,5 +201,6 @@ function handleTableInfo(tableInfo){
 
 export default {
   genAll:genAll,
-  twoDimensionalArray:twoDimensionalArray
+  twoDimensionalArray:twoDimensionalArray,
+  handleTableInfo:handleTableInfo
 };

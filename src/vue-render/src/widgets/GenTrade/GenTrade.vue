@@ -33,12 +33,12 @@
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="开发名称" :rules="titleRule" prop="userName">
+          <el-form-item label="开发者" :rules="titleRule" prop="userName">
             <el-input v-model="tradeAttrArea.userName"></el-input>
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="开发邮件" :rules="titleRule" prop="email">
+          <el-form-item label="邮件" :rules="titleRule" prop="email">
             <el-input v-model="tradeAttrArea.email"></el-input>
           </el-form-item>
         </el-col>
@@ -139,6 +139,9 @@ export default {
       standardFields:[],
       excelData:[],
       paraFileOptions:[],//下拉框
+      tMethods:[],
+      tDataFields:[],
+      tableTpls:[],
     }
   },
   methods:{
@@ -222,6 +225,9 @@ export default {
        */
       let tableInfo = excelData1.filter(v => v.label.includes("|"));
       let {tMsgs,tMethods,tDataFields,tableTpls} = genTpls.handleTableInfo(tableInfo);
+      this.tMethods = tMethods;
+      this.tDataFields = tDataFields;
+      this.tableTpls = tableTpls;
 
       excelData1 = excelData1.filter(v => !v.label.includes("|"));
       let {excelData,msgs} = GenTradeConfig.transformExcelData(this,this.standardFields,excelData1);
@@ -286,9 +292,9 @@ export default {
         dataFieldsAll:dataFieldsAll,
         methodsAll:methodsAll,
         //表格
-        tMethods:tMethods,
-        tDataFields:tDataFields,
-        tableTpls:tableTpls
+        tMethods:this.tMethods,
+        tDataFields:this.tDataFields,
+        tableTpls:this.tableTpls
       };
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();
