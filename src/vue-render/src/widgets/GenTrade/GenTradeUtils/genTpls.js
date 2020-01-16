@@ -32,12 +32,18 @@ function genCommonCompBack(vueIns,stdFieldObj){
    */
   let compAttr = stdFieldObj.compAttr;
   let tagName = stdFieldObj.tagName;
-  compAttr = compAttr.filter(v => Boolean(v.value));
-  compAttr = compAttr.map(item => {
-    if(item.value === false || item.value === "" || item.value === undefined){
-      vueIns.alert(`${JSON.stringify(item)} 无value值`);
-      return "";
+  let exculedKeys = [":visible"];//为false的值默认排除，除了这些key
+  compAttr = compAttr.filter(v => {
+    if(v.value === false){
+      if(exculedKeys.includes(v.name)){
+        return !v.value;
+      }else{
+        return false;
+      }
     }
+    return Boolean(v.value);
+  });
+  compAttr = compAttr.map(item => {
     return `${item.name}="${item.value}"`;
   });
   let attrStr = compAttr.join(" ");

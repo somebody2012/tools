@@ -53,6 +53,7 @@ export default {
       tables = tables.map(v=>v.split(/[,，]/g));
       let checkFields = [...fields];
       tables.forEach(v => {
+        v = v.filter(v1 => v1);
         checkFields = checkFields.concat(v);
       })
       let msgs = this.checkFields(checkFields);

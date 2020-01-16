@@ -10,24 +10,45 @@ HISTORY:
 <template>
   <div class="<%=tradeCode%>">
     <%_ groups.forEach(function(group){ _%>
-      <trade-group title="<%-group[0][0].groupTitle%>">
-        <%_ group.forEach(function(row){ _%>
-          <aui-row>
-            <%_ row.forEach(function(comps,index){ _%>
-              <%_ if (comps.isFullRow) { _%>
-                <aui-col :span="22" :offset="0">
-                  <%-comps.compTpl%>
-                </aui-col>
-              <%_ } _%>
-              <%_ if (!comps.isFullRow) { _%>
-                <aui-col :span="10" :offset="<%=index==0?0:2%>">
-                  <%-comps.compTpl%>
-                </aui-col>
-              <%_ } _%>
-            <%_ }); _%>
-          </aui-row>
-        <%_ }); _%>
-      </trade-group>
+    <trade-group title="<%-group[0][0].groupTitle%>">
+      <%_ group.forEach(function(row){ _%>
+        <aui-row>
+          <%_ row.forEach(function(comps,index){ _%>
+            <%_ if (comps.isFullRow) { _%>
+              <aui-col :span="22" :offset="0">
+                <%-comps.compTpl%>
+              </aui-col>
+            <%_ } _%>
+            <%_ if (!comps.isFullRow) { _%>
+              <aui-col :span="10" :offset="<%=index==0?0:2%>">
+                <%-comps.compTpl%>
+              </aui-col>
+            <%_ } _%>
+          <%_ }); _%>
+        </aui-row>
+      <%_ }); _%>
+    </trade-group>
+    <%_ }); _%>
+    <custom-submit-button></custom-submit-button>
+    <%_ buttomGroup.forEach(function(group){ _%>
+    <div title="<%-group[0][0].groupTitle%>">
+      <%_ group.forEach(function(row){ _%>
+        <aui-row>
+          <%_ row.forEach(function(comps,index){ _%>
+            <%_ if (comps.isFullRow) { _%>
+              <aui-col :span="22" :offset="0">
+                <%-comps.compTpl%>
+              </aui-col>
+            <%_ } _%>
+            <%_ if (!comps.isFullRow) { _%>
+              <aui-col :span="10" :offset="<%=index==0?0:2%>">
+                <%-comps.compTpl%>
+              </aui-col>
+            <%_ } _%>
+          <%_ }); _%>
+        </aui-row>
+      <%_ }); _%>
+    </div>
     <%_ }); _%>
     
   </div>
@@ -60,7 +81,7 @@ export default {
 </script>
 
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 .<%=tradeCode%>{
   display:block;
 }

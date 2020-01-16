@@ -64,6 +64,11 @@ function fetchStandardFields(){
     "X-AmebaCloud-VerifyTime":"1578654163332",
   }
   return new Promise(resolve => {
+    let standardFields = window.standardFields;
+    if(standardFields){
+      resolve({isSuccess:true,data:standardFields});
+      return;
+    }
     axios({
       method: 'post',
       url: 'http://10.16.2.228/abside/abs-ib-dbcomm/dbComm',
@@ -71,20 +76,30 @@ function fetchStandardFields(){
       data: data
     })
     .then(res => {
+      res = res.data;
       if(res.OutArgs.errorcode == "000000"){
         let Result = JSON.parse(res.result.Rslt).Result;
         let data = Result.map(v => {
-          return {
+          let compAttr = {};
+          try{
+            let fn = new Function(`return ${v.COMP_DESC || '{}'}`)
+            compAttr = fn();
+          }catch(e){
+            alert(`解析JSON出错${v.COMP_DESC}`);
+          }
+          let obj = {
             label:v.COLM_DESC,
             value:v.COLM_NM,
             isFullRow:v.DGIT > 60,
             tagName:v.COMP_TAG,
-            compAttr:JSON.parse(v.COMP_DESC || "{}"),
+            compAttr:compAttr,
           }
+          return obj;
         });
-        resolve({isSuccess:true,data:[]})
+        window.standardFields = data;
+        resolve({isSuccess:true,data:data})
       }else{
-        resolve({isSuccess:false,data:[]})
+        resolve({isSuccess:false,data:data})
       }
     })
     .catch(res => {

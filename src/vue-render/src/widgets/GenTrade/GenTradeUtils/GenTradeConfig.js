@@ -1,3 +1,5 @@
+import commRequest from "@/utils/comm-request.js";
+
 /**
  * {
  *  name:"",//属性名称
@@ -6,6 +8,10 @@
  *  value?:"",// 若为data 为字段名字 若为方法 为函数名字, 为tag 则为属性值
  * }
  */
+/*
+let customInputCompAttr = [{name:"v-model",attrPosition:"data"}]
+let customSelector = [{name:"v-model",attrPosition:"data"},{name:"paraFile",attrPosition:"tag",value:""},{name:"listName",attrPosition:"tag",value:""},{name:":success",attrPosition:"methods"}]
+*/
 let compAttr = [
   {
     name:"v-model",
@@ -66,16 +72,25 @@ let standardFields = [
 ];
 // excel导入的数据
 let excelData1 = [
-  {groupTitle:"客户信息",label:"账号",":requisite":"true",},
-  {groupTitle:"客户信息",label:"账号1",":requisite":"true",},
-  {groupTitle:"客户信息",label:"账号2",":requisite":"true",},
-  {groupTitle:"客户信息1",label:"账号3",":requisite":"true",},
+  {groupTitle:"客户信息",label:"IMEI序列号",":requisite":"true",},
+  {groupTitle:"客户信息",label:"SIM卡序列号",":requisite":"true",},
+  {groupTitle:"客户信息",label:"保证金金额",":requisite":"true",},
+  {groupTitle:"客户信息1",label:"保证金账号",":requisite":"true",},
+  {groupTitle:"客户信息1",label:"保证金账户标志",":requisite":"true",},
 ];
 export default {
   // 数据库 获取标准字段
   async getStandardConfig(vueIns){
-    let res = vueIns.success(JSON.parse(JSON.stringify(standardFields)),"成功");
-    return res;
+    /**
+     * compAttr: {alise: Array(0), compAttr: {…}, events: Array(0)}
+      isFullRow: false
+      label: "IMEI序列号"
+      tagName: "custom-input"
+      value: "IMEI_SER_NUM"
+     */
+    let res1 = await commRequest.fetchStandardFields();
+    // let res = vueIns.success(JSON.parse(JSON.stringify(standardFields)),"成功");
+    return res1;
   },
   // excel 获取栏位数据后转换
   transformExcelData(vueIns,standardFields=[],excelData=JSON.parse(JSON.stringify(excelData1))){
@@ -132,12 +147,32 @@ export default {
             compAttr.push({name:":disabled",attrPosition:"tag",value:rowObj[":disabled"]});
           }
         }
+        if(rowObj.hasOwnProperty(":readonly")){
+          let readonlyObj = rowObj.compAttr.find(v => v.name==":readonly");
+          if(readonlyObj){
+            readonlyObj.value = rowObj[":readonly"];
+          }else{
+            compAttr.push({name:":readonly",attrPosition:"tag",value:rowObj[":readonly"]});
+          }
+        }
+        if(rowObj.hasOwnProperty(":visible")){
+          let visibleObj = rowObj.compAttr.find(v => v.name==":visible");
+          if(visibleObj){
+            visibleObj.value = rowObj[":visible"];
+          }else{
+            compAttr.push({name:":visible",attrPosition:"tag",value:rowObj[":visible"]});
+          }
+        }
+        
         let refAttr = {name:"ref",value:rowObj.value,attrPosition:"tag"};
         let propertyAttr = {name:"property",value:rowObj.value,attrPosition:"tag"};
         let labelAttr = {name:"label",value:rowObj.label,attrPosition:"tag"};
         compAttr.splice(1,0,propertyAttr);
         compAttr.splice(1,0,refAttr);
         compAttr.splice(1,0,labelAttr);
+        let compAttrRef = compAttr.find(v => v.name == "ref");
+        let compAttrProp = compAttr.find(v => v.name == "property");
+        let compAttrLabel = compAttr.find(v => v.name == "label");
       }else{
         msgs.push(rowObj.label);
       }

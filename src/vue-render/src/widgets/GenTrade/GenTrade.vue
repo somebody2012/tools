@@ -9,16 +9,32 @@
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="开发组" :rules="titleRule" prop="devGroup">
-            <el-select v-model="tradeAttrArea.devGroup" placeholder="请选择" style="width:100%;">
-              <el-option
-                v-for="item in devGroupOptions"
-                :key="item.value"
-                :label="item.label"
-                :value="item.value">
-              </el-option>
-            </el-select>
-          </el-form-item>
+          <el-row>
+            <el-col :span="12">
+              <el-form-item label="开发组" :rules="titleRule" prop="devGroup">
+                <el-select @focus="devGroupChildBlur" @change="devGroupChildBlur" v-model="tradeAttrArea.devGroup" filterable placeholder="请选择" style="width:100%;">
+                  <el-option
+                    v-for="item in devGroupOptions"
+                    :key="item.value"
+                    :label="item.label"
+                    :value="item.value">
+                  </el-option>
+                </el-select>
+              </el-form-item>
+            </el-col>
+            <el-col :span="12">
+              <el-form-item label="子目录" prop="devGroupChild" label-width="80px">
+                <el-select v-model="tradeAttrArea.devGroupChild" filterable placeholder="请选择" style="width:100%;">
+                  <el-option
+                    v-for="item in devGroupOptionsChild"
+                    :key="item.value"
+                    :label="item.label"
+                    :value="item.value">
+                  </el-option>
+                </el-select>
+              </el-form-item>
+            </el-col>
+          </el-row>
         </el-col>
         <el-col :span="8">
           <el-form-item label="8位交易码" :rules="titleRule" prop="tradeCode">
@@ -55,7 +71,7 @@
       <el-form ref="form" label-width="80px" size="mini">
         <div class="groups">
           <el-collapse v-model="collapseValues">
-            <div v-for="(group,index) in excelData" :key="index" class="group">
+            <div v-for="(group,index) in excelDataRender" :key="index" class="group">
               <el-collapse-item :name="group.label">
                 <template slot="title">
                   <span>组：{{group.groupTitle}}</span>
@@ -111,16 +127,18 @@ export default {
       tradeAttrArea:{
         tradeRoot:"E:\\work\\zantong\\qdgz_TEClient\\FCClient",
         devGroup:"asu-test",
+        devGroupChild:"",
         tradeCode:"00101001",
         tradeName:"测试交易生成",
         userName:"",
-        email:""
+        email:"",
       },
+      devGroupOptionsChild:[],
       devGroupOptions:[
-        {label:"测试-asu-test",value:"asu-test"},
-        {label:"现金结算-cash-out",value:"cash-out"},
+        {label:"测试-asu-test",value:"asu-test"}
       ],
       collapseValues:[],
+      collapseValuesButtom:[],
       rules:[
         // { required: true, message: '不能为空'}
         {type:"any"}
@@ -137,11 +155,26 @@ export default {
       methodsAll:[],
       distTplData:[],
       standardFields:[],
-      excelData:[],
+      standardFieldsButtom:[],
+      excelDataRender:[],//页面显示字段 提交按钮上面 下面区域
       paraFileOptions:[],//下拉框
       tMethods:[],
       tDataFields:[],
       tableTpls:[],
+      buttomArea:[],//提交按钮下面区域数据
+      excelData:[],
+      cascaderGroup:[],
+      cascaderGroupOptions:[
+        {
+          label:"label1",
+          value:"value1",
+          children:[
+            {label:"ddd",value:"vvv"}
+          ]
+        }
+      ],
+      
+
     }
   },
   methods:{
@@ -149,8 +182,7 @@ export default {
       let dataArr = [
         {"组名称(trade-group)":""},
         {"栏位名称":""},
-        {"是否必输":""},
-        {"是否可用":""},
+        {"必输(Q)|不可用(D)|只读(R)|不可见(V)":""}
       ];
       FileUtils.exportJsonToExcel(dataArr,"生成交易模板.xls");
     },
@@ -173,12 +205,23 @@ export default {
       let res = await FileUtils.readExcelAsync(file);
       let Sheet1 = res.data.Sheet1.slice(1);
       let excelData = Sheet1.map(v => {
-        return {
+        let C = String(v.C).toUpperCase();
+        let requisite = C.includes("Q");
+        let disabled = C.includes("D");
+        let readonly = C.includes("R");
+        let visible = C.includes("V"); 
+        let obj = {
           "groupTitle":v.A,
           "label":v.B,
-          ":requisite":v.C.includes("是"),
-          ":disabled":v.D.includes("是")
+          ":requisite":requisite,
+          ":disabled":disabled,
+          ":readonly":readonly,
+          ":visible":!visible,
         }
+        if(obj[":visible"]){
+          delete obj[":visible"];
+        }
+        return obj;
       });
       this.parseExcel(excelData);
     },
@@ -199,28 +242,18 @@ export default {
         this.$notify({title:res.msg,duration: 0});
         return;
       }
-      this.standardFields = res.data;
+      this.standardFields = JSON.parse(JSON.stringify(res.data));
+      this.standardFieldsButtom = JSON.parse(JSON.stringify(res.data));
     },
     parseExcel(excelData1){
-      
+      excelData1 = excelData1.map(v => {
+        if(!v.groupTitle.trim()){
+          v.groupTitle = "默认分组";
+        }
+        return v;
+      })
       /**
-       * excelData 和界面绑定
-        [
-          {
-            :requisite: true
-            compAttr: (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}] {name:"",value:""}
-            groupId: 0
-            groupTitle: "客户信息"
-            isFullRow: false
-            label: "账号"
-            tagName: "custom-input"
-            value: "ACC"
-          }
-        ]
-       */
-
-
-      /**
+       * 表格
        * tableInfo [{groupTitle:"","label":"账号|姓名|年龄"}]
        */
       let tableInfo = excelData1.filter(v => v.label.includes("|"));
@@ -228,8 +261,14 @@ export default {
       this.tMethods = tMethods;
       this.tDataFields = tDataFields;
       this.tableTpls = tableTpls;
-
+      // 提交按钮上面区域
       excelData1 = excelData1.filter(v => !v.label.includes("|"));
+      let buttonIndex = excelData1.findIndex(v => v.label.trim()=="提交");
+      if(buttonIndex == -1){
+        buttonIndex = excelData1.length;
+      }
+      let buttomArea1 = excelData1.slice(buttonIndex+1,excelData1.length);
+      excelData1 = excelData1.slice(0,buttonIndex);
       let {excelData,msgs} = GenTradeConfig.transformExcelData(this,this.standardFields,excelData1);
       msgs = msgs.concat(tMsgs)
       if(msgs.length > 0){
@@ -239,9 +278,26 @@ export default {
         this.alert(msgHtml,"提示");
         return;
       }
+      
+      
+      // 提交按钮下面区域
+      let buttomRes = GenTradeConfig.transformExcelData(this,this.standardFieldsButtom,buttomArea1);
+
+      let buttomArea = buttomRes.excelData;
+      let msgs1 = buttomRes.msgs;
+      if(msgs1.length > 0){
+        msgs1 = msgs1.map(v => ` ${v} `);
+        msgs1.unshift(`<div style="font-weight:bold;font-size:17px;">请联系标准组添加以下字段后再生成交易</div>`);
+        let msgHtml = msgs1.join("");
+        this.alert(msgHtml,"提示");
+        return;
+      }
       this.excelData = [];
       this.excelData = excelData;
       this.calcCollapseValues();
+      this.buttomArea = [];
+      this.buttomArea = buttomArea;
+      this.excelDataRender = this.excelData.concat(this.buttomArea)
     },
     async genTradeTpl(){
       let passed = await this.validateForm();
@@ -249,7 +305,7 @@ export default {
         this.$notify({type:"warning",message:"交易属性填完"})
         return;
       }
-      if(this.excelData.length == 0){
+      if(this.excelDataRender.length == 0){
         this.$notify({type:"warning",message:"先导入统计的excel"})
         return;
       }
@@ -273,11 +329,28 @@ export default {
           compTpl:v.compTpl,
         }
       });
+      let buttomObj = genTpls.genAll(this,this.buttomArea);
+      let excelFieldsAllB = buttomObj.excelFieldsAll;
+      let methodsAllB = buttomObj.methodsAll;
+      let dataFieldsAllB = buttomObj.dataFieldsAll;
+      excelFieldsAllB = excelFieldsAllB.map(v => {
+        return {
+          groupId:v.groupId,
+          groupTitle:v.groupTitle,
+          isFullRow:v.isFullRow,
+          compTpl:v.compTpl,
+        }
+      });
+
       let distTplData = genTpls.twoDimensionalArray(this,excelFieldsAll);
-      this.distTplData = distTplData;
-      this.writeToFile({distTplData,methodsAll,dataFieldsAll});
+      let distTplDataB = genTpls.twoDimensionalArray(this,excelFieldsAllB);
+      methodsAll = methodsAll.concat(methodsAllB);
+      dataFieldsAll = dataFieldsAll.concat(dataFieldsAllB);
+      dataFieldsAll = dataFieldsAll.filter((v,i)=>dataFieldsAll.indexOf(v) == i);
+      methodsAll = methodsAll.filter((v,i)=>methodsAll.indexOf(v) == i);
+      this.writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll});
     },
-    writeToFile({distTplData,methodsAll,dataFieldsAll}){
+    writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll}){
       let _this = this;
       // this.tplsStr = tplCompsStrAll + methodsTpl + datasTpl;
       // let root = m.process.cwd();
@@ -294,12 +367,14 @@ export default {
         //表格
         tMethods:this.tMethods,
         tDataFields:this.tDataFields,
-        tableTpls:this.tableTpls
+        tableTpls:this.tableTpls,
+        // 提交按钮下面区域
+        buttomGroup:distTplDataB
       };
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();
       let srcAppPath = this.buildPath("src/vue-render/tpls/App.ejs");
-      let tradeDirPath = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade",this.tradeAttrArea.devGroup,`t${this.tradeAttrArea.tradeCode}`);
+      let tradeDirPath = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade",this.tradeAttrArea.devGroup,this.tradeAttrArea.devGroupChild,`t${this.tradeAttrArea.tradeCode}`);
       fs.mkdirpSync(tradeDirPath);
       let distAppPath = path.resolve(tradeDirPath,"App.vue");
       console.log(tradeDirPath,"App.vue","写入成功");
@@ -315,6 +390,7 @@ export default {
         this.alert("必须以FCClient结尾");
         return;
       }
+      this.fetchDevGroupOptions();
       let isExists = window.m.fs.existsSync(this.tradeAttrArea.tradeRoot);
       if(!isExists){
         this.alert(`FCClient项目根目录不存在:${this.tradeAttrArea.tradeRoot}`);
@@ -325,14 +401,14 @@ export default {
     },
     getUsernameEmail(){
       let {child_process} = window.m;
-      try{
-        let userName = child_process.execSync('git config --global user.name',{encoding:"utf-8"})
-        let email = child_process.execSync('git config --global user.email',{encoding:"utf-8"})
+      child_process.exec('git config --global user.name',{encoding:"utf-8"},(err,stdout,stderr)=>{
+        let userName = stdout.replace(/[\n\s]/g,'');
         this.tradeAttrArea.userName = userName;
+      })
+      child_process.exec('git config --global user.email',{encoding:"utf-8"},(err,stdout,stderr)=>{
+        let email = stdout.replace(/[\n\s]/g,'');
         this.tradeAttrArea.email = email;
-      }catch(e){
-
-      }
+      })
     },
     validateForm(){
       return new Promise(resolve => {
@@ -365,6 +441,39 @@ export default {
     },
     async fetchStandardFields(){
       let res = await commRequest.fetchStandardFields();
+    },
+    fetchDevGroupOptions(){
+      let groupOptions = [];
+      let {fs,path} = window.m;
+      //modules\trade
+      let tradePath = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade");
+      let level1Dirs = fs.readdirSync(tradePath);
+      level1Dirs.forEach(v => {
+        let p = path.resolve(tradePath,v);
+        let isDir = fs.statSync(p).isDirectory();
+        if(isDir){
+          groupOptions.push({label:v,value:v});
+        }
+      })
+      this.devGroupOptions = groupOptions;
+    },
+    devGroupChildBlur(){
+      let isExists = this.tradeRootChange();
+      if(!isExists) return;
+      this.tradeAttrArea.devGroupChild = "";
+      if(!this.tradeAttrArea.devGroup) return;
+      let groupOptions = [];
+      let {fs,path} = window.m;
+      let pa = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade",this.tradeAttrArea.devGroup);
+      let level2Dirs = fs.readdirSync(pa);
+      level2Dirs.forEach(v => {
+        let p = path.resolve(pa,v);
+        let isDir = fs.statSync(p).isDirectory();
+        if(isDir){
+          groupOptions.push({label:v,value:v});
+        }
+      })
+      this.devGroupOptionsChild = groupOptions;
     }
   },
   computed:{

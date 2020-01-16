@@ -9,7 +9,7 @@ const exportJsonToExcel = (dataArr,fileName) => {
   wb.Sheets.Sheet1["!cols"]=[
     {wch:30},
     {wch:20},
-    {wch:20},
+    {wch:40},
     {wch:20},
   ]
   fileName = fileName || "模板.xls";
