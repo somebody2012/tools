@@ -257,7 +257,7 @@ export default {
        * tableInfo [{groupTitle:"","label":"账号|姓名|年龄"}]
        */
       let tableInfo = excelData1.filter(v => v.label.includes("|"));
-      let {tMsgs,tMethods,tDataFields,tableTpls} = genTpls.handleTableInfo(tableInfo);
+      let {tMsgs,tMethods,tDataFields,tableTpls} = genTpls.handleTableInfo(tableInfo,this.standardFields);
       this.tMethods = tMethods;
       this.tDataFields = tDataFields;
       this.tableTpls = tableTpls;
@@ -371,6 +371,7 @@ export default {
         // 提交按钮下面区域
         buttomGroup:distTplDataB
       };
+      debugger
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();
       let srcAppPath = this.buildPath("src/vue-render/tpls/App.ejs");

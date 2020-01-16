@@ -50,6 +50,11 @@ HISTORY:
       <%_ }); _%>
     </div>
     <%_ }); _%>
+
+    <%_ tableTpls.forEach(function(tableTplItem){ _%>
+    <!-- 表格 -->
+    <%-tableTplItem%>
+    <%_ }); _%>
     
   </div>
 </template>
@@ -66,7 +71,10 @@ export default {
         <%_ dataFieldsAll.forEach(function(field){ _%>
         <%-field%>:"",
         <%_ }); _%>
-      }
+      },
+      <%_ tDataFields.forEach(function(tFieldItem){ _%>
+      <%-tFieldItem.label%>:<%-tFieldItem.value%>,
+      <%_ }); _%>
     };
   },
   computed(){},

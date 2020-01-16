@@ -189,19 +189,64 @@ function twoDimensionalArray(vueIns,excelFieldsAll=[]){
  * @param {*} tableInfo [{groupTitle:"","label":"账号|姓名|年龄"}]
  * @returns {*} {tMsgs:[],tMethods:[],tDataFields:[{label:"",value:""}]}
  */
-function handleTableInfo(tableInfo){
+function handleTableInfo(tableInfo,standardFields){
+  let tMsgs = [];
+  let tMethods = [];
+  let tDataFields = [];
+  let tableTpls = [];
+  let fields = tableInfo.map(v => v.label.split("|").filter(v1 => v1));
+  
+  for(let i=0;i<fields.length;i++){
+    for(let j=0;j<fields[i].length;j++){
+      let cnField = fields[i][j];
+      let stdObj = standardFields.find(v => v.label == cnField);
+      if(!stdObj){
+        tMsgs.push(cnField);
+      }
+    }
+  }
+  if(tMsgs.length != 0){
+    return {
+      tMsgs:tMsgs,
+      tMethods:tMethods,
+      tDataFields:tDataFields,
+      tableTpls:tableTpls
+    }
+  }
   /**
-   <custom-table
-      :tableHeadData="tableHeadData" 
-      :tableData="tableData_3" 
-      :btnGroup="btnGroup"
-    />
+   * [  [{label:"",value:""}]  ]
    */
+  let newFields = fields.map(v => {
+    return v.map(cnField => {
+      let stdObj = standardFields.find(v => v.label == cnField);
+      return {label:stdObj.label,value:stdObj.value};
+    })
+  });
+  
+  newFields.forEach((tableItem,i) => {
+    let tableHeadData = tableItem.map((v) => {
+      return {
+        label: v.label,
+        prop: v.value,
+        type: 'input'
+      }
+    })
+    tDataFields.push({label:`tableHeadData${i}`,value:JSON.stringify(tableHeadData)});
+    tDataFields.push({label:`tableData${i}`,value:JSON.stringify([])});
+    let tableTpl = `<custom-table ref="table${i}" :tableHeadData="tableHeadData${i}" :tableData="tableData${i}"/>`;
+    tableTpls.push(tableTpl);
+  })
+  
+
+  
+  /**
+   <custom-table ref="" :tableHeadData="tableHeadData" :tableData="tableData"/>
+  */
   return {
-    tMsgs:[],
-    tMethods:[],
-    tDataFields:[],
-    tableTpls:[]
+    tMsgs:tMsgs,
+    tMethods:tMethods,
+    tDataFields:tDataFields,
+    tableTpls:tableTpls
   }
 }
 
