@@ -7,14 +7,29 @@
       <el-form-item label="FCClient路径：">
         <el-input v-model="tradeRoot" style="width:100%;" />
       </el-form-item>
-      <el-form-item label="F表文件名：">
-        <el-input v-model="fTableName" style="width:100%;" placeholder="00101001.aft" />
-      </el-form-item>
-      <el-form-item label="F表标题：">
-        <el-input v-model="title" style="width:100%;" />
-      </el-form-item>
+      <el-row>
+        <el-col :span="6">
+          <el-form-item label="F表文件名：">
+            <el-input v-model="fTableName" style="width:100%;" placeholder="00101001.aft" />
+          </el-form-item>
+        </el-col>
+        <el-col :span="6">
+          <el-form-item label="F表标题：">
+            <el-input v-model="title" style="width:100%;" />
+          </el-form-item>
+        </el-col>
+        <el-col :span="6">
+          <el-form-item label="中文字段宽度：">
+            <el-input v-model="labelWidth" style="width:100%;" />
+          </el-form-item>
+        </el-col>
+        
+      </el-row>
       <el-form-item label="F表字段：">
-        <el-input v-model="config" type="textarea" :autosize="{ minRows: 10, maxRows: 40}" placeholder="输入字段格式:(账号|客户姓名|性别|账户类型)"></el-input>
+        <el-input v-model="config" type="textarea" :autosize="{ minRows: 10, maxRows: 40}" placeholder="
+        输入字段格式:账号|客户姓名|性别|账户类型
+        如果为表格则逗号隔开:性别,账号,客户姓名
+        如果有字段和表格则:账号|客户姓名|性别|性别,账号,客户姓名"></el-input>
       </el-form-item>
     </el-form>
     <el-row>
@@ -26,6 +41,7 @@
   </div>
 </template>
 <script>
+import commRequest from "@/utils/comm-request.js";
 export default {
   name: "GenPrintF",
   components: {},
@@ -34,9 +50,10 @@ export default {
   },
   data() {
     return {
+      labelWidth:"17.5",
       tradeRoot:"E:\\work\\zantong\\qdgz_TEClient\\FCClient",
-      fTableName:"xxx",
-      config:"账号|客户姓名|性别",
+      fTableName:"xxx.aft",
+      config:"IMEI序列号|SIM卡序列号|保证金金额|保证金账号|保证金账户标志|IMEI序列号,SIM卡序列号|保证金金额,保证金账号,保证金账户标志",
       title:"无标题",
       standardField:[{label:"账号",value:"acc"},{label:"客户姓名",value:"custName"},{label:"性别",value:"sex"}],//[{label:"",value:""}]
       fields:[],//[{label:"",value:""}]
@@ -47,7 +64,7 @@ export default {
     async parseFields(){
       let res = await this.checkPath();
       if(!res) return;
-      let fields1 = this.config.split("|").filter(v => v);
+      let fields1 = this.config.split("|").map(v => v.replace(/[\s\t\n]/g,"")).filter(v => v);
       let fields = fields1.filter(v => !/[,，]/.test(v));
       let tables = fields1.filter(v => /[,，]/.test(v));
       tables = tables.map(v=>v.split(/[,，]/g));
@@ -63,6 +80,7 @@ export default {
         return;
       }
       this.fields = fields.map(v => {
+        v = v.replace(/[\s\t\n]/g,"");
         return {
           label:v,
           value:this.findEnField(v)
@@ -70,6 +88,7 @@ export default {
       })
       this.tables = tables.map(v => {
         return v.map(v1 => {
+          v1 = v1.replace(/[\s\t\n]/g,"");
           return {
             label:v1,
             value:this.findEnField(v1)
@@ -122,9 +141,53 @@ export default {
         return true;
       }
     },
-    genFtableXml(fields,tables){
-      console.log("this.fields",JSON.stringify(fields));
+    // 转换成一行两列
+    transformFields(fields){
+      let distArr = [];
+      for(let i=0;i<fields.length;i++){
+        let curItem = fields[i];
+        if(distArr.length == 0){
+          distArr.push([curItem]);
+        }else{
+          let lastItemArr = distArr[distArr.length-1];
+          if(lastItemArr.length == 1){
+            lastItemArr.push(curItem);
+            continue;
+          }
+          if(lastItemArr.length == 2){
+            distArr.push([curItem]);
+          }
+        }
+      }
+      return distArr;
+    },
+    async genFtableXml(fields,tables){
+      let {path,fs,process,ejs} = window.m;
+      //[ [{label:"",value:""}，{label:"",value:""}] ]
+      let groups = this.transformFields(fields);
+      console.log("this.groups",JSON.stringify(groups));
       console.log("this.tables",JSON.stringify(tables));
+      let renderData = {
+        title:this.title,
+        groups:groups,
+        tables:tables,
+        labelWidth1:this.labelWidth
+      };
+      let srcAftPath = this.buildPath("src/vue-render/tpls/aft.ejs");
+      let tplStr = fs.readFileSync(srcAftPath,{encoding:"utf-8"});
+      let appTpl = ejs.render(tplStr,renderData);
+      let distAppPath = path.resolve(this.tradeRoot,"print",this.fTableName);
+      console.log("生成F表：",distAppPath);
+      fs.writeFileSync(distAppPath,appTpl,{encoding:"utf-8"});
+      this.alert(`生成F表成功\n${distAppPath}`);
+    },
+    async queryAllStandardFields(){
+      let res = await commRequest.queryAllStandardFields();
+      if(!res.isSuccess){
+        this.alert("获取标准字段出错");
+        return;
+      }
+      this.standardField = res.data;
     }
   },
   watch: {
@@ -135,6 +198,7 @@ export default {
   },
   mounted() {
     // this.parseFields();
+    this.queryAllStandardFields();
   },
 }
 </script>

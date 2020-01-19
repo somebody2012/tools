@@ -37,9 +37,18 @@
           </el-row>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="8位交易码" :rules="titleRule" prop="tradeCode">
-            <el-input v-model="tradeAttrArea.tradeCode"></el-input>
-          </el-form-item>
+          <el-row>
+            <el-col :span="12">
+              <el-form-item label="8位交易码" :rules="titleRule" prop="tradeCode">
+                <el-input v-model="tradeAttrArea.tradeCode"></el-input>
+              </el-form-item>
+            </el-col>
+            <el-col :span="12">
+              <el-form-item label="4位交易码" :rules="titleRule" prop="tradeCodeBiz">
+                <el-input v-model="tradeAttrArea.tradeCodeBiz"></el-input>
+              </el-form-item>
+            </el-col>
+          </el-row>
         </el-col>
       </el-row>
       <el-row>
@@ -132,6 +141,7 @@ export default {
         tradeName:"测试交易生成",
         userName:"",
         email:"",
+        tradeCodeBiz:"0101"
       },
       devGroupOptionsChild:[],
       devGroupOptions:[
@@ -358,6 +368,7 @@ export default {
       // window.m.fs.writeFileSync(outDir,this.tplsStr);
       let renderData = {
         tradeCode:`t${this.tradeAttrArea.tradeCode}`,
+        tradeCodeBiz:this.tradeAttrArea.tradeCodeBiz,
         Author:`${this.tradeAttrArea.userName}   ${this.tradeAttrArea.email}`.replace(/\n/g,''),
         time:new Date(),
         tradeName:this.tradeAttrArea.tradeName,
@@ -378,12 +389,20 @@ export default {
       let tradeDirPath = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade",this.tradeAttrArea.devGroup,this.tradeAttrArea.devGroupChild,`t${this.tradeAttrArea.tradeCode}`);
       fs.mkdirpSync(tradeDirPath);
       let distAppPath = path.resolve(tradeDirPath,"App.vue");
-      console.log(tradeDirPath,"App.vue","写入成功");
+      console.log(distAppPath,"写入成功");
 
-
+      // app.vue
       let tplStr = fs.readFileSync(srcAppPath,{encoding:"utf-8"});
       let appTpl = ejs.render(tplStr,renderData);
       fs.writeFileSync(distAppPath,appTpl,{encoding:"utf-8"});
+      //main.js
+      let srcMainjsPath = this.buildPath("src/vue-render/tpls/main.ejs");
+      // let tradeDirPath = path.resolve(this.tradeAttrArea.tradeRoot,"modules/trade",this.tradeAttrArea.devGroup,this.tradeAttrArea.devGroupChild,`t${this.tradeAttrArea.tradeCode}`);
+      // fs.mkdirpSync(tradeDirPath);
+      let distAppPathMainjs = path.resolve(tradeDirPath,"main.js");
+      let tplStrMainjs = fs.readFileSync(srcMainjsPath,{encoding:"utf-8"});
+      let appTplMainjs = ejs.render(tplStrMainjs,{});
+      fs.writeFileSync(distAppPathMainjs,appTplMainjs,{encoding:"utf-8"});
       this.$notify({type:"success",title:"成功",message:"写入模板成功"});
     },
     tradeRootChange(){

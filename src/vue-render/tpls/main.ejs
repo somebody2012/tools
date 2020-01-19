@@ -1,0 +1,44 @@
+import Vue from 'vue'
+import App from './App.vue'
+import Aui from 'AUI'
+import '@/styles/theme.scss'
+import '@/styles/common.css' // 引入公共样式
+import "@/components/index"
+import { ServicesManager } from 'ab-manager-services'
+Vue.use(Aui);
+
+// 引入rem.js用来给html标签设置font-size
+import '@/common/utils/rem-utils.js'
+
+import { EventControl } from 'ab-manager-focus' //解决按钮连续点击两下触发点击事件
+Vue.use(EventControl)
+
+// 此处services-plugin.js以及services-names.js文件需要手动创建
+// 每条服务的配置
+import ServicesPlugin from '@/common/managers/services-manager/services-plugin.js' // 相对路径 
+// 定义服务名的常量
+import ServicesNames from '@/common/managers/services-manager/services-names.js' // 相对路径
+// 定义统一错误处理信息的函数
+import ServicesError from '@/common/managers/services-manager/services-error.js' // 相对路径
+// 在初始化的时候将plugin传入ServicesManager
+Vue.use(ServicesManager, {plugin: ServicesPlugin, errorHandle: ServicesError});
+// 全局mixins
+import TradeCtrl from '@/common/mixins/trade-ctrl.js'
+Vue.mixin(TradeCtrl);
+import { StorageManager } from "ab-manager-storage";
+import StorageName from "@/common/managers/storage-manager/storage-name.js";
+Vue.use(StorageManager, StorageName);
+Vue.config.productionTip = false
+
+
+//需要动态create的组件--begin
+import VueCreateAPI from "@/common/utils/vue-create-api";
+import SignFlow from "./SignFlow.vue";
+Vue.use(VueCreateAPI);
+Vue.createAPI(SignFlow);
+//需要动态create的组件--end
+
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
