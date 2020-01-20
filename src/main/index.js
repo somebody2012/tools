@@ -1,4 +1,5 @@
-const { app,dialog,ipcMain,globalShortcut,BrowserWindow,Menu,screen} = require('electron')
+const { app,dialog,ipcMain,globalShortcut,BrowserWindow,Menu,screen} = require('electron');
+
 let fs = require("fs");
 let {isDev} = require("./config.js");
 let win = null;

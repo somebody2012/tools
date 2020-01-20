@@ -9,47 +9,30 @@
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-row>
-            <el-col :span="12">
-              <el-form-item label="开发组" :rules="titleRule" prop="devGroup">
-                <el-select @focus="devGroupChildBlur" @change="devGroupChildBlur" v-model="tradeAttrArea.devGroup" filterable placeholder="请选择" style="width:100%;">
-                  <el-option
-                    v-for="item in devGroupOptions"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                  </el-option>
-                </el-select>
-              </el-form-item>
-            </el-col>
-            <el-col :span="12">
-              <el-form-item label="子目录" prop="devGroupChild" label-width="80px">
-                <el-select v-model="tradeAttrArea.devGroupChild" filterable placeholder="请选择" style="width:100%;">
-                  <el-option
-                    v-for="item in devGroupOptionsChild"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                  </el-option>
-                </el-select>
-              </el-form-item>
-            </el-col>
-          </el-row>
+          <el-form-item label="开发组" :rules="titleRule" prop="devGroup">
+            <el-select @focus="devGroupChildBlur" @change="devGroupChildBlur" v-model="tradeAttrArea.devGroup" filterable placeholder="请选择" style="width:100%;">
+              <el-option
+                v-for="item in devGroupOptions"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-select>
+          </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-row>
-            <el-col :span="12">
-              <el-form-item label="8位交易码" :rules="titleRule" prop="tradeCode">
-                <el-input v-model="tradeAttrArea.tradeCode"></el-input>
-              </el-form-item>
-            </el-col>
-            <el-col :span="12">
-              <el-form-item label="4位交易码" :rules="titleRule" prop="tradeCodeBiz">
-                <el-input v-model="tradeAttrArea.tradeCodeBiz"></el-input>
-              </el-form-item>
-            </el-col>
-          </el-row>
+          <el-form-item label="子目录" prop="devGroupChild">
+            <el-select v-model="tradeAttrArea.devGroupChild" filterable placeholder="请选择" style="width:100%;">
+              <el-option
+                v-for="item in devGroupOptionsChild"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-select>
+          </el-form-item>
         </el-col>
+        
       </el-row>
       <el-row>
         <el-col :span="8">
@@ -68,12 +51,65 @@
           </el-form-item>
         </el-col>
       </el-row>
+    <el-divider content-position="left">菜单属性</el-divider>
+    <el-row>
+      <el-col :span="6">
+        <el-form-item label="菜单位置" :rules="titleRule" prop="menuPosition">
+          <el-select v-model="tradeAttrArea.menuPosition" style="width:100%;">
+            <el-option label="客户服务" value="001"></el-option>
+            <el-option label="内部服务" value="002"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-col>
+      <el-col :span="6">
+        <el-form-item label="6位交易码" :rules="titleRule" prop="tradeCodeBiz">
+          <el-input v-model="tradeAttrArea.tradeCodeBiz"></el-input>
+        </el-form-item>
+      </el-col>
+      <el-col :span="6">
+        <el-form-item label="8位交易码" :rules="titleRule" prop="tradeCode">
+          <el-input v-model="tradeAttrArea.tradeCode"></el-input>
+        </el-form-item>
+      </el-col>
+      <el-col :span="6">
+        <el-form-item label="父级菜单" :rules="titleRule" prop="parentMenu">
+          <el-select v-model="tradeAttrArea.parentMenu" style="width:100%;" filterable>
+            <el-option v-for="(item,index) in parentMenuOptions" :key="index" :label="item.label" :value="item.value"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-col>
+      <el-col :span="6">
+        <el-form-item label="菜单icon" :rules="titleRule" prop="menuIcon">
+          <el-select v-model="tradeAttrArea.menuIcon" style="width:100%;">
+            <el-option v-for="(item,index) in iconsOptions" :key="index" :label="item.label" :value="item.value"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-col>
+      <el-col :span="6">
+        <el-form-item label="是否可见" :rules="titleRule" prop="visiable">
+          <el-select v-model="tradeAttrArea.visiable" style="width:100%;">
+            <el-option label="是" value="1"></el-option>
+            <el-option label="否" value="0"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-col>
+      <el-col :span="6">
+        <el-form-item label="签到可见" :rules="titleRule" prop="signVisiable">
+          <el-select v-model="tradeAttrArea.signVisiable" style="width:100%;">
+            <el-option label="是" value="1"></el-option>
+            <el-option label="否" value="0"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-col>
+      
+    </el-row>
     </el-form>
+    
     <el-row>
       <el-button @click="genTradeTpl" type="primary" icon="el-icon-document">生成交易</el-button>
+      <el-button @click="gentTradeMenu" type="primary" icon="el-icon-document">生成菜单sql</el-button>
       <el-button @click="chooseExcel" icon="el-icon-upload2">导入交易统计excel</el-button>
       <el-button @click="saveTmpExcel" icon="el-icon-download">生成交易统计模板excel</el-button>
-      <el-button @click="fetchStandardFields" icon="el-icon-download">获取标准字段</el-button>
     </el-row>
     <el-divider content-position="left">交易内容</el-divider>
     <div>
@@ -120,6 +156,10 @@
       </el-form>
     </div>
     <input type="file" @change="inputFileChange" ref="inputFile" style="display:none;">
+    <el-dialog :visible.sync="dialogVisiable" title="菜单sql" :close-on-click-modal="false" :close-on-press-escape="false">
+      <h3>生成菜单sql</h3>
+      <el-input v-model="menuSqlStr" :autosize="{ minRows: 10, maxRows: 100 }" type="textarea"></el-input>
+    </el-dialog>
   </div>
 </template>
 
@@ -141,7 +181,12 @@ export default {
         tradeName:"测试交易生成",
         userName:"",
         email:"",
-        tradeCodeBiz:"0101"
+        tradeCodeBiz:"010101",
+        menuPosition:"001",//菜单位置
+        menuIcon:"inner-gird-maintain.svg",//菜单icon
+        parentMenu:"0101",//父级菜单
+        visiable:"1",//是否可见
+        signVisiable:"1",//签到可见
       },
       devGroupOptionsChild:[],
       devGroupOptions:[
@@ -183,8 +228,25 @@ export default {
           ]
         }
       ],
-      
-
+      iconsOptions:[
+        {label:"inner-gird-maintain.svg",value:"inner-gird-maintain.svg"},
+        {label:"inner-grid-01.png",value:"inner-grid-01.png"},
+        {label:"icon_trade_debt.png",value:"icon_trade_debt.png"},
+        {label:"icon_trade_other.png",value:"icon_trade_other.png"},
+        {label:"icon_trade_dayend.png",value:"icon_trade_dayend.png"},
+        {label:"icon_trade_feature.png",value:"icon_trade_feature.png"},
+        {label:"icon_trade_default.png",value:"icon_trade_default.png"},
+        {label:"inner-gird-finance.svg",value:"inner-gird-finance.svg"},
+        {label:"inner-gird-query.svg",value:"inner-gird-query.svg"},
+        {label:"inner-gird-other.svg",value:"inner-gird-other.svg"},
+        {label:"icon_trade_inside.png",value:"icon_trade_inside.png"},
+        {label:"inner-grid-04.png",value:"inner-grid-04.png"},
+        {label:"inner-grid-other.svg",value:"inner-grid-other.svg"},
+        {label:"inner-grid-03.png",value:"inner-grid-03.png"},
+      ],
+      parentMenuOptions:[],
+      dialogVisiable:false,
+      menuSqlStr:""
     }
   },
   methods:{
@@ -360,6 +422,32 @@ export default {
       methodsAll = methodsAll.filter((v,i)=>methodsAll.indexOf(v) == i);
       this.writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll});
     },
+    async gentTradeMenu(){
+      let passed = await this.validateForm();
+      if(!passed) {
+        this.$notify({type:"warning",message:"交易属性填完"})
+        return;
+      }
+      let MENU_VIEW_NO = this.tradeAttrArea.menuPosition;
+      let MENU_NO = this.tradeAttrArea.tradeCode;
+      let MENU_NM = this.tradeAttrArea.tradeName;
+      let MENU_ICON_PATH = this.tradeAttrArea.menuIcon;
+      let MENU_PATH = "";
+      let PARE_RANK_MENU_NO = this.tradeAttrArea.parentMenu;
+      let VIS_FLG = this.tradeAttrArea.visiable == "1" ? "1" : "0";
+      let SGNIN_VIS_FLG_CD = this.tradeAttrArea.signVisiable == "1" ? "1" : "0";
+      let BIZ_MENU_NO = this.tradeAttrArea.tradeCodeBiz;
+      let BIZ_MENU_NM = this.tradeAttrArea.tradeName;
+
+      let devGroup = this.tradeAttrArea.devGroup;
+      let devGroupChild = this.tradeAttrArea.devGroupChild ? "/" + this.tradeAttrArea.devGroupChild : "";
+      let tradeCodeT = "/t" + this.tradeAttrArea.tradeCode;
+      let html = "/index.html";
+      MENU_PATH = "modules/trade/" + devGroup + devGroupChild + tradeCodeT + html;
+      let sql = `INSERT INTO \`pub_db\`.\`IB_UPM_MENU_INFO\`(\`APP_NO\`, \`MENU_VIEW_NO\`, \`MENU_NO\`, \`MENU_NM\`, \`MENU_ICON_PATH\`, \`MENU_PATH\`, \`MENU_TYP_CD\`, \`QUNG_SEQ_NO\`, \`PARE_RANK_MENU_NO\`, \`VIS_FLG\`, \`SYNC_ASYNC_FLG\`, \`BLNG_LPR_CD\`, \`MATN_ORG_NO\`, \`MATN_TM\`, \`MATN_DT\`, \`REMRK_1\`, \`REMRK_2\`, \`REMRK_3\`, \`MATN_TELR_NO\`, \`SGNIN_VIS_FLG_CD\`, \`CLNT_MENU_FLG\`, \`IS_BPMN_FLG\`, \`MENU_SIZE\`, \`ACTIVE_CLASS\`, \`BCKGRND_COLR_CD\`, \`BCKGRND_PICT_PATH\`, \`LAYOUT_ROW\`, \`LAYOUT_COL\`, \`MENU_ENG_NM\`, \`BIZ_MENU_NO\`, \`BIZ_MENU_NM\`, \`STRK_BAL_FLG\`, \`NEED_PR_ELEC_SIGNET_FLG\`, \`UPLDG_ATCH_FLG\`) VALUES ('TE', '${MENU_VIEW_NO}', '${MENU_NO}', '${MENU_NM}', '${MENU_ICON_PATH}', '${MENU_PATH}', '02', 100, '${PARE_RANK_MENU_NO}', '${VIS_FLG}', '1', '0000', '0000', NULL, NULL, NULL, NULL, NULL, NULL, '${SGNIN_VIS_FLG_CD}', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '${BIZ_MENU_NO}', '${BIZ_MENU_NM}', NULL, NULL, NULL);`;
+      this.menuSqlStr = sql;
+      this.dialogVisiable = true;
+    },
     writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll}){
       let _this = this;
       // this.tplsStr = tplCompsStrAll + methodsTpl + datasTpl;
@@ -410,13 +498,14 @@ export default {
         this.alert("必须以FCClient结尾");
         return;
       }
-      this.fetchDevGroupOptions();
       let isExists = window.m.fs.existsSync(this.tradeAttrArea.tradeRoot);
       if(!isExists){
         this.alert(`FCClient项目根目录不存在:${this.tradeAttrArea.tradeRoot}`);
         this.$refs.tradeRoot.focus();
         return false;
       }
+      this.fetchDevGroupOptions();
+      window.m.store.set("tradeRoot",this.tradeAttrArea.tradeRoot);
       return true;
     },
     getUsernameEmail(){
@@ -494,6 +583,23 @@ export default {
         }
       })
       this.devGroupOptionsChild = groupOptions;
+    },
+    async getParentMenuInfo(){
+      let res = await commRequest.getParentMenuInfo();
+      if(!res.isSuccess){
+        this.alert("获取父级餐单失败");
+        return;
+      }
+      this.parentMenuOptions = res.data.map(v => {
+        /**
+         * MENU_NM: "客户账户管理"
+         * MENU_NO: "01"
+         */
+        return {
+          label:`${v.MENU_NM}-${v.MENU_NO}`,
+          value:v.MENU_NO
+        }
+      });
     }
   },
   computed:{
@@ -503,7 +609,11 @@ export default {
     this.genStandardField();
     // 获取邮件
     this.getUsernameEmail();
-    
+    let exists = window.m.store.has("tradeRoot");
+    if(exists){
+      this.tradeAttrArea.tradeRoot = window.m.store.get("tradeRoot");
+    }
+    this.getParentMenuInfo();
   }
 }
 </script>

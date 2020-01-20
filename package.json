@@ -70,6 +70,7 @@
   },
   "dependencies": {
     "ejs": "^3.0.1",
+    "electron-store": "^5.1.0",
     "fs-extra": "^8.1.0",
     "node-xlsx": "^0.15.0",
     "xlsx": "^0.15.4"

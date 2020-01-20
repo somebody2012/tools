@@ -122,6 +122,13 @@ export default {
         this.alert("F表字段不能为空")
         return false;
       };
+      let tradeRootExist = window.m.fs.existsSync(this.tradeRoot);
+      if(tradeRootExist){
+        window.m.store.set("tradeRoot",this.tradeRoot);
+      }else{
+        this.alert(`项目路径不存在\n${this.tradeRoot}`);
+        return;
+      }
       let fTableDir = window.m.path.resolve(this.tradeRoot,"print");
       let isExist = window.m.fs.existsSync(fTableDir);
       if(!isExist){
@@ -199,6 +206,10 @@ export default {
   mounted() {
     // this.parseFields();
     this.queryAllStandardFields();
+    let exists = window.m.store.has("tradeRoot");
+    if(exists){
+      this.tradeRoot = window.m.store.get("tradeRoot");
+    }
   },
 }
 </script>
