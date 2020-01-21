@@ -319,6 +319,7 @@ export default {
     },
     parseExcel(excelData1){
       excelData1 = excelData1.map(v => {
+        v.groupTitle = String(v.groupTitle);
         if(!v.groupTitle.trim()){
           v.groupTitle = "默认分组";
         }
