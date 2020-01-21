@@ -10,7 +10,6 @@
   </Setting>
   <DataBasket/>
   <InArgs/>
-  <!-- 行高间距 5.48 -->
   <Content>
     <Constant Bold="true" BoundTableIdOfAft="" Doubleheight="true"
       Doublewidth="false" Height="9.88" HorizontalCompress="false"
@@ -24,19 +23,63 @@
         <Doubleheight><%-title%></Doubleheight>
       </Bold>
     </Constant>
+    <%_ var Top = 22.23; %>
     <%_ groups.forEach(function(row,rowIndex){ _%>
-    <%_ var Top = 22.23 + (rowIndex * 5.48)   %>
+    <%_  Top = Top + 5.48;<!-- 行高间距 5.48 -->%>
     <%_ row.forEach(function(item,colIndex){ _%>
     <%_ var ideId = rowIndex + '' + colIndex %>
       <%_ 
-        var labelWidth = Number(labelWidth1);
+        <!-- 英文 1.90 中文 3.81 冒号2.38 -->
+        var enLen = (item.label.match(/[a-zA-Z0-9]/g)||[]).length;
+        var cnLen = (item.label.match(/[\u4e00-\u9fa5]/g)||[]).length;
+        var totalWidth = 84.6;
+        if(item.isFullRow || item.isAmt){
+          totalWidth = 173;
+        }
+        <!-- var labelWidth = Number(labelWidth1); -->
+        var labelWidth = Number((enLen*1.90+cnLen*3.81+3.88).toFixed(2));
         var col1VarLeft = 37.57+(labelWidth-17.5);
-        var col2VarLeft = 126.12+(labelWidth-17.5);
+        var col2VarLeft = 126.12+(labelWidth-17.5);    
         labelWidth = labelWidth.toFixed(2);
         col1VarLeft = col1VarLeft.toFixed(2);
         col2VarLeft = col2VarLeft.toFixed(2);
+        var variableWidth = totalWidth - labelWidth;
       _%>
     <%_ if(colIndex==0) {_%>
+    <%_ var varHeight = 5.12; _%>
+    <%_ if(item.isAmt) {_%>
+    <%_ 
+      varHeight = 7.41;
+      Top=Top+2.51; 
+      varTop=Top-2.50;
+      labelTop=Top-1.51;
+
+      Top = Number(Top.toFixed(2));
+      varTop = Number(varTop.toFixed(2));
+      labelTop = Number(labelTop.toFixed(2));
+    _%>
+    <Constant Bold="false" BoundTableIdOfAft="" Doubleheight="false"
+      Doublewidth="false" Height="5.12" HorizontalCompress="false"
+      IDE_ID="constant<%=ideId%>" IsFixedTop="false"
+      IsParseStatisticalInfo="false" IsPrint="true" Left="20.11"
+      LineSeparate="5.14" Pos="Absolute" TextAlign="Align_Left"
+      Top="<%=labelTop%>" Tripleheight="false" Triplewidth="false"
+      VerticalAlign="Align_Middle" Width="<%=labelWidth%>" border-bottom="0"
+      border-left="0" border-right="0" border-top="0"><%=item.label%>：</Constant>
+    <Variable AddHeightOfLine="0.0" Bold="false"
+      BoundTableIdOfAft="" CcyFlag="" CodeTitle="" Comment=""
+      DefaultValue="" Doubleheight="false" Doublewidth="false"
+      Height="<%=varHeight%>" HorizontalCompress="false"
+      IDE_ID="variable<%=ideId%>" IsFixedTop="false" IsParseCRLF="false"
+      IsParseStatisticalInfo="false" IsPrint="true" Left="<%=col1VarLeft%>"
+      Length="0" LineSeparate="5.14" Pos="Absolute"
+      TextAlign="Align_Left" Top="<%=varTop%>" Tripleheight="false"
+      Triplewidth="false" Type="A" VerticalAlign="Align_Middle"
+      Width="<%=variableWidth%>" ade="" border-bottom="0" border-left="0"
+      border-right="0" border-top="0">
+      <Doubleheight><%=item.value%></Doubleheight></Variable>
+    <%_ } _%>
+    <%_ if(!item.isAmt) {_%>
     <Constant Bold="false" BoundTableIdOfAft="" Doubleheight="false"
       Doublewidth="false" Height="5.12" HorizontalCompress="false"
       IDE_ID="constant<%=ideId%>" IsFixedTop="false"
@@ -44,18 +87,20 @@
       LineSeparate="5.14" Pos="Absolute" TextAlign="Align_Left"
       Top="<%=Top%>" Tripleheight="false" Triplewidth="false"
       VerticalAlign="Align_Middle" Width="<%=labelWidth%>" border-bottom="0"
-      border-left="0" border-right="0" border-top="0"><%=item.label%>:</Constant>
+      border-left="0" border-right="0" border-top="0"><%=item.label%>：</Constant>
     <Variable AddHeightOfLine="0.0" Bold="false"
       BoundTableIdOfAft="" CcyFlag="" CodeTitle="" Comment=""
       DefaultValue="" Doubleheight="false" Doublewidth="false"
-      Height="5.12" HorizontalCompress="false"
+      Height="<%=varHeight%>" HorizontalCompress="false"
       IDE_ID="variable<%=ideId%>" IsFixedTop="false" IsParseCRLF="false"
       IsParseStatisticalInfo="false" IsPrint="true" Left="<%=col1VarLeft%>"
       Length="0" LineSeparate="5.14" Pos="Absolute"
       TextAlign="Align_Left" Top="<%=Top%>" Tripleheight="false"
       Triplewidth="false" Type="A" VerticalAlign="Align_Middle"
-      Width="54.50" ade="" border-bottom="0" border-left="0"
+      Width="<%=variableWidth%>" ade="" border-bottom="0" border-left="0"
       border-right="0" border-top="0"><%=item.value%></Variable>
+    <%_ } _%>
+    
     <%_ } _%>
     <%_ if(colIndex==1) {_%>
     <Constant Bold="false" BoundTableIdOfAft="" Doubleheight="false"
@@ -65,7 +110,7 @@
       LineSeparate="5.14" Pos="Absolute" TextAlign="Align_Left"
       Top="<%=Top%>" Tripleheight="false" Triplewidth="false"
       VerticalAlign="Align_Middle" Width="<%=labelWidth%>" border-bottom="0"
-      border-left="0" border-right="0" border-top="0"><%=item.label%>:</Constant>
+      border-left="0" border-right="0" border-top="0"><%=item.label%>：</Constant>
     <Variable AddHeightOfLine="0.0" Bold="false"
       BoundTableIdOfAft="" CcyFlag=""
       CodeTitle="APLY_DRCT_CD_option" Comment="" DefaultValue=""
@@ -76,14 +121,14 @@
       Length="0" LineSeparate="5.14" Pos="Absolute"
       TextAlign="Align_Left" Top="<%=Top%>" Tripleheight="false"
       Triplewidth="false" Type="A" VerticalAlign="Align_Middle"
-      Width="54.50" ade="" border-bottom="0" border-left="0"
+      Width="<%=variableWidth%>" ade="" border-bottom="0" border-left="0"
       border-right="0" border-top="0"><%=item.value%></Variable>
     <%_ } _%>
     <%_ }); _%>
     <%_ }); _%>
     <%_ tables.forEach(function(table,tableIndex){ _%>
       <%_ 
-        var tableTop = 22.3 + groups.length * 5.48 + 2 + tableIndex*15;
+        var tableTop = Top + 8 + tableIndex*15;
         var rowWidth = 166.42; 
         var colWidth = (rowWidth/table.length).toFixed(2);
       %>

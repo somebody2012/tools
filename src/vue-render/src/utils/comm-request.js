@@ -171,9 +171,9 @@ function queryAllStandardFields(){
     "X-AmebaCloud-VerifyTime":"1578654163332",
   }
   return new Promise(resolve => {
-    let standardFields = window.standardFields;
-    if(standardFields){
-      resolve({isSuccess:true,data:standardFields});
+    let standardAllFields = window.standardAllFields;
+    if(standardAllFields){
+      resolve({isSuccess:true,data:standardAllFields});
       return;
     }
     axios({
@@ -190,11 +190,12 @@ function queryAllStandardFields(){
           let obj = {
             label:v.COLM_DESC,
             value:v.COLM_NM,
-            isFullRow:v.DGIT > 60
+            isFullRow:(v.DGIT || 0) >= 60,
+            isAmt:(v.DEC_DGIT || 0) != 0
           }
           return obj;
         });
-        window.standardFields = data;
+        window.standardAllFields = data;
         resolve({isSuccess:true,data:data})
       }else{
         resolve({isSuccess:false,data:data})

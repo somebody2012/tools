@@ -18,11 +18,11 @@
             <el-input v-model="title" style="width:100%;" />
           </el-form-item>
         </el-col>
-        <el-col :span="6">
+        <!-- <el-col :span="6">
           <el-form-item label="中文字段宽度：">
             <el-input v-model="labelWidth" style="width:100%;" />
           </el-form-item>
-        </el-col>
+        </el-col> -->
         
       </el-row>
       <el-form-item label="F表字段：">
@@ -55,6 +55,7 @@ export default {
       fTableName:"xxx.aft",
       config:"IMEI序列号|SIM卡序列号|保证金金额|保证金账号|保证金账户标志|IMEI序列号,SIM卡序列号|保证金金额,保证金账号,保证金账户标志",
       title:"无标题",
+      //isAmt: true isFullRow: false label: "保证金金额" value: "MARGN_AMT"
       standardField:[{label:"账号",value:"acc"},{label:"客户姓名",value:"custName"},{label:"性别",value:"sex"}],//[{label:"",value:""}]
       fields:[],//[{label:"",value:""}]
       tables:[],//[{label:"",value:""}]
@@ -81,17 +82,23 @@ export default {
       }
       this.fields = fields.map(v => {
         v = v.replace(/[\s\t\n]/g,"");
+        let fieldObj = this.findEnField(v);
         return {
           label:v,
-          value:this.findEnField(v)
+          value:fieldObj.value,
+          isAmt:fieldObj.isAmt,
+          isFullRow:fieldObj.isFullRow,
         }
       })
       this.tables = tables.map(v => {
         return v.map(v1 => {
           v1 = v1.replace(/[\s\t\n]/g,"");
+          let fieldObj = this.findEnField(v1);
           return {
             label:v1,
-            value:this.findEnField(v1)
+            value:fieldObj.value,
+            isAmt:fieldObj.isAmt,
+            isFullRow:fieldObj.isFullRow,
           }
         })
       })
@@ -111,7 +118,11 @@ export default {
     },
     findEnField(cnField){
       let curObj = this.standardField.find(v => v.label == cnField);
-      return curObj.value;
+      return {
+        value:curObj.value,
+        isAmt:curObj.isAmt,
+        isFullRow:curObj.isFullRow,
+      };
     },
     async checkPath(){
       if(!this.fTableName.trim()){
@@ -158,7 +169,12 @@ export default {
         }else{
           let lastItemArr = distArr[distArr.length-1];
           if(lastItemArr.length == 1){
-            lastItemArr.push(curItem);
+            let lastItemArrOfLast = lastItemArr[lastItemArr.length-1];
+            if(lastItemArrOfLast.isFullRow || lastItemArrOfLast.isAmt){
+              distArr.push([curItem]);
+            }else{
+              lastItemArr.push(curItem);
+            }
             continue;
           }
           if(lastItemArr.length == 2){
@@ -184,6 +200,7 @@ export default {
       let tplStr = fs.readFileSync(srcAftPath,{encoding:"utf-8"});
       let appTpl = ejs.render(tplStr,renderData);
       let distAppPath = path.resolve(this.tradeRoot,"print",this.fTableName);
+      // distAppPath = path.resolve("D:\\ABIDE-20180302\\ABIDE-20180302\\print\\test\\printType",this.fTableName)
       console.log("生成F表：",distAppPath);
       fs.writeFileSync(distAppPath,appTpl,{encoding:"utf-8"});
       this.alert(`生成F表成功\n${distAppPath}`);
