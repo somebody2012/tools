@@ -25,7 +25,7 @@
     </Constant>
     <%_ var Top = 22.23; %>
     <%_ groups.forEach(function(row,rowIndex){ _%>
-    <%_  Top = Top + 5.48;<!-- 行高间距 5.48 -->%>
+    <%_  Top = Top + 5.48;Top = Number(Top.toFixed(2));<!-- 行高间距 5.48 -->%>
     <%_ row.forEach(function(item,colIndex){ _%>
     <%_ var ideId = rowIndex + '' + colIndex %>
       <%_ 
@@ -44,6 +44,7 @@
         col1VarLeft = col1VarLeft.toFixed(2);
         col2VarLeft = col2VarLeft.toFixed(2);
         var variableWidth = totalWidth - labelWidth;
+        variableWidth = Number(variableWidth.toFixed(2));
       _%>
     <%_ if(colIndex==0) {_%>
     <%_ var varHeight = 5.12; _%>
