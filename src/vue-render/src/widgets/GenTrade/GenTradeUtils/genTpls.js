@@ -1,7 +1,12 @@
 import _ from "underscore";
-/**
- * 生成组件模板
- */
+import compImport from "./comp-import.js";
+// 转换成大驼峰
+function transBigCamel(str=""){
+  if(str.length == 0) return "";
+  str = str.charAt(0).toUpperCase() + str.substring(1)
+  let bigCamel = str.replace(/-(\w)/,(a,b,c)=>b.toUpperCase());
+  return bigCamel;
+}
 
 
 /**
@@ -102,6 +107,11 @@ function genTableComp(stdFieldObj){
 function genComps(vueIns,standardFields){
   let methodsAll = [];//[{name:"",args:[]}]
   let dataFieldsAll = [];//["xxx"]
+  //交易import 信息
+  let importArr = {
+    import:[],
+    components:[]
+  };
   for(let i=0;i<standardFields.length;i++){
     let stdFieldObj = standardFields[i];
     if(stdFieldObj.tagName == "custom-table"){
@@ -113,19 +123,30 @@ function genComps(vueIns,standardFields){
       methodsAll = methodsAll.concat(methods);
       dataFieldsAll = dataFieldsAll.concat(dataFields);
     }
+    if(compImport[stdFieldObj.tagName]){
+      let bigCamel = transBigCamel(stdFieldObj.tagName);
+      let isExsit = importArr.components.find(v => v == bigCamel);
+      if(!isExsit){
+        importArr.components.push(bigCamel);
+        importArr.import.push(compImport[stdFieldObj.tagName]);
+      }
+    }else{
+      console.log(`comp-import 未配置${stdFieldObj.tagName}`);
+    }
   }
   methodsAll = genMethods(vueIns,methodsAll);
-  return {standardFields,methodsAll,dataFieldsAll};
+  return {standardFields,methodsAll,dataFieldsAll,importArr};
 }
 /**
  * 生成所有
  */
 function genAll(vueIns,standardFieldsExcelData){
-  let {standardFields,methodsAll,dataFieldsAll} = genComps(vueIns,standardFieldsExcelData);
+  let {standardFields,methodsAll,dataFieldsAll,importArr} = genComps(vueIns,standardFieldsExcelData);
   return {
     excelFieldsAll:standardFields,
     methodsAll,
-    dataFieldsAll
+    dataFieldsAll,
+    importArr
   }
 }
 /**

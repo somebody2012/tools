@@ -393,7 +393,7 @@ export default {
        *   }
        * ]
        */
-      let {excelFieldsAll,methodsAll,dataFieldsAll} = genTpls.genAll(this,this.excelData);
+      let {excelFieldsAll,methodsAll,dataFieldsAll,importArr} = genTpls.genAll(this,this.excelData);
       excelFieldsAll = excelFieldsAll.map(v => {
         return {
           groupId:v.groupId,
@@ -421,7 +421,7 @@ export default {
       dataFieldsAll = dataFieldsAll.concat(dataFieldsAllB);
       dataFieldsAll = dataFieldsAll.filter((v,i)=>dataFieldsAll.indexOf(v) == i);
       methodsAll = methodsAll.filter((v,i)=>methodsAll.indexOf(v) == i);
-      this.writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll});
+      this.writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll,importArr});
     },
     async gentTradeMenu(){
       let passed = await this.validateForm();
@@ -449,7 +449,7 @@ export default {
       this.menuSqlStr = sql;
       this.dialogVisiable = true;
     },
-    writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll}){
+    writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll,importArr}){
       let _this = this;
       // this.tplsStr = tplCompsStrAll + methodsTpl + datasTpl;
       // let root = m.process.cwd();
@@ -469,7 +469,8 @@ export default {
         tDataFields:this.tDataFields,
         tableTpls:this.tableTpls,
         // 提交按钮下面区域
-        buttomGroup:distTplDataB
+        buttomGroup:distTplDataB,
+        importArr:importArr
       };
       debugger
       let {path,fs,process,ejs} = window.m;

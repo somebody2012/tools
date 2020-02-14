@@ -61,8 +61,12 @@ HISTORY:
 
 <script>
 import {TradeFlow,ServiceConfig,TradeMessage} from "@/FCClient/common/constants/trade-import.js";
+<%_ importArr.import.forEach(function(importItem){ _%>
+<%-importItem%>
+<%_ }); _%>
 export default {
   mixins: [TradeFlow,TradeMessage],
+  components:{<%_ importArr.components.forEach(function(compItem){ _%><%-compItem%>,<%_ }); _%>},
   validators: {},
   props:{},
   data(){
