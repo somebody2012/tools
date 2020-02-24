@@ -4,7 +4,7 @@ import compImport from "./comp-import.js";
 function transBigCamel(str=""){
   if(str.length == 0) return "";
   str = str.charAt(0).toUpperCase() + str.substring(1)
-  let bigCamel = str.replace(/-(\w)/,(a,b,c)=>b.toUpperCase());
+  let bigCamel = str.replace(/-(\w)/g,(a,b,c)=>b.toUpperCase());
   return bigCamel;
 }
 
@@ -45,11 +45,33 @@ function genCommonCompBack(vueIns,stdFieldObj){
       }else{
         return false;
       }
+    }else{
+      return true;
     }
-    return Boolean(v.value);
+    // return Boolean(v.value);
   });
   compAttr = compAttr.map(item => {
-    return `${item.name}="${item.value}"`;
+    // debugger
+    if(item.name.includes(".sync")){
+      let curObj = compAttr.find(v => v.name == "v-model");
+      let fieldName = "noVmodelField";
+      if(curObj){
+        fieldName = curObj.value.replace("TradeData.","");
+      }
+      let optName = item.name.replace(/(^:)|(\.sync$)/g,"");
+      optName = optName.charAt(0).toUpperCase() + optName.substring(1);
+      let value = fieldName + optName + "Sync";
+      return `${item.name}="${value}"`;
+    }else{
+      let value = item.value;
+      if(Array.isArray(value)){
+        value = JSON.stringify(value);
+      }
+      if(Object.prototype.toString.call(value) == "[object Object]"){
+        value = JSON.stringify(value).replace(/"/g,"'");
+      }
+      return `${item.name}="${value}"`;
+    }
   });
   let attrStr = compAttr.join(" ");
   let compTpl = `<${tagName} ${attrStr}></${tagName}>`;
@@ -76,6 +98,11 @@ function genCommonComp(vueIns,stdFieldObj){
     vueIns.alert(`<p>有属性没有attrPosition${JSON.stringify(stdFieldObj)}</p>`);
   }else{
     // methods datafield
+    let fieldName = "noVmodelField";
+    let curVmodelObj = stdFieldObj.compAttr.find(v => v.name = "v-model");
+    if(curVmodelObj){
+      fieldName = curVmodelObj.value.replace("TradeData.","");
+    }
     for(let i=0;i<stdFieldObj.compAttr.length;i++){
       let compAttrItem = stdFieldObj.compAttr[i];
       if(compAttrItem.attrPosition == "methods"){
@@ -83,9 +110,25 @@ function genCommonComp(vueIns,stdFieldObj){
       }else if(compAttrItem.attrPosition == "data"){
         if(compAttrItem.name == "v-model"){
           compAttrItem.value = `TradeData.${stdFieldObj.value}`;
-          dataFields.push(stdFieldObj.value);
+          dataFields.push({
+            value:stdFieldObj.value,
+            defaultValue:stdFieldObj.defaultValue || '""'
+          });
+          // dataFields.push(stdFieldObj.value);
         }else{
-          dataFields.push(compAttrItem.value);
+          // dataFields.push(compAttrItem.value);
+          let obj = {};
+          if(/\.sync$/.test(compAttrItem.name)){
+            let optName = compAttrItem.name.replace(/(^:)|(\.sync$)/g,"");
+            optName = optName.charAt(0).toUpperCase() + optName.substring(1);
+            obj.defaultValue = JSON.stringify(compAttrItem.value || "");
+            obj.value = fieldName + optName + "Sync";
+          }else{
+            obj.defaultValue = JSON.stringify(compAttrItem.value || "");
+            obj.value = compAttrItem.name.replace(/^:/g,"") + "Var";
+          }
+          
+          dataFields.push(obj);
         }
       }
     }

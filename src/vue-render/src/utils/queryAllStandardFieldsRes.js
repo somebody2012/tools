@@ -1,0 +1,16026 @@
+export default [{
+  "label": "IMEI序列号",
+  "value": "IMEI_SER_NUM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "SIM卡序列号",
+  "value": "SIM_CARD_SER_NUM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保证金金额",
+  "value": "MARGN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "保证金账号",
+  "value": "MARGN_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保证金账户标志",
+  "value": "MARGN_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被投资企业名称",
+  "value": "BE_INVST_CORP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "被投资企业中征码",
+  "value": "BE_INVST_CORP_CRDT_ID_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本行员工标志",
+  "value": "MBANK_EMPLY_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "表外业务类型代码",
+  "value": "OFFSHET_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财务账户编号",
+  "value": "FINC_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财务主管证件号码",
+  "value": "FINC_DIROR_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财务主管证件类型代码",
+  "value": "FINC_DIROR_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "参贷行行名",
+  "value": "PRTCPT_BANK_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "钞汇类型代码",
+  "value": "CASHRMT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持股币种代码",
+  "value": "SHRHL_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出口创汇企业标志",
+  "value": "EXP_EARN_FORE_EXCH_CORP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出资方式代码",
+  "value": "CONTRI_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代发工资客户标志",
+  "value": "AGEN_PAYOFF_SALARY_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理行行号",
+  "value": "AGNCBNK_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理人联系电话号码",
+  "value": "AGENT_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款到期日期",
+  "value": "LN_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款经营类型代码",
+  "value": "LN_MANG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款用途说明",
+  "value": "LN_USAGE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "贷款重组方式代码",
+  "value": "LN_REGRP_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "担保方式代码",
+  "value": "GUAR_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "担保企业标志",
+  "value": "GUAR_CORP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位所属行业类型代码",
+  "value": "UNIT_BLNGTO_INDUS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位组织机构类型代码",
+  "value": "UNIT_ORGTN_ORG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当前本金逾期开始日期",
+  "value": "CURR_PRIN_OVDUE_BGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "抵减存款准备金方式代码",
+  "value": "DEDUCT_DPST_RESV_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方机构号",
+  "value": "CNTPTY_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方网点类型代码",
+  "value": "CNTPTY_BRCH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方账号",
+  "value": "CNTPTY_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方账号附加编号",
+  "value": "CNTPTY_ACCT_NO_ADDT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方证件类型代码",
+  "value": "CNTPTY_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对公客户证件号码",
+  "value": "GNRL_CUST_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对公客户证件类型代码",
+  "value": "GNRL_CUST_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "额度",
+  "value": "QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "发票币种代码",
+  "value": "INVOICE_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发票编号",
+  "value": "INVOICE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发证机关名称",
+  "value": "GRNTCRTF_INSTN_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "法人代表联系电话号码",
+  "value": "LPR_REP_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人代表证件号码",
+  "value": "LPR_REP_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人代表证件类型代码",
+  "value": "LPR_REP_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人代表最高学历代码",
+  "value": "LPR_REP_HIGH_EDCTBKG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "放款方式代码",
+  "value": "MAKELN_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "辅助项编号",
+  "value": "ASSIS_ITEM_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "辅助项名称",
+  "value": "ASSIS_ITEM_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "复核柜员号",
+  "value": "RCHK_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "岗位名称",
+  "value": "POST_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "岗位种类代码",
+  "value": "POST_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人地址类型代码",
+  "value": "INDV_ADDR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人月收入金额",
+  "value": "INDV_MON_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "工作岗位主次关系代码",
+  "value": "WORK_POST_MAIN_MINOR_REL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "公允价值",
+  "value": "FAIR_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "供应商名称",
+  "value": "SPLR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "供应商纳税号码类型代码",
+  "value": "SPLR_PYTX_NBR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东标志",
+  "value": "SHRHD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东个人证件号码",
+  "value": "SHRHD_INDV_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东联系人类型代码",
+  "value": "SHRHD_CONTR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东名称",
+  "value": "SHRHD_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "股东营业执照编号",
+  "value": "SHRHD_BIZ_LIC_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东中征码",
+  "value": "SHRHD_CRDT_ID_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东组织机构代码",
+  "value": "SHRHD_ORGTN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失方式代码",
+  "value": "RPTLOSS_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失介质类型代码",
+  "value": "RPTLOSS_MEDM_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人出生日期",
+  "value": "RLTINDV_BIRTH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人单位地址",
+  "value": "RLTINDV_UNIT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关联人单位性质代码",
+  "value": "RLTINDV_UNIT_CHARC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人单位邮政编码",
+  "value": "RLTINDV_UNIT_POST_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人工作单位名称",
+  "value": "RLTINDV_WORK_UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关联人行政区划代码",
+  "value": "RLTINDV_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人联系电话号码",
+  "value": "RLTINDV_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人联系手机电话号码",
+  "value": "RLTINDV_CONT_MOBILE_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人年收入金额",
+  "value": "RLTINDV_YR_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "关联人英文名称",
+  "value": "RLTINDV_ENG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关联人月收入金额",
+  "value": "RLTINDV_MON_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "关联人证件类型代码",
+  "value": "RLTINDV_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关系开始日期",
+  "value": "REL_BGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员类型代码",
+  "value": "TELR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员内部分类代码",
+  "value": "TELR_INTER_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员权限级别代码",
+  "value": "TELR_PRVLG_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "国家限制行业标志",
+  "value": "STATE_LIMIT_INDUS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合同贷款期限",
+  "value": "CTRT_LN_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核定价值",
+  "value": "CHKAPRV_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "核销标志",
+  "value": "WRTOFF_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核销日期",
+  "value": "WRTOFF_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "户籍行政区划代码",
+  "value": "HOUSD_RGST_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "会计期间名称",
+  "value": "ACCTN_PRD_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "会计日期",
+  "value": "ACCTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "会计调整期间标志",
+  "value": "ACCTN_ADJ_PRD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构负责人编号",
+  "value": "ORG_PRINC_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "基准利率",
+  "value": "BNCHMK_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "集团客户标志",
+  "value": "GRP_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集团中征码",
+  "value": "GRP_CRDT_ID_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计划还款日期",
+  "value": "PLAN_REPAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计划应收本金",
+  "value": "PLAN_RECVBL_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "计划应收利息",
+  "value": "PLAN_RECVBL_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "计息标志",
+  "value": "INTACR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计息周期代码",
+  "value": "INTACR_CYC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "家庭月收入金额",
+  "value": "FAMILY_MON_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易代码",
+  "value": "TX_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易发生地点行政区划代码",
+  "value": "TX_HAPP_SITE_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易柜员号",
+  "value": "TX_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易去向地点行政区划代码",
+  "value": "TX_WHRABT_SITE_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易日期",
+  "value": "TX_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易手续费分润金额",
+  "value": "TX_COMM_FEE_PRFT_CUT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易摘要",
+  "value": "TX_SUMMARY",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "解冻日期",
+  "value": "UNFRZ_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "金融机构编码",
+  "value": "FIN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "金融机构标志",
+  "value": "FIN_ORG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "金融机构类别代码",
+  "value": "FIN_ORG_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "进出口权标志",
+  "value": "IMP_EXP_RIGHT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办联系人姓名",
+  "value": "OPR_CONTR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "经办联系人职务代码",
+  "value": "OPR_CONTR_DUTY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "净资产金额",
+  "value": "NET_ASST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "卡类型代码",
+  "value": "CARD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开工日期",
+  "value": "STRTWK_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户许可证核准号",
+  "value": "OPEN_ACCT_LICS_APRVL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开卡机构号",
+  "value": "OPEN_CARD_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开始日期",
+  "value": "BGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开销户标志",
+  "value": "OPEN_CLOSE_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "科目编号",
+  "value": "SUBJ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "科目名称",
+  "value": "SUBJ_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "科目余额",
+  "value": "SUBJ_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "科目余额方向代码",
+  "value": "SUBJ_BAL_DRCT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "可透支标志",
+  "value": "OVERDFT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户经理姓名",
+  "value": "CUST_MGR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "客户英文名称",
+  "value": "CUST_ENG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "控股经济类型代码",
+  "value": "HLDCTLINT_ECON_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "宽限期限",
+  "value": "GRACE_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "累计应收利息",
+  "value": "ACCM_RECVBL_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "立项批文编号",
+  "value": "STP_PRJ_APVLDOC_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "利率浮动方式代码",
+  "value": "INTRT_FLOT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利息税率",
+  "value": "INT_TAX_RATE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "连续欠款期数",
+  "value": "CONTINUOUS_ARREAR_PRIDNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联机标志",
+  "value": "ONLINE_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联系人姓名",
+  "value": "CONTR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "联系人证件类型代码",
+  "value": "CONTR_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联系人职务代码",
+  "value": "CONTR_DUTY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "临时信用额度",
+  "value": "TMP_CREDIT_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "留存金额",
+  "value": "RETND_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "流通股金金额",
+  "value": "CRCLTNG_STK_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "民族代码",
+  "value": "ETHNIC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "纳税人识别号",
+  "value": "PYTX_PERSON_IDTFY_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "批文编号",
+  "value": "APVLDOC_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "评估机构英文名称",
+  "value": "EVALTN_ORG_ENG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "评估日期",
+  "value": "EVALTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证类型代码",
+  "value": "VOUCH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证类型名称",
+  "value": "VOUCH_TYP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "期初贷方余额",
+  "value": "TERM_BGN_CRDTR_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "期末贷方余额",
+  "value": "TERM_END_CRDTR_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "企业登记注册类型代码",
+  "value": "CORP_RGST_REG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用柜员号",
+  "value": "ENBL_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起存金额",
+  "value": "MIN_DPSIT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "牵头行标志",
+  "value": "LEAD_BANK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约类型代码",
+  "value": "SIGN_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约日期",
+  "value": "SIGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约状态代码",
+  "value": "SIGN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道名称",
+  "value": "CHNL_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道用途说明",
+  "value": "CHNL_USAGE_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "日记账编号",
+  "value": "DAY_KEPACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "日记账会计期间",
+  "value": "DAY_KEPACCT_ACCTN_PRD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "融资机构标志",
+  "value": "RSFND_ORG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上黑名单原因说明",
+  "value": "UP_BLKLIST_RSN_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "上级机构号",
+  "value": "SPR_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上级科目编号",
+  "value": "SPR_SUBJ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上级客户名称",
+  "value": "SPR_CUST_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "上级中征码",
+  "value": "SPR_CRDT_ID_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上级组织机构代码",
+  "value": "SPR_ORGTN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上市交易所代码",
+  "value": "GO_PUB_EXCHA_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "身份证有效期限标志",
+  "value": "ID_CARD_VALID_PERIOD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际承担贷款金额",
+  "value": "ACTL_UNDERTAKE_LN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实际还款本金",
+  "value": "ACTL_REPAY_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实际还款利息",
+  "value": "ACTL_REPAY_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实际控制人名称",
+  "value": "ACTL_CTRL_PERSON_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "实收资本币种代码",
+  "value": "ACTL_RECV_CPTL_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "使用授信额度",
+  "value": "USE_CRDT_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收益上限金额",
+  "value": "GAINS_CEIL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收益下限金额",
+  "value": "GAINS_FLOOR_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "授信到期日期",
+  "value": "CRDT_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授信起始日期",
+  "value": "CRDT_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "税务登记证号码",
+  "value": "TXADMN_RGST_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所在城市行政区划代码",
+  "value": "BLNGT_CITY_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所在国家和地区代码",
+  "value": "BLNGT_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贴息利率",
+  "value": "INT_SUBSIDY_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "通知存款计划变动金额",
+  "value": "NOTI_DPST_PLAN_CHG_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "投资产品名称",
+  "value": "INVST_PROD_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "完工日期",
+  "value": "CMPLTD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "网点编号",
+  "value": "BRCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "微信号码",
+  "value": "WECHAT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "违约币种代码",
+  "value": "DLQCY_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "违约失效日期",
+  "value": "DLQCY_INVALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "IMSI编码",
+  "value": "IMSI_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "SWIFT号码",
+  "value": "SWIFT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保证金币种代码",
+  "value": "MARGN_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本行股东标志",
+  "value": "MBANK_SHRHD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "比例",
+  "value": "RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "表外欠息余额",
+  "value": "OFFSHET_DEBT_INT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "承担贷款金额",
+  "value": "UNDERTAKE_LN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "持股数量",
+  "value": "SHRHL_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出资金额",
+  "value": "CONTRI_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "催收标志",
+  "value": "COLL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款结息方式代码",
+  "value": "DPST_INT_STL_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款剩余期限代码",
+  "value": "DPST_REMAIN_PERIOD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款账户状态代码",
+  "value": "DPST_ACCT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "大股东标志",
+  "value": "STRG_SHRHD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代缴费标志",
+  "value": "AGEN_PAY_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代缴水电费客户标志",
+  "value": "AGEN_PAY_WAT_ELEC_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理开户标志",
+  "value": "AGEN_OPEN_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理人名称",
+  "value": "AGENT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "代理人证件号码",
+  "value": "AGENT_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理人证件类型代码",
+  "value": "AGENT_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款分户账号",
+  "value": "LN_LEDGR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款风险分类代码",
+  "value": "LN_RISK_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款结清日期",
+  "value": "LN_PAY_OFF_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款借据号",
+  "value": "LN_DUBIL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款投向行业类型代码",
+  "value": "LN_INVT_INDUS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款新规种类代码",
+  "value": "LN_NEW_RULE_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款业务种类代码",
+  "value": "LN_BIZ_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "担保合同编号",
+  "value": "GUAR_CTRT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "担保金额",
+  "value": "GUAR_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "担保人姓名",
+  "value": "GUARTR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "单一客户风险预警信号代码",
+  "value": "SGL_CUST_RISK_WARN_SIGNAL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "到期日期",
+  "value": "MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登记地址",
+  "value": "RGST_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "地址所属国家和地区代码",
+  "value": "ADDR_BLNGTO_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "第三方存管客户标志",
+  "value": "THIRD_PTY_DPSTRY_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电话号码",
+  "value": "TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子地址信息",
+  "value": "ELEC_ADDR_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "电子银行用户注册日期时间",
+  "value": "ELEC_BANK_USER_REG_DT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "盯市价值",
+  "value": "MRK_MRKT_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "冻结标志",
+  "value": "FRZ_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冻结金额",
+  "value": "FRZ_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "冻结类型代码",
+  "value": "FRZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冻结日期",
+  "value": "FRZ_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方行名",
+  "value": "CNTPTY_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "对方机构行政区划代码",
+  "value": "CNTPTY_ORG_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方机构名称",
+  "value": "CNTPTY_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "对方交易账户类型代码",
+  "value": "CNTPTY_TX_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方金融机构标志",
+  "value": "CNTPTY_FIN_ORG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方证件号码",
+  "value": "CNTPTY_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对公客户地址类型代码",
+  "value": "GNRL_CUST_ADDR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对公客户电话类型代码",
+  "value": "GNRL_CUST_TEL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "额度币种代码",
+  "value": "QTA_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "额度生效日期",
+  "value": "QTA_EFFT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "额度失效日期",
+  "value": "QTA_INVALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发票日期",
+  "value": "INVOICE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发票说明",
+  "value": "INVOICE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "发生日期",
+  "value": "HAPP_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法定存款准备金比率",
+  "value": "LEGAL_DPST_RESV_RATE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "法人代表出生日期",
+  "value": "LPR_REP_BIRTH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人代表姓名",
+  "value": "LPR_REP_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "法人代表职称级别代码",
+  "value": "LPR_REP_TITLE_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人机构号",
+  "value": "LPR_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人机构名称",
+  "value": "LPR_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "非现场监管代码",
+  "value": "NON_ONSITE_REGULTRY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分户账号",
+  "value": "LEDGR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分配金额",
+  "value": "DISTR_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "辅助项描述",
+  "value": "ASSIS_ITEM_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "付款编号",
+  "value": "PAY_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款方式代码",
+  "value": "PAY_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "负责人职务代码",
+  "value": "PRINC_DUTY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "岗位说明",
+  "value": "POST_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "个人电话类型代码",
+  "value": "INDV_TEL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人电子地址类型代码",
+  "value": "INDV_ELEC_ADDR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人年收入金额",
+  "value": "INDV_YR_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "个人账户类型代码",
+  "value": "INDV_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人证件类型代码",
+  "value": "INDV_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "工作区域代码",
+  "value": "WORK_REGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "供应商编号",
+  "value": "SPLR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东代码",
+  "value": "SHRHD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东法人标志",
+  "value": "SHRHD_LPR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东法人代表姓名",
+  "value": "SHRHD_LPR_REP_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "股东国家和地区代码",
+  "value": "SHRHD_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东客户编号",
+  "value": "SHRHD_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东类型代码",
+  "value": "SHRHD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东证件类型代码",
+  "value": "SHRHD_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股金金额",
+  "value": "STK_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "股权类型代码",
+  "value": "STKRGT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失日期",
+  "value": "RPTLOSS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人本行客户标志",
+  "value": "RLTINDV_MBANK_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人单位电话号码",
+  "value": "RLTINDV_UNIT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人婚姻状况代码",
+  "value": "RLTINDV_MARRG_SITUATION_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人学历代码",
+  "value": "RLTINDV_EDCTBKG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人证件到期日期",
+  "value": "RLTINDV_CRTF_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人证件发放日期",
+  "value": "RLTINDV_CRTF_GRANT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人证件号码",
+  "value": "RLTINDV_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人职务代码",
+  "value": "RLTINDV_DUTY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人中文姓名",
+  "value": "RLTINDV_CN_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关联人住宅地址邮政编码",
+  "value": "RLTINDV_RESDC_ADDR_POST_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员流水号",
+  "value": "TELR_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "国家和地区代码",
+  "value": "STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "国民经济部门代码",
+  "value": "NTNL_ECON_DEPT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "国有企业标志",
+  "value": "STAT_OWN_CORP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "国资机构标志",
+  "value": "NATION_CAPI_ORG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "过账标志代码",
+  "value": "POSTG_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "还款到期日期",
+  "value": "REPAY_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "还款方式代码",
+  "value": "REPAY_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "还款账号",
+  "value": "REPAY_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "行政区划代码",
+  "value": "ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合并报表标志",
+  "value": "MERGE_RPT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合同金额",
+  "value": "CTRT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "核销金额",
+  "value": "WRTOFF_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "汇率",
+  "value": "EXCH_RATE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "会计科目类型代码",
+  "value": "ACCTN_SUBJ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "会计期间开始日期",
+  "value": "ACCTN_PRD_BGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "基本信用额度",
+  "value": "BASIC_CREDIT_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "基本账户开户行名",
+  "value": "BASIC_ACCT_OPEN_ACCT_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "基本账户账号",
+  "value": "BASIC_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集团成员数量",
+  "value": "GRP_MEM_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集团客户风险预警信号代码",
+  "value": "GRP_CUST_RISK_WARN_SIGNAL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计划还款期数",
+  "value": "PLAN_REPAY_PRIDNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计息方式代码",
+  "value": "INTACR_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计息日期",
+  "value": "INTACR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "家庭年收入金额",
+  "value": "FAMILY_YR_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易币种代码",
+  "value": "TX_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易机构号",
+  "value": "TX_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易类型代码",
+  "value": "TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易时间",
+  "value": "TX_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易账号",
+  "value": "TX_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易账户存款类型代码",
+  "value": "TX_ACCT_DPST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易账户余额",
+  "value": "TX_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易终端编号",
+  "value": "TX_TERMINAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结束日期",
+  "value": "END_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解挂日期",
+  "value": "URPTLOSS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解约日期",
+  "value": "CANCEL_CONT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借据状态代码",
+  "value": "DUBIL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借款金额",
+  "value": "BRWRMNY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "借款余额",
+  "value": "BRWRMNY_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "经办联系人联系电话号码",
+  "value": "OPR_CONTR_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办联系人证件号码",
+  "value": "OPR_CONTR_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "IP地址",
+  "value": "IP_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "QQ号码",
+  "value": "QQ_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保证金比例",
+  "value": "MARGN_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "被投资企业编号",
+  "value": "BE_INVST_CORP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被投资企业组织机构代码",
+  "value": "BE_INVST_CORP_ORGTN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本金连续逾期天数",
+  "value": "PRIN_CONTINUOUS_OVDUE_DAYS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本位币币种代码",
+  "value": "STD_CURR_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "币种代码",
+  "value": "CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "表内欠息余额",
+  "value": "ONSHET_DEBT_INT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "财务主管联系电话号码",
+  "value": "FINC_DIROR_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财务主管姓名",
+  "value": "FINC_DIROR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "参贷行行号",
+  "value": "PRTCPT_BANK_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "仓库管理人员标志",
+  "value": "WHS_MGMT_PERSON_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "承担剩余贷款金额",
+  "value": "UNDERTAKE_REMAIN_LN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "出生城市行政区划代码",
+  "value": "BIRTH_CITY_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出生国家和地区代码",
+  "value": "BIRTH_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出生日期",
+  "value": "BIRTH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出资币种代码",
+  "value": "CONTRI_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出资占比比例",
+  "value": "CONTRI_PROPTN_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "存款期限代码",
+  "value": "DPST_PERIOD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理参贷标志",
+  "value": "AGEN_PRTC_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理行行名",
+  "value": "AGNCBNK_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "贷方发生金额",
+  "value": "CRDTR_HAPP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "贷款财政扶持方式代码",
+  "value": "LN_FISCAL_SUPT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款发放日期",
+  "value": "LN_GRANT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款合同编号",
+  "value": "LN_CTRT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款合同状态代码",
+  "value": "LN_CTRT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款入账账号",
+  "value": "LN_RCRDACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "担保额度",
+  "value": "GUAR_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "担保合同类型代码",
+  "value": "GUAR_CTRT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "担保合同状态代码",
+  "value": "GUAR_CTRT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当期偿还利息",
+  "value": "CURR_PERIOD_REPAY_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "当期还款金额",
+  "value": "CURR_PERIOD_REPAY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "当期逾期金额",
+  "value": "CURR_PERIOD_OVDUE_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "当前利息逾期开始日期",
+  "value": "CURR_INT_OVDUE_BGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "地税登记证号码",
+  "value": "LOCTX_RGST_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "地址",
+  "value": "ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "地址所属行政区划代码",
+  "value": "ADDR_BLNGTO_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "地址所属四川省行政区划代码",
+  "value": "ADDR_BLNGTO_SC_PROV_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "地址邮政编码",
+  "value": "ADDR_POST_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子邮箱",
+  "value": "EMAIL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方行号",
+  "value": "CNTPTY_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方户名",
+  "value": "CNTPTY_ACCTNM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "对公客户其他证件类型代码",
+  "value": "GNRL_CUST_OTH_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对公账户类型代码",
+  "value": "GNRL_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "额度循环标志",
+  "value": "QTA_REVL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发票类型代码",
+  "value": "INVOICE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发票总金额",
+  "value": "INVOICE_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "发生额会计期间",
+  "value": "AMT_ACCTN_PRD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "罚息利率",
+  "value": "PNLTINT_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "法人代表客户编号",
+  "value": "LPR_REP_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人代表客户国家和地区代码",
+  "value": "LPR_REP_CUST_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人代表性别代码",
+  "value": "LPR_REP_GENDER_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人机构标志",
+  "value": "LPR_ORG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "费用编号",
+  "value": "FEE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分配说明",
+  "value": "DISTR_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "分润受益人代码",
+  "value": "PRFT_CUT_BENFCY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款币种代码",
+  "value": "PAY_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款金额",
+  "value": "PAY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "付款日期",
+  "value": "PAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "负责人联系电话号码",
+  "value": "PRINC_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "负责人姓名",
+  "value": "PRINC_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "岗位编号",
+  "value": "POST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "岗位主次关系代码",
+  "value": "POST_MAIN_MINOR_REL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人经营贷款用途代码",
+  "value": "INDV_MANG_LN_USAGE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "更新国内办公地址日期",
+  "value": "UPD_DMST_OFFI_ADDR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "工资卡标志",
+  "value": "SALARY_CARD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "工作单位名称",
+  "value": "WORK_UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "供应商编码",
+  "value": "SPLR_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "供应商地点编号",
+  "value": "SPLR_SITE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "购置价值",
+  "value": "PURCH_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "购置日期",
+  "value": "PURCH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东联系电话号码",
+  "value": "SHRHD_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东企业类型代码",
+  "value": "SHRHD_CORP_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东证件号码",
+  "value": "SHRHD_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股东状态标志",
+  "value": "SHRHD_STUS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "固定资产类型代码",
+  "value": "FIXD_ASST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人客户编号",
+  "value": "RLTINDV_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人性别代码",
+  "value": "RLTINDV_GENDER_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人职称级别代码",
+  "value": "RLTINDV_TITLE_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联人住宅地址",
+  "value": "RLTINDV_RESDC_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关系结束日期",
+  "value": "REL_END_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关系状态代码",
+  "value": "REL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "管理机构号",
+  "value": "MGMT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员号",
+  "value": "TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员用户级别代码",
+  "value": "TELR_USER_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "国内办公地址行政区划代码",
+  "value": "DMST_OFFI_ADDR_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "国税登记证号码",
+  "value": "NATION_TAX_RGST_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "还款来源说明",
+  "value": "REPAY_SOURCE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "核算机构号",
+  "value": "ACCTI_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核算机构名称",
+  "value": "ACCTI_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "户名",
+  "value": "ACCTNM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "会计期间结束日期",
+  "value": "ACCTN_PRD_END_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "婚姻状况代码",
+  "value": "MARRG_SITUATION_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构关系类型代码",
+  "value": "ORG_REL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构号",
+  "value": "ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构信用代码证号",
+  "value": "ORG_CREDIT_CDCRTF_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "激活日期",
+  "value": "ACTV_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "籍贯行政区划代码",
+  "value": "NTVPLC_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计量单位代码",
+  "value": "MODULE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "记账凭证摘要",
+  "value": "KEPACCT_VOUCH_SUMMARY",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "交易结果标志",
+  "value": "TX_RESULT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易金额",
+  "value": "TX_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易名称",
+  "value": "TX_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "交易渠道分类代码",
+  "value": "TX_CHNL_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易手续费金额",
+  "value": "TX_COMM_FEE_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易调整标志代码",
+  "value": "TX_ADJ_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易账户类型代码",
+  "value": "TX_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易状态代码",
+  "value": "TX_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴存存款准备金方式代码",
+  "value": "DPST_DPST_RESV_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借贷标志代码",
+  "value": "DEBIT_CRDT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借方发生金额",
+  "value": "DEBIT_HAPP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "金融许可证编号",
+  "value": "FIN_LICS_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办联系人客户编号",
+  "value": "OPR_CONTR_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办联系人证件类型代码",
+  "value": "OPR_CONTR_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经度",
+  "value": "LGTD",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "经营场地面积",
+  "value": "MANG_PLACE_AREA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "经营范围说明",
+  "value": "MANG_SCP_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "境内外标志",
+  "value": "DOM_OVERS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "居住城市行政区划代码",
+  "value": "DWLG_CITY_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "居住状况代码",
+  "value": "DWLG_SITUATION_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡有效日期",
+  "value": "CARD_VALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡性质代码",
+  "value": "CARD_CHARC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡状态代码",
+  "value": "CARD_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户柜员号",
+  "value": "OPEN_ACCT_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户机构号",
+  "value": "OPEN_ACCT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户金额",
+  "value": "OPEN_ACCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "客户编号",
+  "value": "CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户类型代码",
+  "value": "CUST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户名称",
+  "value": "CUST_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "客户拼音名称",
+  "value": "CUST_PINYIN_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "客户证件类型代码",
+  "value": "CUST_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户中文姓名",
+  "value": "CUST_CN_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "跨行标志",
+  "value": "CROSS_BANK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "累计欠款期数",
+  "value": "ACCM_ARREAR_PRIDNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利率执行方式代码",
+  "value": "INTRT_EXEC_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "末端标志",
+  "value": "END_END_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "未支取利率",
+  "value": "UN_DRAW_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "我行储蓄客户标志",
+  "value": "MBANK_SAVING_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行存款客户标志",
+  "value": "MBANK_DPST_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行代发客户标志",
+  "value": "MBANK_AGEN_PAYOFF_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行电子回单箱客户标志",
+  "value": "MBANK_ELEC_RTNBOX_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行黑名单客户标志",
+  "value": "MBANK_BLKLIST_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行机构理财客户标志",
+  "value": "MBANK_ORG_CHREM_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行基金客户标志",
+  "value": "MBANK_FUNDS_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行网银客户标志",
+  "value": "MBANK_INTBNK_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行现金管理客户标志",
+  "value": "MBANK_CASH_MGMT_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行协议存款客户标志",
+  "value": "MBANK_AGMT_DPST_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行信用卡客户标志",
+  "value": "MBANK_CRDT_CARD_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行重要客户标志",
+  "value": "MBANK_IMPRT_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物权人姓名",
+  "value": "PROP_PERSON_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "系统版本编号",
+  "value": "SYS_VER_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "系统跟踪号",
+  "value": "SYS_FOLN_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "下次重新定价日期",
+  "value": "NEXT_AGAIN_PRICING_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现转标志",
+  "value": "CASH_TRAN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "享有国民待遇标志",
+  "value": "ENJOY_NTNL_TREATMENT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户柜员号",
+  "value": "CLOS_ACCT_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销卡柜员号",
+  "value": "CLSCRD_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销卡日期",
+  "value": "CLSCRD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协定存款标志",
+  "value": "AGREMT_DPST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "信用评级代码",
+  "value": "CREDIT_RAT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "押品分类代码",
+  "value": "CLTRL_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "押品名称",
+  "value": "CLTRL_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "已发放承担贷款金额",
+  "value": "ALRDY_GRANT_UNDERTAKE_LN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "已放款金额",
+  "value": "ALRDY_MAKELN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "以物抵债标志",
+  "value": "WTH_GOODS_COMUT_DEBT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "银行行业标志",
+  "value": "BANK_INDUS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "银行卡号",
+  "value": "BANK_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "银团贷款标志",
+  "value": "SYNDIC_LN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业机构标志",
+  "value": "BIZ_ORG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业执照编号",
+  "value": "BIZ_LIC_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业状态代码",
+  "value": "BIZ_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "邮政编码",
+  "value": "POST_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "逾期本金",
+  "value": "OVDUE_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "逾期利率",
+  "value": "OVDUE_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "逾期余额",
+  "value": "OVDUE_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "预期收益金额",
+  "value": "EXPCT_GAINS_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "员工亲属员工号",
+  "value": "EMPLY_KIN_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工亲属在我行标志",
+  "value": "EMPLY_KIN_AT_MBANK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工数量",
+  "value": "EMPLY_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工所属部门名称",
+  "value": "EMPLY_BLNGTO_DEPT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "员工状态代码",
+  "value": "EMPLY_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易日期",
+  "value": "ORGINL_TX_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "运营商名称",
+  "value": "OPRTR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "展期次数",
+  "value": "EXTSN_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "展期到期日期",
+  "value": "EXTSN_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "展期金额",
+  "value": "EXTSN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "账单日期",
+  "value": "BIL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账号附加编号",
+  "value": "ACCT_NO_ADDT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户可用余额",
+  "value": "ACCT_AVAL_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "账户余额",
+  "value": "ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "账户支取方式代码",
+  "value": "ACCT_DRAW_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账务机构号",
+  "value": "ACTNG_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "执行利率",
+  "value": "EXEC_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "职业类型代码",
+  "value": "CAREER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终端地理位置",
+  "value": "TERMINAL_GEOG_POSITION",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "终端设备编号",
+  "value": "TERMINAL_EQUIP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "重要证件年检标志",
+  "value": "IMPRT_CRTF_ANL_INSPT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "重要证件最近年检日期",
+  "value": "IMPRT_CRTF_RECNT_ANL_INSPT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主管部门名称",
+  "value": "DIROR_DEPT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主机流水号",
+  "value": "HOST_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册地址邮政编码",
+  "value": "REG_ADDR_POST_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册资本金额",
+  "value": "REG_CPTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转存计划变动金额",
+  "value": "TSFDEP_PLAN_CHG_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转营业外日期",
+  "value": "TRAN_BIZ_EXTRA_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "资产购置方式代码",
+  "value": "ASST_PURCH_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "资产使用状况代码",
+  "value": "ASST_USE_SITUATION_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "资产形态描述",
+  "value": "ASST_FORM_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "资产状态代码",
+  "value": "ASST_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最高学位代码",
+  "value": "HIGH_DEGREE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "ATM每日转账限额",
+  "value": "ATM_DLY_TSFACCT_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "GPS坐标纬度",
+  "value": "GPS_CORDT_LTTD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "KEY取值",
+  "value": "KEY_GT_VAL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "PIN密码",
+  "value": "PIN_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "UKEY成功发出数量",
+  "value": "UKEY_SUCC_SNDOUT_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "UKEY序号",
+  "value": "UKEY_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "UKEY状态代码",
+  "value": "UKEY_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "办公电话号码",
+  "value": "OFFI_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "绑定失败UKEY数量",
+  "value": "BIND_FAIL_UKEY_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "绑定失败流水号",
+  "value": "BIND_FAIL_SN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "保险金额",
+  "value": "INS_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "报表级别代码",
+  "value": "RPT_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "报表类型代码",
+  "value": "RPT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "报表日期",
+  "value": "RPT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "报文收发时间",
+  "value": "MSG_RCVSND_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "备用字段3",
+  "value": "REMRK_FIELD_3",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "备注机构号",
+  "value": "REMRK_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被背书人名称",
+  "value": "BE_ENDRS_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "被背书人数",
+  "value": "BE_BCKBIL_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被顶岗柜员号",
+  "value": "BE_IN_POST_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被顶岗级别代码",
+  "value": "BE_IN_POST_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被转介员工号",
+  "value": "BE_REFERRAL_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本金",
+  "value": "PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "本批次全部入账标志",
+  "value": "THS_BATCH_ALL_RCRDACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本批次重发标志",
+  "value": "THS_BATCH_RPTSND_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "便签类型代码",
+  "value": "NOTE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "表内应收利息",
+  "value": "ONSHET_RECVBL_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "表外应收利息",
+  "value": "OFFSHET_RECVBL_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "播放样式代码",
+  "value": "PLAY_STYLE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补开柜员号",
+  "value": "MND_OPEN_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补开机构号",
+  "value": "MND_OPEN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "部分支取或部分金额开户标志",
+  "value": "PARTL_DRAW_OR_PARTL_AMT_OPEN_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "部支金额",
+  "value": "PRT_WDRL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "财税库银处理结果代码",
+  "value": "TIPS_DLWTH_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财税库银交易状态代码",
+  "value": "TIPS_TX_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财税库银签约状态代码",
+  "value": "TIPS_SIGN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "菜单编号",
+  "value": "MENU_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "菜单名称",
+  "value": "MENU_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "操作记录描述",
+  "value": "OPER_KEPRCD_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "操作结果代码",
+  "value": "OPER_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作类型代码",
+  "value": "OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作员柜员号",
+  "value": "OPRR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查复书打印标志",
+  "value": "CHKANSR_BOK_PR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查复书内容",
+  "value": "CHKANSR_BOK_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "查复状态代码",
+  "value": "CHKANSR_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询标志代码",
+  "value": "QRY_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询日期",
+  "value": "QRY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询书打印标志",
+  "value": "QRY_BOK_PR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询书打印次数",
+  "value": "QRY_BOK_PR_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "产品码",
+  "value": "PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "常住地址",
+  "value": "CONSERVATION_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "厂商名称",
+  "value": "MANUFAC_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "钞汇标志代码",
+  "value": "CASHRMT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "撤销标志",
+  "value": "RVCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "撤销类型代码",
+  "value": "RVCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "撤销原因",
+  "value": "RVCT_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "成功发卡数量",
+  "value": "SUCC_ISCRD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "成功率",
+  "value": "SUCC_RT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "承兑人名称",
+  "value": "ACPTOR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "承兑协议编号",
+  "value": "ACPTNC_AGMT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持卡人名称",
+  "value": "CRDHLD_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "持卡人姓名",
+  "value": "CRDHLD_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "持卡人证件号码",
+  "value": "CRDHLD_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持卡人证件类型代码",
+  "value": "CRDHLD_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持票人名称",
+  "value": "BILHLDR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "持票人证件类型代码",
+  "value": "BILHLDR_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冲销标志",
+  "value": "WRTFF_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冲账标志",
+  "value": "RENRT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冲账日期",
+  "value": "RENRT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出票行行号",
+  "value": "TICOUT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出票人全称",
+  "value": "DRAWER_FULLNAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "出票人账户名称",
+  "value": "DRAWER_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "出生地地址",
+  "value": "BIRTHPLACE_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "出生中文地址",
+  "value": "BIRTH_CN_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "处理次数",
+  "value": "DLWTH_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理机构号",
+  "value": "DLWTH_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理日期",
+  "value": "DLWTH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理时间",
+  "value": "DLWTH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理状态代码",
+  "value": "DLWTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口编号",
+  "value": "WINDOW_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口叫号时显示速度",
+  "value": "WINDOW_CALL_NO_WHEN_INDCT_SPEED",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口叫号时显示效果说明",
+  "value": "WINDOW_CALL_NO_WHEN_INDCT_EFCT_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口叫号时显示英文内容",
+  "value": "WINDOW_CALL_NO_WHEN_INDCT_ENG_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口空闲时显示速度",
+  "value": "WINDOW_LEISURE_WHEN_INDCT_SPEED",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口启动标志代码",
+  "value": "WINDOW_START_UP_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口暂停时显示英文内容",
+  "value": "WINDOW_SUSPD_WHEN_INDCT_ENG_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口正在办理时显示效果说明",
+  "value": "WINDOW_PROCNG_WHEN_INDCT_EFCT_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口正在办理时显示中文内容",
+  "value": "WINDOW_PROCNG_WHEN_INDCT_CN_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "创建柜员号",
+  "value": "CRT_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "次日到账渠道代码",
+  "value": "MINOR_DAY_ARVACCT_CHNL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存单产品类型代码",
+  "value": "DEPRCP_PROD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款协议转回方式代码",
+  "value": "DPST_AGMT_TRAN_BACK_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存续期限",
+  "value": "SUBSI_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存折挂失申请书编号",
+  "value": "DEPBOK_RPTLOSS_APLY_BOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存折已打印行数",
+  "value": "DEPBOK_ALRDY_PR_RWSNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存折余额",
+  "value": "DEPBOK_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "存折账号",
+  "value": "DEPBOK_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "措施描述",
+  "value": "MEASURES_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "措施名称",
+  "value": "MEASURES_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "措施使用次数",
+  "value": "MEASURES_USE_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "错账控制标志",
+  "value": "ERACCT_CTRL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "错账控制应答附言说明",
+  "value": "ERACCT_CTRL_RSPN_MEMO_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "打开类型代码",
+  "value": "TURN_ON_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印类型代码",
+  "value": "PR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印流水号",
+  "value": "PR_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印用户编码",
+  "value": "PR_USER_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印原因代码",
+  "value": "PR_RSN_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "大写金额",
+  "value": "UPPR_AMT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "代理付款行行号",
+  "value": "AGEN_PAY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷方积数",
+  "value": "CRDTR_ACCUM",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "贷款利率代号",
+  "value": "LN_INTRT_CDNM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款收回处理标志代码",
+  "value": "LN_TKBCK_DLWTH_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款收回方式代码",
+  "value": "LN_TKBCK_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款余额",
+  "value": "LN_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "待处理总笔数",
+  "value": "WAIT_DLWTH_TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "待处理总金额",
+  "value": "WAIT_DLWTH_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "单位卡持卡人姓名",
+  "value": "UNIT_CARD_CRDHLD_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "单位联系人名称",
+  "value": "UNIT_CONTR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "当前排队编号",
+  "value": "CURR_QUEUE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当前项信息",
+  "value": "CURR_ITEM_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "当日预约提前最小时间",
+  "value": "TODAY_RVT_ADV_MIN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "倒计时时间",
+  "value": "CNT_DOWN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登记机构名称",
+  "value": "RGST_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "登记注册号",
+  "value": "RGST_REG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "第三方验证结果描述",
+  "value": "THIRD_PTY_VLIDT_RESULT_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "电子凭证归档编号",
+  "value": "ELEC_VOUCH_ARCHIVE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子凭证生成时间",
+  "value": "ELEC_VOUCH_GNRT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子印章交易种类代码",
+  "value": "ELEC_SIGNET_TX_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "定期本金",
+  "value": "RGL_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "经办账务标志",
+  "value": "OPR_ACTNG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户日期",
+  "value": "OPEN_ACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户许可证编号",
+  "value": "OPEN_ACCT_LICS_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开卡柜员号",
+  "value": "OPEN_CARD_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "科目级次代码",
+  "value": "SUBJ_GRADT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "科目类型代码",
+  "value": "SUBJ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户经理编号",
+  "value": "CUST_MGR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户经理标志",
+  "value": "CUST_MGR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户经理电话号码",
+  "value": "CUST_MGR_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户英文简称",
+  "value": "CUST_ENG_ABBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户账号",
+  "value": "CUST_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户证件号码",
+  "value": "CUST_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户中文简称",
+  "value": "CUST_CN_ABBR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "累计实收利息",
+  "value": "ACCM_ACTL_RECV_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利率浮动值",
+  "value": "INTRT_FLOT_VAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利率基准值",
+  "value": "INTRT_BNCHMK_VAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利息",
+  "value": "INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利息税金额",
+  "value": "INT_TAX_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "联系地址",
+  "value": "CONT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "临时额度标志",
+  "value": "TMP_QTA_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "临时额度失效日期",
+  "value": "TMP_QTA_INVALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "母公司更新注册信息日期",
+  "value": "PRNTCMPN_UPD_REG_INFO_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "母公司国家和地区代码",
+  "value": "PRNTCMPN_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "母公司国内注册地址",
+  "value": "PRNTCMPN_DMST_REG_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "母公司客户编号",
+  "value": "PRNTCMPN_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "纳入统一授信标志",
+  "value": "FIT_IN_UNIFIED_CRDT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "纳税人身份类别代码",
+  "value": "PYTX_PERSON_IDTY_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "内部机构中文简称",
+  "value": "INTER_ORG_CN_ABBR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "内部机构中文名称",
+  "value": "INTER_ORG_CN_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "年收入金额",
+  "value": "YR_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "批量标志",
+  "value": "BAT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "批量开户标志",
+  "value": "BAT_OPEN_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据号码",
+  "value": "BILL_NBR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "票据类型代码",
+  "value": "BILL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票面金额",
+  "value": "PAR_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "评估机构中文名称",
+  "value": "EVALTN_ORG_CN_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "评估价值",
+  "value": "EVALTN_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "凭证来源说明",
+  "value": "VOUCH_SOURCE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "期间借方发生金额",
+  "value": "PRD_DEBIT_HAPP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "期末借方余额",
+  "value": "TERM_END_DEBIT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "期数",
+  "value": "PRIDNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "其他关联企业总资产币种代码",
+  "value": "OTH_RELA_CORP_TOTL_ASST_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "企业成立日期",
+  "value": "CORP_FOUND_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起息日期",
+  "value": "BEGINT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签署机构号",
+  "value": "SGN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "亲属姓名",
+  "value": "KIN_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "渠道英文名称",
+  "value": "CHNL_ENG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "渠道用户类型名称",
+  "value": "CHNL_USER_TYP_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "权限管理标志",
+  "value": "PRVLG_MGMT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "商户编号",
+  "value": "MERCHT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次动户日期",
+  "value": "LSTTM_ACTACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次还款日期",
+  "value": "LSTTM_REPAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次重新定价日期",
+  "value": "LSTTM_AGAIN_PRICING_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上黑名单日期",
+  "value": "UP_BLKLIST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上市国家和地区代码",
+  "value": "GO_PUB_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "涉农标志",
+  "value": "AGR_RELAT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请贷款总金额",
+  "value": "APLY_LN_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "生效日期",
+  "value": "EFFT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "时间",
+  "value": "TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际控制人客户编号",
+  "value": "ACTL_CTRL_PERSON_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际控制人证件类型代码",
+  "value": "ACTL_CTRL_PERSON_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实体机构标志",
+  "value": "ENTITY_ORG_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手续费",
+  "value": "COMM_FEE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "手续费负担方分润受益人代码",
+  "value": "COMM_FEE_BURDEN_PTY_PRFT_CUT_BENFCY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权标志",
+  "value": "AUTH_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授信额度类型代码",
+  "value": "CRDT_QTA_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授信种类代码",
+  "value": "CRDT_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "睡眠户标志",
+  "value": "SLPACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所属行业类型代码",
+  "value": "BLNGTO_INDUS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所属集团编号",
+  "value": "BLNGTO_GRP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所属集团客户名称",
+  "value": "BLNGTO_GRP_CUST_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "所在位置",
+  "value": "BLNGT_POSITION",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "提前支取利率",
+  "value": "ADV_DRAW_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "通存标志",
+  "value": "UNIVSV_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通讯地址",
+  "value": "CMUNIC_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "统一社会信用代码",
+  "value": "USCD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "投资金额",
+  "value": "INVST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "外管账户性质代码",
+  "value": "ADMIN_FRGN_EXCH_ACCT_CHARC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "违约概率",
+  "value": "DLQCY_PROB",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "违约金额",
+  "value": "DLQCY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "违约起始日期",
+  "value": "DLQCY_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行担保类业务客户标志",
+  "value": "MBANK_GUAR_CLS_BIZ_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行电话银行客户标志",
+  "value": "MBANK_TELE_BNK_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行电子银行客户标志",
+  "value": "MBANK_ELEC_BANK_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行电子支付客户标志",
+  "value": "MBANK_ELEC_PAYMT_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行短信签约客户标志",
+  "value": "MBANK_SMS_SIGN_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行贵金属客户标志",
+  "value": "MBANK_PREC_METAL_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行国债客户标志",
+  "value": "MBANK_TRSBOND_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行借记卡客户标志",
+  "value": "MBANK_DBTCRD_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行社保类客户标志",
+  "value": "MBANK_SOCI_SECU_CLS_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行授信客户标志",
+  "value": "MBANK_CRDT_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行特约商户标志",
+  "value": "MBANK_SPC_ARGMT_MERCHT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户金额",
+  "value": "CLOS_ACCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "销户日期",
+  "value": "CLOS_ACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销卡机构号",
+  "value": "CLSCRD_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "信贷人员标志",
+  "value": "CRDTS_PERSON_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "信用卡卡号",
+  "value": "CRDT_CARD_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "性别代码",
+  "value": "GENDER_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "押品编号",
+  "value": "CLTRL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "押品登记日期",
+  "value": "CLTRL_RGST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "押品生效日期",
+  "value": "CLTRL_EFFT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "央行开户标志",
+  "value": "CENTR_BANK_OPEN_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一般管理标志",
+  "value": "GENL_MGMT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已出账单金额",
+  "value": "ALRDY_OUT_BIL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "优惠利率",
+  "value": "PREFR_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "有无下级客户标志",
+  "value": "HAV_NOT_SUBORD_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "逾期次数",
+  "value": "OVDUE_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "逾期利息",
+  "value": "OVDUE_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "逾期天数",
+  "value": "OVDUE_DAYS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原币币种代码",
+  "value": "ORG_CUR_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "在我行开立保证金账户标志",
+  "value": "AT_MBANK_SETUP_MARGN_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "在我行开立基本账户标志",
+  "value": "AT_MBANK_SETUP_BASIC_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "在我行开立结算账户标志",
+  "value": "AT_MBANK_SETUP_STL_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "摘要码",
+  "value": "SUMMARY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户主账号",
+  "value": "ACCT_MAIN_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账面价值",
+  "value": "BOOK_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "账套简称",
+  "value": "ACCT_BOOK_ABBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账套名称",
+  "value": "ACCT_BOOK_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账套终止日期",
+  "value": "ACCT_BOOK_TERMTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件到期日期",
+  "value": "CRTF_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件发放日期",
+  "value": "CRTF_GRANT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件号码",
+  "value": "CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "职称级别代码",
+  "value": "TITLE_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "职务代码",
+  "value": "DUTY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终端IP地址",
+  "value": "TERMINAL_IP_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终端MAC地址",
+  "value": "TERMINAL_MAC_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终端类型代码",
+  "value": "TERMINAL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终端设备名称",
+  "value": "TERMINAL_EQUIP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主办行行名",
+  "value": "HOST_BANK_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主办客户经理编号",
+  "value": "SPONSOR_CUST_MGR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主附卡标志",
+  "value": "MAIN_ADDTCARD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主卡卡号",
+  "value": "MSTCRD_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主营业务收入金额",
+  "value": "MAIN_BIZ_BIZ_INCOME_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "注册城市行政区划代码",
+  "value": "REG_CITY_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册日期",
+  "value": "REG_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册资本币种代码",
+  "value": "REG_CPTL_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转久悬日期",
+  "value": "TRAN_DORMANT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "资产权属状况代码",
+  "value": "ASST_ONRSHP_SITUATION_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自动标志",
+  "value": "ATMTC_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自然人证件号码",
+  "value": "NTRLPSN_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总资产金额",
+  "value": "TOTL_ASST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "组织机构代码",
+  "value": "ORGTN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最低还款金额",
+  "value": "LOWEST_REPAY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "最高学历代码",
+  "value": "HIGH_EDCTBKG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "UKEY领取数量",
+  "value": "UKEY_RCV_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "安装地址",
+  "value": "INSTL_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "版本编号",
+  "value": "VER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "版本描述",
+  "value": "VER_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "办理交易数",
+  "value": "HDL_TX_ENMERT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "绑定银行行号",
+  "value": "BIND_BANK_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "绑定状态代码",
+  "value": "BIND_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "包流水号",
+  "value": "PKG_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保号标志",
+  "value": "POLICY_NO_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保险费",
+  "value": "INSURE_PREM",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "保险期限",
+  "value": "INS_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "备用字段1",
+  "value": "REMRK_FIELD_1",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "备注",
+  "value": "REMRK",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "备注柜员号",
+  "value": "REMRK_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "背书标志",
+  "value": "BCKBIL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被背书人清单描述",
+  "value": "BE_ENDRS_LST_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "本地文件路径",
+  "value": "LOCL_FILE_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "便签内容",
+  "value": "NOTE_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "表格编号",
+  "value": "TB_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "补打次数",
+  "value": "PRINT_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补打截止日期",
+  "value": "PRINT_EXPIRY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补打时间",
+  "value": "PRINT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "不满意比率",
+  "value": "NOT_SATSF_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "不相符原因说明",
+  "value": "NOT_MATCH_RSN_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "部分支取或部分金额开户日期",
+  "value": "PARTL_DRAW_OR_PARTL_AMT_OPEN_ACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财税库银处理状态代码",
+  "value": "TIPS_DLWTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财税库银交易类型代码",
+  "value": "TIPS_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "菜单功能编号",
+  "value": "MENU_FUNC_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "菜单路径",
+  "value": "MENU_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "菜单视图编号",
+  "value": "MENU_VIEW_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "菜单图标路径",
+  "value": "MENU_ICON_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "菜单英文名称",
+  "value": "MENU_ENG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "参数编号",
+  "value": "PARA_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作标志代码",
+  "value": "OPER_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作步骤",
+  "value": "OPER_STEP",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作机构号",
+  "value": "OPER_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作流水号",
+  "value": "OPER_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作日期",
+  "value": "OPER_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作系统版本号",
+  "value": "OPER_SYS_VER_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "操作原因",
+  "value": "OPER_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "槽位编号",
+  "value": "SLOT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "册号或凭证号",
+  "value": "VOL_OR_VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查复行行名",
+  "value": "CHKANSR_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "查复书打印次数",
+  "value": "CHKANSR_BOK_PR_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询行行号",
+  "value": "QRY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询库箱结余操作类型代码",
+  "value": "QRY_LIB_BOX_CSHSPLS_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询密码",
+  "value": "QRY_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "查询起始日期",
+  "value": "QRY_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询书类型代码",
+  "value": "QRY_BOK_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询书内容",
+  "value": "QRY_BOK_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "查询终止日期",
+  "value": "QRY_TERMTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "差额金额",
+  "value": "DIFCAMT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "差评处理结果代码",
+  "value": "BASPST_DLWTH_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "差评处理状态代码",
+  "value": "BASPST_DLWTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "拆借期限",
+  "value": "CALBLE_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "产品编号",
+  "value": "PROD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "产品利率",
+  "value": "PROD_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "产品名称",
+  "value": "PROD_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "产品营销信息",
+  "value": "PROD_MKTING_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "常用交易类型代码",
+  "value": "COMM_USED_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利息连续逾期天数",
+  "value": "INT_CONTINUOUS_OVDUE_DAYS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联系电话号码",
+  "value": "CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联系人类型代码",
+  "value": "CONTR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联系人员工号",
+  "value": "CONTR_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "临时额度生效日期",
+  "value": "TMP_QTA_EFFT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "流通股数量",
+  "value": "CRCLTNG_STOCKS_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "免除年费标志",
+  "value": "EXMT_ANNL_FEE_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "免收手续费标志",
+  "value": "EXMPTN_COMM_FEE_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "母公司行政区划代码",
+  "value": "PRNTCMPN_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "内部机构级别代码",
+  "value": "INTER_ORG_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "内部机构类型代码",
+  "value": "INTER_ORG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "农户标志",
+  "value": "PST_HOUSD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "农信法人机构类型代码",
+  "value": "RCU_LPR_ORG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "农信法人组织形式代码",
+  "value": "RCU_LPR_ORGTN_MDE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "品牌名称",
+  "value": "BRAND_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "凭证冠字号",
+  "value": "VOUCH_CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证号",
+  "value": "VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "期初借方余额",
+  "value": "TERM_BGN_DEBIT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "期间贷方发生金额",
+  "value": "PRD_CRDTR_HAPP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "其他关联企业客户编号",
+  "value": "OTH_RELA_CORP_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "其他关联企业客户名称",
+  "value": "OTH_RELA_CORP_CUST_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "其他关联企业总资产金额",
+  "value": "OTH_RELA_CORP_TOTL_ASST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "其他关联企业组织机构代码",
+  "value": "OTH_RELA_CORP_ORGTN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "企业电子地址类型代码",
+  "value": "CORP_ELEC_ADDR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "企业规模代码",
+  "value": "CORP_SCAL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用标志",
+  "value": "ENBL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用日期",
+  "value": "ENBL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签署经办人编号",
+  "value": "SGN_OPRR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "前置交易渠道分类代码",
+  "value": "FRONT_TX_CHNL_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "前置外部交易类型代码",
+  "value": "FRONT_EXTNL_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "亲属关系代码",
+  "value": "KIN_REL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "亲属手机电话号码",
+  "value": "KIN_MOBILE_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道编号代码",
+  "value": "CHNL_NO_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道流水号",
+  "value": "CHNL_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道应用场景说明",
+  "value": "CHNL_APP_SCENE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "取现额度",
+  "value": "CASH_WITHDR_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "日记账名称",
+  "value": "DAY_KEPACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "日记账凭证银行编号",
+  "value": "DAY_KEPACCT_VOUCH_BANK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "日期",
+  "value": "DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "商户类别代码",
+  "value": "MERCHT_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上级客户编号",
+  "value": "SPR_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上市企业标志",
+  "value": "GO_PUB_CORP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备破解标志",
+  "value": "EQUIP_CRACK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备型号",
+  "value": "EQUIP_MODEL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "社保代发客户标志",
+  "value": "SOCI_SECU_AGEN_PAYOFF_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "身份证号码",
+  "value": "ID_CARD_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "审批员工号",
+  "value": "APPRV_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际还款日期",
+  "value": "ACTL_REPAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际控制人类型代码",
+  "value": "ACTL_CTRL_PERSON_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际控制人证件号码",
+  "value": "ACTL_CTRL_PERSON_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际控制人中征码",
+  "value": "ACTL_CTRL_PERSON_CRDT_ID_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际控制人组织机构代码",
+  "value": "ACTL_CTRL_PERSON_ORGTN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实收注册资本金额",
+  "value": "ACTL_RECV_REG_CPTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实收资本金额",
+  "value": "ACTL_RECV_CPTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实体柜员标志",
+  "value": "ENTITY_TELR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "市场价值",
+  "value": "MKT_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "手机电话号码",
+  "value": "MOBILE_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手机号码用途类型代码",
+  "value": "MOBILE_NBR_USAGE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手机卡国家和地区代码",
+  "value": "MOBILE_CARD_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权范围说明",
+  "value": "AUTH_SCP_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "授权柜员号",
+  "value": "AUTH_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授信协议编号",
+  "value": "CRDT_AGMT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "诉讼标志",
+  "value": "LITIGA_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所属机构号",
+  "value": "BLNGTO_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所在地址",
+  "value": "BLNGT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "通兑标志",
+  "value": "UNIVERSAL_WITHDR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知存款计划执行日期",
+  "value": "NOTI_DPST_PLAN_EXEC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "同城标志",
+  "value": "CTYWD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "投保人姓名",
+  "value": "POLICY_HOLDER_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "投产定价金额",
+  "value": "PUT_PROD_PRICING_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "投资对象名称",
+  "value": "INVST_OBJ_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "投资期限",
+  "value": "INVST_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "投资日期",
+  "value": "INVST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "投资资产类型代码",
+  "value": "INVST_ASST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "透支金额",
+  "value": "OVDR_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "违约事件说明",
+  "value": "DLQCY_EVENT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "纬度",
+  "value": "LTTD",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "未出账单金额",
+  "value": "UN_OUT_BIL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "我行代缴费客户标志",
+  "value": "MBANK_AGEN_PAY_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行贷款客户标志",
+  "value": "MBANK_LN_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行国际结算客户标志",
+  "value": "MBANK_INTL_STL_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行理财客户标志",
+  "value": "MBANK_CHREM_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行企业负债客户标志",
+  "value": "MBANK_CORP_LIAB_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我行首次信贷日期",
+  "value": "MBANK_FSTTM_CRDTS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现金分期额度",
+  "value": "CASH_INSTLT_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "详细地址",
+  "value": "DTL_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "消费凭密标志",
+  "value": "CONSM_BYPWD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户机构号",
+  "value": "CLOS_ACCT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务跟踪号",
+  "value": "BIZ_FOLN_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已抵押价值",
+  "value": "ALRDY_MTG_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "已发放贷款金额",
+  "value": "ALRDY_GRANT_LN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "已使用额度",
+  "value": "ALRDY_USE_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "银行联行行号",
+  "value": "BANK_IBANK_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "银行认定价值",
+  "value": "BANK_IDTFY_WORTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "银行账户名称",
+  "value": "BANK_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "银企直联客户标志",
+  "value": "BNK_ENTRPS_DIR_CONNECT_CUST_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业部标志",
+  "value": "BIZ_DEPT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业执照到期日期",
+  "value": "BIZ_LIC_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "应用系统ID代码",
+  "value": "APP_SYS_ID_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工号",
+  "value": "EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工标志",
+  "value": "EMPLY_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工个人地址类型代码",
+  "value": "EMPLY_INDV_ADDR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工卡标志",
+  "value": "EMPLY_CARD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工身份证号码",
+  "value": "EMPLY_ID_CARD_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工姓名",
+  "value": "EMPLY_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "员工证件类型代码",
+  "value": "EMPLY_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易流水号",
+  "value": "ORGINL_TX_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "在岗员工状态代码",
+  "value": "ON_GUARD_EMPLY_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "展期起始日期",
+  "value": "EXTSN_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户编号",
+  "value": "ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户附加状态代码",
+  "value": "ACCT_ADDT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户机构号",
+  "value": "ACCT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账套编号",
+  "value": "ACCT_BOOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账套会计期间",
+  "value": "ACCT_BOOK_ACCTN_PRD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账套启用日期",
+  "value": "ACCT_BOOK_ENBL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件生效日期",
+  "value": "CRTF_EFFT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件失效日期",
+  "value": "CRTF_INVALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "政治面貌代码",
+  "value": "POLIC_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "职级代码",
+  "value": "RANK_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "中征码",
+  "value": "CRDT_ID_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终端应用类型名称",
+  "value": "TERMINAL_APP_TYP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "终止日期",
+  "value": "TERMTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主办行行号",
+  "value": "HOST_BANK_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主担保方式代码",
+  "value": "MAIN_GUAR_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册地址",
+  "value": "REG_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "注册国家和地区代码",
+  "value": "REG_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转存计划执行日期",
+  "value": "TSFDEP_PLAN_EXEC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自动转存标志",
+  "value": "ATMTC_TSFDEP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "综合柜员标志",
+  "value": "COMPHSV_TELR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总负债金额",
+  "value": "TOTL_LIAB_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "总账日期",
+  "value": "GL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "组织机构类型代码",
+  "value": "ORGTN_ORG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "ATM转账签约标志代码",
+  "value": "ATM_TSFACCT_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "CPU使用率",
+  "value": "CPU_USE_RT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "GPS坐标经度",
+  "value": "GPS_CORDT_LGTD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "IC卡序号",
+  "value": "IC_CARD_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "IP检查标志",
+  "value": "IP_CHK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "UKEY清机数量",
+  "value": "UKEY_CLEA_MACH_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "UKEY上缴数量",
+  "value": "UKEY_TURNIN_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "UKEY种类代码",
+  "value": "UKEY_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "VIP卡标志",
+  "value": "VIP_CARD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "版本策略代码",
+  "value": "VER_STRATEGY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "绑定机构号",
+  "value": "BIND_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "包序号",
+  "value": "PKG_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "包状态代码",
+  "value": "PKG_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保险缴费方式代码",
+  "value": "INS_PAY_FEE_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "保值贴息金额",
+  "value": "MATVAL_INT_SUBSIDY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "备用字段2",
+  "value": "REMRK_FIELD_2",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "备注1",
+  "value": "REMRK_1",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "备注2",
+  "value": "REMRK_2",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "备注3",
+  "value": "REMRK_3",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "备注时间",
+  "value": "REMRK_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被贷记行行号",
+  "value": "BE_CRDIT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "被借记行行号",
+  "value": "BE_DEBT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本次查询起始序号",
+  "value": "CURTTM_QRY_START_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "本次核销金额",
+  "value": "CURTTM_WRTOFF_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "本地文件名称",
+  "value": "LOCL_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "本息合计金额",
+  "value": "PRNCPINT_TOT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "笔数",
+  "value": "STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "必刷卡标志",
+  "value": "MUST_PYCRD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "便签编号",
+  "value": "NOTE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "表外核算标志代码",
+  "value": "OFFSHET_ACCTI_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "并入客户编号",
+  "value": "MERGE_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "拨付内容描述",
+  "value": "APPR_CONTENT_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "拨付账号",
+  "value": "APPR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "播放规则编号",
+  "value": "PLAY_RULE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "播放日期",
+  "value": "PLAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补打柜员号",
+  "value": "PRINT_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补打起始日期",
+  "value": "PRINT_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补打日期",
+  "value": "PRINT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补打授权柜员号",
+  "value": "PRINT_AUTH_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补打原因",
+  "value": "PRINT_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "补开日期",
+  "value": "MND_OPEN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "补开账户继承标志",
+  "value": "MND_OPEN_ACCT_INHERIT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "不满意数量",
+  "value": "NOT_SATSF_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "布放区域说明",
+  "value": "DISTRB_REGN_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "部分支取次数",
+  "value": "PARTL_DRAW_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "部分支取利息",
+  "value": "PARTL_DRAW_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "财税库银交易渠道分类代码",
+  "value": "TIPS_TX_CHNL_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "财税库银项目代码",
+  "value": "TIPS_PROJ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "菜单类型代码",
+  "value": "MENU_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "菜单视图名称",
+  "value": "MENU_VIEW_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "操作柜员号",
+  "value": "OPER_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作权限代码",
+  "value": "OPER_PRVLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "操作时间",
+  "value": "OPER_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查复行行号",
+  "value": "CHKANSR_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查复日期",
+  "value": "CHKANSR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查复书号",
+  "value": "CHKANSR_ISBN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询行行名",
+  "value": "QRY_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "查询内容",
+  "value": "QRY_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "查询起止日期",
+  "value": "QRY_START_END_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询书号",
+  "value": "QRY_ISBN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "查询数量",
+  "value": "QRY_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "拆借利率",
+  "value": "CALBLE_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "产品类型代码",
+  "value": "PROD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "产品子类编码",
+  "value": "PROD_SUB_CLS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "产业代码",
+  "value": "INDSTL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "厂商编号",
+  "value": "MANUFAC_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "场景编码",
+  "value": "SCENE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "城市行政区划代码",
+  "value": "CITY_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "城市名称",
+  "value": "CITY_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持股比例",
+  "value": "SHRHL_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "定期金额",
+  "value": "RGL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "定期业务批次号",
+  "value": "RGL_BIZ_BCHNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "定期余额",
+  "value": "RGL_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "定期账户账号",
+  "value": "RGL_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "动作类型代码",
+  "value": "ACTN_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "栋或小区账号",
+  "value": "RIDGPL_OR_RESQRT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "短信通知签约标志代码",
+  "value": "SMS_NOTI_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "队列ID",
+  "value": "QUEUE_ID",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "队列优先级代码",
+  "value": "QUEUE_PRIT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方交易日期",
+  "value": "CNTPTY_TX_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对应节点代码",
+  "value": "CRSP_NODE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对应支付系统行号",
+  "value": "CRSP_PAYMT_SYS_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对账簿册号",
+  "value": "BILL_BK_VOL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对账批次号",
+  "value": "CHKACCT_BCHNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对账日期",
+  "value": "CHKACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发出流水号",
+  "value": "SNDOUT_SN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "发放累计金额",
+  "value": "GRANT_ACCM_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "发卡器状态代码",
+  "value": "CARD_SND_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发起日期",
+  "value": "LUNCH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发送成功笔数",
+  "value": "SND_SUCC_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发送成功金额",
+  "value": "SND_SUCC_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "发送日期",
+  "value": "SND_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发证机关地址",
+  "value": "GRNTCRTF_INSTN_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "法人编号",
+  "value": "LPR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "返回记录数",
+  "value": "RETN_KEPRCD_ENMERT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "返回码成功值",
+  "value": "RETN_CD_SUCC_VAL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "返回码字段名称",
+  "value": "RETN_CD_FIELD_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "返回字段信息",
+  "value": "RETN_FIELD_INFO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "房管局账号",
+  "value": "HOUS_MANG_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "房号",
+  "value": "HOS_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "房屋地址",
+  "value": "HS_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "房屋类别代码",
+  "value": "HS_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "房屋楼层号码",
+  "value": "HS_FLOR_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "放款金额",
+  "value": "MAKELN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "放款日期",
+  "value": "MAKELN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "非常满意数量",
+  "value": "VERY_SATSF_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "非柜面年累计限额",
+  "value": "NON_CUNTR_YR_ACCM_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "非接触模块状态代码",
+  "value": "NON_CONT_MDUL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分层计息标志",
+  "value": "LYRD_INTACR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分段标志",
+  "value": "SECT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分区号码",
+  "value": "PRTN_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务分数",
+  "value": "SERV_SCR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务流水号",
+  "value": "SERV_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务起始时间",
+  "value": "SERV_START_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务日期",
+  "value": "SERV_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务商名称",
+  "value": "SERV_PROVDER_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "服务生效日期",
+  "value": "SERV_EFFT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务失效日期",
+  "value": "SERV_INVALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付出支用张数",
+  "value": "PYOUT_FORSPRT_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付出作废凭证张数",
+  "value": "PYOUT_CANCL_VOUCH_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款行行号",
+  "value": "PAY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款人地址",
+  "value": "DRWE_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "付款人开户行行号",
+  "value": "DRWE_OPEN_ACCT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款人账号",
+  "value": "DRWE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款人证件号码",
+  "value": "DRWE_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款账户开户行行号",
+  "value": "PAY_ACCT_OPEN_ACCT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款账户余额",
+  "value": "PAY_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "附加账户状态代码",
+  "value": "ADDT_ACCT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "复核岗位编号",
+  "value": "RCHK_POST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "复核级别代码",
+  "value": "RCHK_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "岗位状态代码",
+  "value": "POST_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "岗位组编号",
+  "value": "POST_GROUP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "岗位组名称",
+  "value": "POST_GROUP_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "高度",
+  "value": "HEIGHT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "客户生日当日日期",
+  "value": "CUST_BRTHDY_TODAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人税收居民身份类别代码",
+  "value": "INDV_TXRVN_RESDT_IDTY_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人资金来源代码",
+  "value": "INDV_FUND_SOURCE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "跟踪信息编号",
+  "value": "FOLN_INFO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "工作地址",
+  "value": "WORK_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "工作状态代码",
+  "value": "WORK_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "公告类型代码",
+  "value": "ANNC_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "公共收益账号",
+  "value": "PUB_GAINS_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "公摊面积",
+  "value": "EQUA_SHRD_AREA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "页面共管账户交易类型代码",
+  "value": "PAGE_JOINT_MGMT_ACCT_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "共计份数",
+  "value": "SMTO_CNTSHR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "股权标志",
+  "value": "STKRGT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "固定利率标志",
+  "value": "FIXD_INTRT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失柜员号",
+  "value": "RPTLOSS_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失类型代码",
+  "value": "RPTLOSS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联单位账户名称",
+  "value": "RELA_UNIT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关联流水号",
+  "value": "RELA_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联业务参考号码",
+  "value": "RELA_BIZ_FORREF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联账号",
+  "value": "RELA_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联账户名称",
+  "value": "RELA_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关系编号",
+  "value": "REL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "管理密码标志代码",
+  "value": "MGMT_PWD_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "广告编号",
+  "value": "AD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "广告内容",
+  "value": "AD_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "归集账号",
+  "value": "COLLTN_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "规则类型代码",
+  "value": "RULE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜台服务状态代码",
+  "value": "CNTR_SERV_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员办理效率值",
+  "value": "TELR_HDL_EFFICNY_VAL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员监督方式代码",
+  "value": "TELR_SUPERV_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员名称",
+  "value": "TELR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "国家和地区名称",
+  "value": "STATE_AND_RGN_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "还款金额",
+  "value": "REPAY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "还清标志代码",
+  "value": "PYF_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "还息金额",
+  "value": "RPYINT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "行号类型代码",
+  "value": "BNKNO_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "行内清算机构类型代码",
+  "value": "INSDBNK_LIQD_ORG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "号段",
+  "value": "SECTNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合计数量",
+  "value": "TOT_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合同利率",
+  "value": "CTRT_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "核查结果代码",
+  "value": "CHK_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核对查询结果说明",
+  "value": "CLLT_QRY_RESULT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "核销操作员柜员号",
+  "value": "WRTOFF_OPRR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核销账号",
+  "value": "WRTOFF_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "黑名单类型代码",
+  "value": "BLKLIST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "后续类型代码",
+  "value": "FLWUP_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "划拨申请人证件号码",
+  "value": "APRPT_APPLCT_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "换证次数",
+  "value": "RENEWAL_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单标识码二打印坐标",
+  "value": "CHCSLP_IND_CD_TWO_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单标识码三打印坐标",
+  "value": "CHCSLP_IND_CD_THR_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单印模一打印坐标",
+  "value": "CHCSLP_MODEL_ONE_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回执日期",
+  "value": "RETNRCPT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构电话号码",
+  "value": "ORG_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构类别代码",
+  "value": "ORG_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构联系人电话号码",
+  "value": "ORG_CONTR_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "积分",
+  "value": "POINT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "基础积分",
+  "value": "BASE_POINT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "激活码",
+  "value": "ACTV_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集中授权柜员号",
+  "value": "CNTRTN_AUTH_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集中授权机构号",
+  "value": "CNTRTN_AUTH_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集中授权级别代码",
+  "value": "CNTRTN_AUTH_LVL_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "集中授权日期",
+  "value": "CNTRTN_AUTH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集中授权原因代码",
+  "value": "CNTRTN_AUTH_RSN_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "集中授权中心名称",
+  "value": "CNTRTN_AUTH_CENT_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计收复息标志代码",
+  "value": "REVNE_CMPNDINT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "记账标志代码",
+  "value": "KEPACCT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "记账日期",
+  "value": "KEPACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加卡日期",
+  "value": "ADD_CARD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加卡数量",
+  "value": "ADD_CARD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "建安本金",
+  "value": "JIANAN_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交存比例",
+  "value": "DPST_PYMNT_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易合同号码",
+  "value": "TX_CTRT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易路径说明",
+  "value": "TX_PATH_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "交易码",
+  "value": "TRAN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易数据画面信息",
+  "value": "TX_DATA_TABLU_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "角色编号",
+  "value": "ROLE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "角色状态代码",
+  "value": "ROLE_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费日期",
+  "value": "PAY_FEE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费用户证件号码",
+  "value": "PAY_FEE_USER_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴款人名称",
+  "value": "PAYEE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "缴费通知单号",
+  "value": "PAY_FEE_NOTICE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "叫号规则",
+  "value": "CALL_NO_RULE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收行号",
+  "value": "RCPTN_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收机构号",
+  "value": "RCPTN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收设备类型代码",
+  "value": "RCPTN_EQUIP_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "节点类型代码",
+  "value": "NODE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "节点名称",
+  "value": "NODE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "节气描述",
+  "value": "SOLAR_TERM_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "结果文件名",
+  "value": "RESULT_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "结清入账方式代码",
+  "value": "PAY_OFF_RCRDACCT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结算卡号",
+  "value": "STL_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "截止金额",
+  "value": "EXPIRY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "解付柜员号",
+  "value": "UFRZPY_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解付原因",
+  "value": "UFRZPY_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "介质形式代码",
+  "value": "MEDM_MDE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "界面显示名称",
+  "value": "BUNDRY_INDCT_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借方凭证类型代码",
+  "value": "DEBIT_VOUCH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借据号",
+  "value": "DUBIL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借款日期",
+  "value": "BRWRMNY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "金额区间说明",
+  "value": "AMT_DIST_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "经办柜员号",
+  "value": "OPR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办机构号",
+  "value": "OPR_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办人客户编号",
+  "value": "OPRR_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办人姓名",
+  "value": "OPRR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "经办人证件号码",
+  "value": "OPRR_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办人证件类型代码",
+  "value": "OPRR_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "旧账号",
+  "value": "OLD_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "居住地地址",
+  "value": "DWLG_GRND_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "具体原因",
+  "value": "SPEC_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "卡管理序号",
+  "value": "CARD_MGMT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡号",
+  "value": "CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡号或账号",
+  "value": "CARD_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡等级代码",
+  "value": "CARD_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡名称",
+  "value": "CARD_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡启用标志代码",
+  "value": "CARD_ENBL_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡属性代码",
+  "value": "CARD_ATTR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡箱编号",
+  "value": "CARD_BOX_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡种名称",
+  "value": "CARD_TYPE_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户单位地址",
+  "value": "OPEN_ACCT_UNIT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开户行号",
+  "value": "OPEN_ACCT_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户名称",
+  "value": "OPEN_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开户证件类型代码",
+  "value": "OPEN_ACCT_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开机时显示英文内容",
+  "value": "BOT_WHEN_INDCT_ENG_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开立原因代码",
+  "value": "SETUP_RSN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开通大额标志代码",
+  "value": "DRDG_LRGAMT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开通四川支付标志代码",
+  "value": "DRDG_SC_PAYMT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "可取现标志",
+  "value": "CAN_CASH_WITHDR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户标签代码",
+  "value": "CUST_LABL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户查询账户类型代码",
+  "value": "CUST_QRY_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户地址",
+  "value": "CUST_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "客户或代理人姓名",
+  "value": "CUST_OR_AGENT_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "客户机构类型代码",
+  "value": "CUST_ORG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户开户年限日期",
+  "value": "CUST_OPEN_ACCT_YEARS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户评价代码",
+  "value": "CUST_APRS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户签名内容说明",
+  "value": "CUST_AUTOGR_CONTENT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "客户手机号码",
+  "value": "CUST_MOBILE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "控制金额",
+  "value": "CTRL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "扣费周期代码",
+  "value": "DSTRN_FE_CYC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "扣划原因",
+  "value": "DCT_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "跨境业务附言说明",
+  "value": "CRSBDR_BIZ_MEMO_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "宽度",
+  "value": "WIDTH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利率档次代码",
+  "value": "INTRT_GRDE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利率类型代码",
+  "value": "INTRT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "连接状态代码",
+  "value": "CNECT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "成功笔数",
+  "value": "SUCC_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "成功金额",
+  "value": "SUCC_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "成功总笔数",
+  "value": "SUCC_TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "成功总金额",
+  "value": "SUCC_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "承兑日期",
+  "value": "ACPTNC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持票人账号",
+  "value": "BILHLDR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持票人账户名称",
+  "value": "BILHLDR_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "持票人证件号码",
+  "value": "BILHLDR_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出票日期",
+  "value": "TICOUT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "初始存款金额",
+  "value": "INIT_DPST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "处理备注",
+  "value": "DLWTH_REMRK",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理标志代码",
+  "value": "DLWTH_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理措施描述",
+  "value": "DLWTH_MEASURES_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口空闲时显示效果说明",
+  "value": "WINDOW_LEISURE_WHEN_INDCT_EFCT_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口空闲时显示中文内容",
+  "value": "WINDOW_LEISURE_WHEN_INDCT_CN_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口正在办理时显示速度",
+  "value": "WINDOW_PROCNG_WHEN_INDCT_SPEED",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "创建时间",
+  "value": "CRT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "垂直直径值",
+  "value": "VERTICAL_DIAM_VAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "存单或存折号",
+  "value": "DEPRCP_OR_STR_DEPBOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款产品类型代码",
+  "value": "DPST_PROD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款类型代码",
+  "value": "DPST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款期限",
+  "value": "DPST_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存期日期",
+  "value": "DEPTRM_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存折冠字号",
+  "value": "DEPBOK_CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存折已打印笔数",
+  "value": "DEPBOK_ALRDY_PR_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "错误标志代码",
+  "value": "FALSE_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "错误描述",
+  "value": "FALSE_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "打开样式代码",
+  "value": "TURN_ON_STYLE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印机构名称",
+  "value": "PR_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "打印日期",
+  "value": "PR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印序号",
+  "value": "PR_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印主联信息",
+  "value": "PR_MAIN_CONTENT_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "代理行号",
+  "value": "AGEN_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理人或经办人姓名",
+  "value": "AGENT_OR_OPRR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "代理人或经办人证件类型代码",
+  "value": "AGENT_OR_OPRR_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款方式代码",
+  "value": "LN_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款类别代码",
+  "value": "LN_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款期限",
+  "value": "LN_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款账号",
+  "value": "LN_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "待回执笔数",
+  "value": "WAIT_RETNRCPT_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "待回执金额",
+  "value": "WAIT_RETNRCPT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "单笔限额",
+  "value": "SGL_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "单词升级数量",
+  "value": "WORD_UPGRD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单日累计POS交易限额",
+  "value": "SGLDY_ACCM_POS_TX_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "单日限额",
+  "value": "SGLDY_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "单日预约最大次数",
+  "value": "SGLDY_RVT_MAX_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位卡持卡人客户编号",
+  "value": "UNIT_CARD_CRDHLD_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位名称",
+  "value": "UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "单位协议号",
+  "value": "UNIT_AGMT_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "单位账号",
+  "value": "UNIT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位账户名称",
+  "value": "UNIT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "单元地址",
+  "value": "UNITELE_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "单元名称",
+  "value": "UNITELE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "当前贵宾卡级别代码",
+  "value": "CURR_VIPSN_CARD_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当前机构号",
+  "value": "CURR_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当前记录号",
+  "value": "CURR_KEPRCD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当日总笔数",
+  "value": "TODAY_TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当日总金额",
+  "value": "TODAY_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "导入标志代码",
+  "value": "IMPT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "到期利息",
+  "value": "MATR_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "到账时效代码",
+  "value": "ARVACCT_AGNG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登出日期",
+  "value": "LOGOUT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登记类型代码",
+  "value": "RGST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登记时间",
+  "value": "RGST_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登录标志",
+  "value": "LGN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登录状态代码",
+  "value": "LGN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "第三方处理信息",
+  "value": "THIRD_PTY_DLWTH_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "第三方验证日期",
+  "value": "THIRD_PTY_VLIDT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子凭证生成方式代码",
+  "value": "ELEC_VOUCH_GNRT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子商业汇票号码",
+  "value": "ELEC_BIZ_DRAFT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子现金账户余额",
+  "value": "ELEC_CASH_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "电子银行签约类型代码",
+  "value": "ELEC_BANK_SIGN_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "顶岗级别代码",
+  "value": "IN_POST_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "定期增值期限",
+  "value": "RGL_ADDVAL_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "定期账户名称",
+  "value": "RGL_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "定期账户状态代码",
+  "value": "RGL_ACCT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "定时关机时间",
+  "value": "TMNG_OFF_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冻结书编号",
+  "value": "FRZ_BOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "栋账号",
+  "value": "RIDGPL_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "栋账户余额",
+  "value": "RIDGPL_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "读卡操作标志代码",
+  "value": "RDCRD_OPER_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "短信内容模板",
+  "value": "SMS_CONTENT_TMPL",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "队列转移标志",
+  "value": "QUEUE_TSFFR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "队列状态标志代码",
+  "value": "QUEUE_STUS_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方交易流水号",
+  "value": "CNTPTY_TX_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方节点代码",
+  "value": "CNTPTY_NODE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方卡号或账号",
+  "value": "CNTPTY_CARD_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方账户名称",
+  "value": "CNTPTY_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "对公账户种类",
+  "value": "GNRL_ACCT_KIND",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对应直接参与者行号",
+  "value": "CRSP_DIRC_PRTCPTR_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对账类型代码",
+  "value": "CHKACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "兑付张数",
+  "value": "CSHNG_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "盾数量",
+  "value": "SHIELD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "盾箱编号",
+  "value": "SHIELD_BOX_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "多付金额",
+  "value": "OVPAY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "多余金额",
+  "value": "EXCS_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "额度区间说明",
+  "value": "QTA_DIST_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "发报行收费金额",
+  "value": "RADIO_RW_COLTFE_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "发布时间",
+  "value": "RELS_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发票开具号码类型代码",
+  "value": "INVOICE_OPEN_NBR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发起行行号",
+  "value": "LUNCH_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发起机构号",
+  "value": "LUNCH_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发起员工号",
+  "value": "LUNCH_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发起主体代码",
+  "value": "LUNCH_MANSBJ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发生金额",
+  "value": "HAPP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "法定代表人或单位负责人名称",
+  "value": "LEGAL_REPRESENTR_OR_UNIT_PRINC_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "法人名称",
+  "value": "LPR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "房屋唯一编码",
+  "value": "HS_UNIQ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "房屋维修基金城市代码",
+  "value": "HS_REPAIR_FUNDS_CITY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "房屋维修基金区县代码",
+  "value": "HS_REPAIR_FUNDS_ZONE_CNTY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分段计息标志代码",
+  "value": "SECT_INTACR_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分户指标金额",
+  "value": "LEDGR_IDX_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "分类标识代码",
+  "value": "CLSF_IND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "份数",
+  "value": "CNTSHR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务编号",
+  "value": "SERV_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务地址",
+  "value": "SERV_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "服务费扣缴比例",
+  "value": "SERV_FE_WTHLD_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "浮动利率",
+  "value": "FLOT_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "父级菜单编号",
+  "value": "PARENT_RANK_MENU_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付出售出张数",
+  "value": "PYOUT_WORKOFF_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付出数量",
+  "value": "PYOUT_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款人账户名称",
+  "value": "DRWE_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "付款人证件类型代码",
+  "value": "DRWE_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款账号",
+  "value": "PAY_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款账号名称",
+  "value": "PAY_ACCT_NO_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "附加数据域内容",
+  "value": "ADDT_DATA_DM_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "附件名称",
+  "value": "ATCH_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "复核标志",
+  "value": "RCHK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "复核流水号",
+  "value": "RCHK_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "复核字段名称",
+  "value": "RCHK_FIELD_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "复核字段信息",
+  "value": "RCHK_FIELD_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "个人爱好说明",
+  "value": "INDV_HOBBY_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "更改柜员密码操作类型代码",
+  "value": "CHG_TELR_PWD_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "更换日期",
+  "value": "REPL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "公告内容",
+  "value": "ANNC_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "公告状态代码",
+  "value": "ANNC_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "公共字典名称",
+  "value": "PUB_DICTRY_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "公私标志代码",
+  "value": "PUB_PRIV_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "功能编号",
+  "value": "FUNC_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "供款金额",
+  "value": "CNTRB_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "购房合同号",
+  "value": "HSPRCH_CTRT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "购买金额",
+  "value": "EMPTN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "挂失标志代码",
+  "value": "RPTLOSS_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失机构号",
+  "value": "RPTLOSS_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失原因",
+  "value": "RPTLOSS_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "挂息方式代码",
+  "value": "SUSPD_INT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂息账号",
+  "value": "SUSPD_INT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂账待处理笔数",
+  "value": "PNGDGACCT_WAIT_DLWTH_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂账已入账笔数",
+  "value": "PNGDGACCT_ALRDY_RCRDACCT_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂账已入账金额",
+  "value": "PNGDGACCT_ALRDY_RCRDACCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "挂账已退汇金额",
+  "value": "PNGDGACCT_ALRDY_RFNDEXCG_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "挂账原因",
+  "value": "PNGDGACCT_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "关联类别代码",
+  "value": "RELA_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联信息",
+  "value": "RELA_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "广告播放间隔时间",
+  "value": "AD_PLAY_INTRVL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "广告模板名称",
+  "value": "AD_TMPL_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "归档号生成方式代码",
+  "value": "ARCHIVE_NO_GNRT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "归档文件用户信息",
+  "value": "ARCHIVE_FILE_USER_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "归属法人编码",
+  "value": "BLNG_LPR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "归属业务编码",
+  "value": "BLNG_BIZ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "规则编号",
+  "value": "RULE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员密码",
+  "value": "TELR_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "还款日期",
+  "value": "REPAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "还息日期",
+  "value": "RPYINT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "行别代码",
+  "value": "BNKCTGY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "行内行外标志代码",
+  "value": "INSDBNK_OUTSDBNK_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "行内外标志代码",
+  "value": "RW_INSDOUTSD_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "号码作废时间",
+  "value": "NBR_CANCL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合法性校验代码",
+  "value": "LGTMCY_CHK_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合计金额",
+  "value": "TOT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "核对日期",
+  "value": "CLLT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核销累计金额",
+  "value": "WRTOFF_ACCM_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "核销序号",
+  "value": "WRTOFF_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "互斥岗位编号",
+  "value": "MUTEX_POST_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "划拨金额",
+  "value": "APRPT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "回单标识码五打印坐标",
+  "value": "CHCSLP_IND_CD_FIVE_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单标识码一打印坐标",
+  "value": "CHCSLP_IND_CD_ONE_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单印模编号",
+  "value": "CHCSLP_MODEL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单印模二打印坐标",
+  "value": "CHCSLP_MODEL_TWO_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回盘文件名",
+  "value": "BCKPLT_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "回盘文件途径说明",
+  "value": "BCKPLT_FILE_WAY_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "回执期限",
+  "value": "RETNRCPT_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "汇款金额",
+  "value": "RTM_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "会计事务所名称",
+  "value": "ACCTN_TRSCTN_PLACE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "机构级别代码",
+  "value": "ORG_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构联系人姓名",
+  "value": "ORG_CONTR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "机构状态代码",
+  "value": "ORG_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "积数",
+  "value": "ACCUM",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "积数变化标志",
+  "value": "ACCUM_TRSFRMTN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "基本户开户行行名",
+  "value": "BASIC_ACCT_OPEN_ACCT_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "集中授权结果代码",
+  "value": "CNTRTN_AUTH_RESULT_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "集中授权时间",
+  "value": "CNTRTN_AUTH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集中运营标志",
+  "value": "CNTRTN_OPRTN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集中作业启用状态代码",
+  "value": "CNTRTN_TASK_ENBL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "计息标志代码",
+  "value": "INTACR_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "记账金额",
+  "value": "KEPACCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "加急标志",
+  "value": "UGNT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加卡类型代码",
+  "value": "ADD_CARD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加卡流水号",
+  "value": "ADD_CARD_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加签标志",
+  "value": "ENCRP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "建筑面积",
+  "value": "ARCT_AREA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交通信息",
+  "value": "TRFC_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "交易大写金额",
+  "value": "TX_UPPR_AMT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "交易结果代码",
+  "value": "TX_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易结束时间",
+  "value": "TX_END_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易流水号",
+  "value": "TX_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "持卡人客户编号",
+  "value": "CRDHLD_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冲销原因",
+  "value": "WRTFF_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "出票行行名",
+  "value": "TICOUT_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "出票金额",
+  "value": "TICOUT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "出票人名称",
+  "value": "DRAWER_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "出票人账号",
+  "value": "DRAWER_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出入账金额",
+  "value": "OUT_RCRDACCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "出入账类型代码",
+  "value": "OUT_RCRDACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "出入账日期",
+  "value": "OUT_RCRDACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "初始存入日期",
+  "value": "INIT_DEPIN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理标志",
+  "value": "DLWTH_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理步骤",
+  "value": "DLWTH_STEP",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理措施代码",
+  "value": "DLWTH_MEASURES_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理记录说明",
+  "value": "DLWTH_KEPRCD_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "处理节点标志代码",
+  "value": "DLWTH_NODE_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理码",
+  "value": "PROC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "处理内容",
+  "value": "DLWTH_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "处理人姓名",
+  "value": "DLWTH_PERSON_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "处理信息",
+  "value": "DLWTH_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "处理用户编号",
+  "value": "DLWTH_USER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "传真电话号码",
+  "value": "FAX_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口叫号时显示中文内容",
+  "value": "WINDOW_CALL_NO_WHEN_INDCT_CN_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口空闲时显示英文内容",
+  "value": "WINDOW_LEISURE_WHEN_INDCT_ENG_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口暂停时显示速度",
+  "value": "WINDOW_SUSPD_WHEN_INDCT_SPEED",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口暂停时显示效果说明",
+  "value": "WINDOW_SUSPD_WHEN_INDCT_EFCT_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "窗口暂停时显示中文内容",
+  "value": "WINDOW_SUSPD_WHEN_INDCT_CN_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口正在办理时显示英文内容",
+  "value": "WINDOW_PROCNG_WHEN_INDCT_ENG_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "窗口状态代码",
+  "value": "WINDOW_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "创建日期",
+  "value": "CRT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "创建用户编号",
+  "value": "CRT_USER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存款天数",
+  "value": "DPST_DAYS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "存折号",
+  "value": "STR_DEPBOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "措施编码",
+  "value": "MEASURES_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "措施类型代码",
+  "value": "MEASURES_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "错账控制附言说明",
+  "value": "ERACCT_CTRL_MEMO_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "打印次数",
+  "value": "PR_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印副联信息",
+  "value": "PR_SUB_CONTENT_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "打印机构号",
+  "value": "PR_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "打印凭证信息",
+  "value": "PR_VOUCH_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "大额借记确认结果说明",
+  "value": "LRGAMT_DEBT_CNFRM_RESULT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "代理标志",
+  "value": "AGEN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "代理人姓名",
+  "value": "AGENT_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "代理业务类型代码",
+  "value": "AGEN_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "带后缀文件名",
+  "value": "WT_SUFX_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "贷款额度",
+  "value": "LN_QTA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "贷款机构号",
+  "value": "LN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款金额",
+  "value": "LN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "贷款利率",
+  "value": "LN_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "贷款收回标志代码",
+  "value": "LN_TKBCK_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款系统分类代码",
+  "value": "LN_SYS_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "贷款状态代码",
+  "value": "LN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "待处理记录来源代码",
+  "value": "WAIT_DLWTH_KEPRCD_SOURCE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "待退汇笔数",
+  "value": "WAIT_RFNDEXCG_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单笔POS交易限额",
+  "value": "SGL_POS_TX_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "单笔最高金额",
+  "value": "SGL_HIGH_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "单位存款证实书号码",
+  "value": "UNIT_DPST_CFRMT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位电子邮箱",
+  "value": "UNIT_EMAIL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位卡持卡人证件号码",
+  "value": "UNIT_CARD_CRDHLD_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位卡持卡人证件类型代码",
+  "value": "UNIT_CARD_CRDHLD_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位卡关联基本账户账号",
+  "value": "UNIT_CARD_RELA_BASIC_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位客户编号",
+  "value": "UNIT_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单位账户类型代码",
+  "value": "UNIT_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单元编号",
+  "value": "UNITELE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "单元账号",
+  "value": "UNITELE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "当前张数",
+  "value": "CURR_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "导入文件名",
+  "value": "IMPT_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "倒计时单位代码",
+  "value": "CNT_DOWN_UNIT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "倒计时数量",
+  "value": "CNT_DOWN_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "到号通知提醒阈值",
+  "value": "TO_NOTIC_RMNDR_THLD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登记日期",
+  "value": "RGST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "登记员工号",
+  "value": "RGST_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "等待人数",
+  "value": "STAY_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "第三方状态代码",
+  "value": "THIRD_PTY_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子存单余额",
+  "value": "ELEC_DEPRCP_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "电子存单账号",
+  "value": "ELEC_DEPRCP_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子存单账户名称",
+  "value": "ELEC_DEPRCP_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "电子凭证编号",
+  "value": "ELEC_VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子凭证流水号",
+  "value": "ELEC_VOUCH_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子凭证模板编号",
+  "value": "ELEC_VOUCH_TMPL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子印章模型编号",
+  "value": "ELEC_SIGNET_MODEL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "电子印章数量",
+  "value": "ELEC_SIGNET_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "顶岗柜员号",
+  "value": "IN_POST_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转回方式代码",
+  "value": "TRAN_BACK_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "定期一个月利率信息",
+  "value": "RGL_A_MONTH_INTRT_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "定期增值金额",
+  "value": "RGL_ADDVAL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "定期账号",
+  "value": "RGL_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "定时转账标志",
+  "value": "TMNG_TSFACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "动态时间",
+  "value": "DYNAMIC_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "冻结标志代码",
+  "value": "FRZ_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "栋或小区名称",
+  "value": "RIDGPL_OR_RESQRT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "栋名称",
+  "value": "RIDGPL_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "短信签约标志",
+  "value": "SMS_SIGN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "队列类型编号",
+  "value": "QUEUE_TYP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "队列名称",
+  "value": "QUEUE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "队列前缀数字代码",
+  "value": "QUEUE_PREFX_ENMERT_WD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "队列前缀字母标志代码",
+  "value": "QUEUE_PREFX_ALBT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "队列预警时间",
+  "value": "QUEUE_WARN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方柜员号",
+  "value": "CNTPTY_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方柜员密码",
+  "value": "CNTPTY_TELR_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "对方行行号",
+  "value": "CNTPTY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方机构代码",
+  "value": "CNTPTY_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对方信息",
+  "value": "CNTPTY_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "对公客户境内外标志代码",
+  "value": "GNRL_CUST_DOM_OVERS_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "对账簿标志代码",
+  "value": "BILL_BK_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "兑付日期",
+  "value": "CSHNG_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发布日期",
+  "value": "RELS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发卡行号",
+  "value": "ISCRD_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发卡流水号",
+  "value": "ISCRD_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发起成员行行号",
+  "value": "LUNCH_MEM_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发起时间",
+  "value": "LUNCH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发送失败笔数",
+  "value": "SND_FAIL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发送失败金额",
+  "value": "SND_FAIL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "发送时间",
+  "value": "SND_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "发送状态代码",
+  "value": "SND_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "返还本金",
+  "value": "RESTR_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "返回码",
+  "value": "RETN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "返回码判断字段代码",
+  "value": "RETN_CD_JDG_FIELD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "返回描述",
+  "value": "RETN_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "返回信息",
+  "value": "RETN_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "房管局业务流水号",
+  "value": "HOUS_MANG_BIZ_SN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "房管局账户名称",
+  "value": "HOUS_MANG_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "房屋编号",
+  "value": "HS_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "房屋类型代码",
+  "value": "HS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "房屋维修基金所属区县代码",
+  "value": "HS_REPAIR_FUNDS_BLNGTO_ZONE_CNTY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "房屋坐落地址",
+  "value": "HS_LOCAT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "非常满意比率",
+  "value": "VERY_SATSF_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "非柜面日累计笔数",
+  "value": "NON_CUNTR_DAY_ACCM_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "非柜面日累计限额",
+  "value": "NON_CUNTR_DAY_ACCM_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "费用类型代码",
+  "value": "FEE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分段标志代码",
+  "value": "SECT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分段计息标志",
+  "value": "SECT_INTACR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分行编码",
+  "value": "PNY_RW_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分户余额",
+  "value": "LEDGR_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "分类标志代码",
+  "value": "CLSF_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "分期余额",
+  "value": "INSTLT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "服务方简称",
+  "value": "SERV_PTY_ABBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务客户数量",
+  "value": "SERV_CUST_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务期限",
+  "value": "SERV_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务商编号",
+  "value": "SERV_PROVDER_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "服务时间",
+  "value": "SERV_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务时间段",
+  "value": "SERV_TM_QUANT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "服务终止时间",
+  "value": "SERV_TERMTN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "服务总笔数",
+  "value": "SERV_TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "浮动规则",
+  "value": "FLOT_RULE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "符合模式编号",
+  "value": "COICDC_MODE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "父菜单编号",
+  "value": "PARENT_MENU_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付出合计金额",
+  "value": "PYOUT_TOT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "付出调出张数",
+  "value": "PYOUT_CALOUT_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款行行名",
+  "value": "PAY_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "付款开户行行号",
+  "value": "PAY_OPEN_ACCT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "付款人名称",
+  "value": "DRWE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "负责人电话号码",
+  "value": "PRINC_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "附卡卡号",
+  "value": "ADDTCARD_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "复核原因代码",
+  "value": "RCHK_RSN_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "复息利息标志",
+  "value": "CMPNDINT_INT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "个人客户境内外标志代码",
+  "value": "INDV_CUST_DOM_OVERS_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面个人综合销户操作类型代码",
+  "value": "PAGE_INDV_COMPHSV_CLOS_ACCT_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "工作单位地址",
+  "value": "WORK_UNIT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "公共收益账户名称",
+  "value": "PUB_GAINS_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "共管人姓名",
+  "value": "JOINT_MGMT_PERSON_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "共管账户标志",
+  "value": "JOINT_MGMT_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "共管账户支取方式代码",
+  "value": "JOINT_MGMT_ACCT_DRAW_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "故障结束时间",
+  "value": "FAULT_END_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "故障名称",
+  "value": "FAULT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "挂失处理结果代码",
+  "value": "RPTLOSS_DLWTH_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失类型标志",
+  "value": "RPTLOSS_TYP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂失申请书编号",
+  "value": "RPTLOSS_APLY_BOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "挂账待处理金额",
+  "value": "PNGDGACCT_WAIT_DLWTH_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "挂账已退汇笔数",
+  "value": "PNGDGACCT_ALRDY_RFNDEXCG_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关机时间",
+  "value": "OFF_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联编号",
+  "value": "RELA_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联单位账户账号",
+  "value": "RELA_UNIT_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联号编号",
+  "value": "RELA_NO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联业务委托日期",
+  "value": "RELA_BIZ_ENTRST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关联账户账号",
+  "value": "RELA_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "管理密码",
+  "value": "MGMT_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "冠字号",
+  "value": "CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "广告名称",
+  "value": "AD_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "广告模板描述",
+  "value": "AD_TMPL_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "归集账号名称",
+  "value": "COLLTN_ACCT_NO_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "归属主账户名称",
+  "value": "BLNG_MAIN_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "规则名称",
+  "value": "RULE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "规则条件编号",
+  "value": "RULE_COND_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "柜面渠道标志",
+  "value": "CUNTR_CHNL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜面业务标志",
+  "value": "CUNTR_BIZ_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "柜员卡序号",
+  "value": "TELR_CARD_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "行号",
+  "value": "BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "行名",
+  "value": "BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "行内处理说明",
+  "value": "INSDBNK_DLWTH_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "行业类型代码",
+  "value": "INDUS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "合同号",
+  "value": "CTRT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核押标志代码",
+  "value": "NUCLR_RCHG_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "核验结果说明",
+  "value": "VRFCTN_RESULT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "后续交易码",
+  "value": "FLWUP_TRAN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "户籍地址",
+  "value": "HOUSD_RGST_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "划拨方向代码",
+  "value": "APRPT_DRCT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "划拨申请人名称",
+  "value": "APRPT_APPLCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "划拨数量",
+  "value": "APRPT_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "划出张数",
+  "value": "LYOF_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "划入张数",
+  "value": "GOINT_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "划转差额金额",
+  "value": "TRAN_DIFCAMT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "回单标识码四打印坐标",
+  "value": "CHCSLP_IND_CD_FOUR_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单印模三打印坐标",
+  "value": "CHCSLP_MODEL_THR_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单印模四打印坐标",
+  "value": "CHCSLP_MODEL_FOUR_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联名人姓名",
+  "value": "JNT_PERSON_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "联名人证件号码",
+  "value": "JNT_PERSON_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联名人证件类型代码",
+  "value": "JNT_PERSON_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联网核查信息",
+  "value": "NETWKG_CHK_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "聊天时间",
+  "value": "CHAT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "领用方式代码",
+  "value": "RCVUSE_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "领用失效时间",
+  "value": "RCVUSE_INVALID_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "流程银行岗位编号",
+  "value": "PROCES_BANK_POST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "流程银行业务种类代码",
+  "value": "PROCES_BANK_BIZ_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "流水打印模块状态代码",
+  "value": "WAST_PR_MDUL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "录入流水号",
+  "value": "ETRG_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "满意数量",
+  "value": "SATSF_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码",
+  "value": "PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "密码更新周期代码",
+  "value": "PWD_UPD_CYC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码键盘状态代码",
+  "value": "PWD_KEYBRD_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码最近更新日期",
+  "value": "PWD_RECNT_UPD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "免首年年费标志代码",
+  "value": "EXMPT_SPME_YR_ANNL_FEE_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "模板样式主题信息",
+  "value": "TMPL_STYLE_THEME_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "模板名称",
+  "value": "TMPL_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "模式编号",
+  "value": "MODE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "模型编号",
+  "value": "MODEL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "年费扣缴比例",
+  "value": "ANNL_FEE_WTHLD_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "年检标志代码",
+  "value": "ANL_INSPT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "年累计限额",
+  "value": "YR_ACCM_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "年利率",
+  "value": "YR_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "年月日期",
+  "value": "YRMON_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "排队机界面编号",
+  "value": "QUE_MACH_BUNDRY_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "配发介质标志",
+  "value": "ALCT_MEDM_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "配偶工作单位名称",
+  "value": "SPS_WORK_UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "配偶联系电话号码",
+  "value": "SPS_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "配偶证件号码",
+  "value": "SPS_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "配偶中文拼音姓名",
+  "value": "SPS_CN_PINYIN_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "配送状态代码",
+  "value": "DLVR_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "批次流水号",
+  "value": "BATCH_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "批次名称",
+  "value": "BATCH_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "批量结息时间",
+  "value": "BAT_INT_STL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据承兑日期",
+  "value": "BILL_ACPTNC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据结清金额",
+  "value": "BILL_PAY_OFF_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "票据解付方式代码",
+  "value": "BILL_UFRZPY_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平均等待时间",
+  "value": "AVG_STAY_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平台服务码",
+  "value": "PLATFM_SERVCD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平台服务名称",
+  "value": "PLATFM_SERV_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平台流水号",
+  "value": "PLATFM_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价编号",
+  "value": "APRS_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价超时时间",
+  "value": "APRS_OVER_TM_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价类型代码",
+  "value": "APRS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价配置编号",
+  "value": "APRS_CONF_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价日期",
+  "value": "APRS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭条打印模块状态代码",
+  "value": "ENTRY_SLP_PR_MDUL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证处理方式代码",
+  "value": "VOUCH_DLWTH_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证处理状态代码",
+  "value": "VOUCH_DLWTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证模板类型代码",
+  "value": "VOUCH_TMPL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证模板数据格式代码",
+  "value": "VOUCH_TMPL_DATA_FMT_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "凭证模板文字描述",
+  "value": "VOUCH_TMPL_WORD_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "凭证日期",
+  "value": "VOUCH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证状态代码",
+  "value": "VOUCH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "屏幕编号",
+  "value": "SCRN_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "屏幕排列序号",
+  "value": "SCRN_SORT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "其他可登陆机构号",
+  "value": "OTH_CAN_LOGON_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用审批员柜员号",
+  "value": "ENBL_APPRV_MEM_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用业务服务时间标志",
+  "value": "ENBL_BIZ_SERV_TM_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起保日期",
+  "value": "INSRC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起始编号",
+  "value": "START_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起始凭证号",
+  "value": "START_VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签到时间",
+  "value": "SGNIN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签发机构号",
+  "value": "ISU_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签名图片路径",
+  "value": "AUTOGR_PICT_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "签约产品描述",
+  "value": "SIGN_PROD_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "签约卡号或账号",
+  "value": "SIGN_CARD_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约协议号",
+  "value": "SIGN_AGMT_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "页面签约交易类型代码",
+  "value": "PAGE_SIGN_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "潜在客户标志",
+  "value": "LATENT_CUST_FLG",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "强制绑定标志代码",
+  "value": "CMPL_BIND_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清盾次数",
+  "value": "CLR_SHIELD_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清机次数",
+  "value": "CLEA_MACH_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清机卡数量",
+  "value": "CLEA_MACH_CARD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清机数量",
+  "value": "CLEA_MACH_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清算中心转入标志",
+  "value": "LIQD_CENT_TSFIN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "情况说明",
+  "value": "SITN_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "请求创建来源流水号",
+  "value": "REQE_CRT_SOURCE_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道时间",
+  "value": "CHNL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "取号日期",
+  "value": "GET_NO_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "取款通知单号",
+  "value": "WTHMNY_NOTICE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "取款总金额",
+  "value": "WTHMNY_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "取值范围代码",
+  "value": "GT_VAL_SCP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "权限类型代码",
+  "value": "PRVLG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行编号",
+  "value": "PBOC_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行处理信息",
+  "value": "PBOC_DLWTH_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "人行国库当前工作日期",
+  "value": "PBOC_NTNLTR_CURR_WORK_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人民币存款利率",
+  "value": "RMB_DPST_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "任务处理时间",
+  "value": "MISN_DLWTH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务优先级代码",
+  "value": "MISN_PRIT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "日历编号",
+  "value": "CAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "融资本金",
+  "value": "RSFND_CPTCSH",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "入账方式代码",
+  "value": "RCRDACCT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "入账账号",
+  "value": "RCRDACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "叫号启用状态代码",
+  "value": "CALL_NO_ENBL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "三方存单号",
+  "value": "THR_PTY_DEPRCP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次清机操作员编号",
+  "value": "LSTTM_CLEA_MACH_OPRR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上级法人主管部门名称",
+  "value": "SPR_LPR_DIROR_DEPT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "上级清算中心机构名称",
+  "value": "SPR_LIQD_CENT_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "上缴数量",
+  "value": "TURNIN_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备IP地址",
+  "value": "EQUIP_IP_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备ID",
+  "value": "EQUIP_ID",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "设备钞箱状态代码",
+  "value": "EQUIP_BNKNTE_BOX_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备归还日期",
+  "value": "EQUIP_RMND_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备类型标志代码",
+  "value": "EQUIP_TYP_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备领用状态代码",
+  "value": "EQUIP_RCVUSE_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备名称",
+  "value": "EQUIP_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备品牌编号",
+  "value": "EQUIP_BRAND_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请编号",
+  "value": "APLY_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请柜员号",
+  "value": "APLY_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请金额",
+  "value": "APLY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "申请人账号",
+  "value": "APPLCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请序号",
+  "value": "APLY_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "身份信息",
+  "value": "IDTY_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "审核时间1",
+  "value": "EXMNVRFY_TM_1",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "审核时间2",
+  "value": "EXMNVRFY_TM_2",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "升降级类型代码",
+  "value": "ASC_DSC_RANK_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "生成时间",
+  "value": "GNRT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "生活缴费项目代码",
+  "value": "LVLHD_PAY_FEE_PROJ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "省清算中心资金授权时间",
+  "value": "PROV_LIQD_CENT_FUND_AUTH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际付款人账号",
+  "value": "ACTL_DRWE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际付款人账户名称",
+  "value": "ACTL_DRWE_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "实际结算金额",
+  "value": "ACTL_STL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实际金额",
+  "value": "ACTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实际调出金额",
+  "value": "ACTL_CALOUT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实时排队次数",
+  "value": "RELTM_QUEUE_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实体印章底卡说明",
+  "value": "ENTITY_SIGNET_BOTM_CARD_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "使用柜员号",
+  "value": "USE_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "样式编号",
+  "value": "STYLE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "事务日期",
+  "value": "TRSCTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "视频IP地址",
+  "value": "VIDEO_IP_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "视频编号",
+  "value": "VIDEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收藏夹编号",
+  "value": "FAVORITES_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收费金额",
+  "value": "COLTFE_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收费账号",
+  "value": "COLTFE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收费种类代码",
+  "value": "COLTFE_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款单位代码",
+  "value": "RCVMNY_UNIT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款单位名称",
+  "value": "RCVMNY_UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款行行号",
+  "value": "RCVMNY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款人行号",
+  "value": "RECVR_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款人机构号",
+  "value": "RECVR_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款人开户行行号",
+  "value": "RECVR_OPEN_ACCT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款人开户行行名",
+  "value": "RECVR_OPEN_ACCT_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款账户开户行行号",
+  "value": "RCVMNY_ACCT_OPEN_ACCT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收息账号",
+  "value": "RCVINT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手机号码",
+  "value": "MOBILE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手机银行签约标志",
+  "value": "MOBILE_BANK_SIGN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手机银行签约标志代码",
+  "value": "MOBILE_BANK_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "首次缴存金额",
+  "value": "FSTTM_DPST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "受理日期",
+  "value": "ACPTE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权等待时间",
+  "value": "AUTH_STAY_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权岗位编号",
+  "value": "AUTH_POST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权机构类型代码",
+  "value": "AUTH_ORG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权类型代码",
+  "value": "AUTH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权密码",
+  "value": "AUTH_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "授权字典编号",
+  "value": "AUTH_DICTRY_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "售后公房标志",
+  "value": "AFT-SALE_PUB_HOUSE_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "数据操作关键字",
+  "value": "DATA_OPER_KEYWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "水电缴费方式代码",
+  "value": "WATER_ELEC_PAY_FEE_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "税收居民国家和地区代码",
+  "value": "TXRVN_RESDT_STATE_AND_RGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "税收居民身份类别代码",
+  "value": "TXRVN_RESDT_IDTY_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "税种代码",
+  "value": "TXCTGY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "顺呼限制时间",
+  "value": "SEQ_CALL_LIMIT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "私有字典名称",
+  "value": "PRIV_DICTRY_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所有制性质代码",
+  "value": "SYSONRSHP_CHARC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "特许参与者行号",
+  "value": "SPCPMSN_PRTCPTR_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "特征编码",
+  "value": "CHARCTR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提钞核准件号",
+  "value": "WTHDRW_MNY_APPRVL_LETTER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提前支取标志",
+  "value": "ADV_DRAW_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提示信息",
+  "value": "HINT_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "天数核算方法代码",
+  "value": "DAYS_ACCTI_MTHD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "填单信息",
+  "value": "FILL_BILL_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "调出机构号",
+  "value": "CALOUT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调出日期",
+  "value": "CALOUT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调动原因代码",
+  "value": "TRANSFR_RSN_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "调来柜员流水号",
+  "value": "CALL_OUT_TELR_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调入机构号",
+  "value": "CALL_IN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调入数量",
+  "value": "CALL_IN_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通兑等级代码",
+  "value": "UNIVERSAL_WITHDR_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通兑范围代码",
+  "value": "UNIVERSAL_WITHDR_SCP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通行证证件号码",
+  "value": "PASS_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知单类型代码",
+  "value": "NOTICE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知单状态代码",
+  "value": "NOTICE_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知机构号",
+  "value": "NOTI_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "同意付款笔数",
+  "value": "AGREE_PAY_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "同意付款金额",
+  "value": "AGREE_PAY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "头像图片路径",
+  "value": "AVATAR_PICT_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "推荐产品码",
+  "value": "RECOM_PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "退回原因",
+  "value": "SNDBCK_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "退汇原因",
+  "value": "RFNDEXCG_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "退款方式代码",
+  "value": "REFND_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "退款金额",
+  "value": "REFND_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "退款情况标志代码",
+  "value": "REFND_SITN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "吞卡流水号",
+  "value": "SWA_CARD_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "吞卡数量",
+  "value": "SWA_CARD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "拖欠周期日期",
+  "value": "DUE_CYC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "外圈间隙值",
+  "value": "OUT_RING_GAP_VAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "网银签约日期",
+  "value": "INTBNK_SIGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "往来标志代码",
+  "value": "CONT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "维护说明",
+  "value": "MATN_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "维修基金文件类型代码",
+  "value": "REPAIR_FUNDS_FILE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "尾箱属性类型代码",
+  "value": "BOX_ATTR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易小写金额",
+  "value": "TX_LOWER_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "交易序号",
+  "value": "TX_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面交易操作类型代码",
+  "value": "PAGE_TX_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易种类代码",
+  "value": "TX_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "角色名称",
+  "value": "ROLE_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费单位流水号",
+  "value": "PAY_FEE_UNIT_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费方式代码",
+  "value": "PAY_FEE_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费用户证件类型代码",
+  "value": "PAY_FEE_USER_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费卡号或账号",
+  "value": "PAY_FEE_CARD_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费通知单类型代码",
+  "value": "PAY_FEE_NOTICE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费账号",
+  "value": "PAY_FEE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费账户名称",
+  "value": "PAY_FEE_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "接收对象编号",
+  "value": "RCPTN_OBJ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收岗位编号",
+  "value": "RCPTN_POST_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "接收机构代码",
+  "value": "RCPTN_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收日期",
+  "value": "RCPTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "节点序号",
+  "value": "NODE_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结欠利息",
+  "value": "CRDTBAL_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "结清柜员流水号",
+  "value": "PAY_OFF_TELR_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结清类型代码",
+  "value": "PAY_OFF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结清日期",
+  "value": "PAY_OFF_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结束时间",
+  "value": "END_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结束营业时间",
+  "value": "END_BIZ_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结算金额",
+  "value": "STL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "结余金额",
+  "value": "CSHSPLS_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "截止编号",
+  "value": "EXPIRY_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解付机构号",
+  "value": "UFRZPY_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解付金额",
+  "value": "UFRZPY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "解付日期",
+  "value": "UFRZPY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解挂方式代码",
+  "value": "URPTLOSS_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "介质标志代码",
+  "value": "MEDM_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借方积数",
+  "value": "DEBIT_ACCUM",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "借据号或账号",
+  "value": "DUBIL_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "金融客户图片地址",
+  "value": "FIN_CUST_PICT_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "进程名称",
+  "value": "PROC_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "经办人名称",
+  "value": "OPRR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "旧卡卡号",
+  "value": "OLD_CARD_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "旧密码",
+  "value": "OLD_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "拒绝付款笔数",
+  "value": "REJ_PAY_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "拒绝原因",
+  "value": "REJ_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "卡标志",
+  "value": "CARD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡产品码",
+  "value": "CARD_PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡号后四位号码",
+  "value": "CARD_NO_AFT_FOUR_BIT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡号或存折号",
+  "value": "CARD_NO_OR_STR_DEPBOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡号或借据号或账号",
+  "value": "CARD_NO_OR_DUBIL_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡内互转标志代码",
+  "value": "CARD_INSID_INTER_TRAN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡启用日期",
+  "value": "CARD_ENBL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡种介绍说明",
+  "value": "CARD_TYPE_INTRDC_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开发商单位名称",
+  "value": "DVLPS_UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开户操作员柜员号",
+  "value": "OPEN_ACCT_OPRR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户行行号",
+  "value": "OPEN_ACCT_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户证实书编号",
+  "value": "OPEN_ACCT_CFRMT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户证实书冠字号",
+  "value": "OPEN_ACCT_CFRMT_CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开机时显示速度",
+  "value": "BOT_WHEN_INDCT_SPEED",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开机时显示效果说明",
+  "value": "BOT_WHEN_INDCT_EFCT_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开机时显示中文内容",
+  "value": "BOT_WHEN_INDCT_CN_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开通ATM转账标志",
+  "value": "DRDG_ATM_TSFACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开通农信银支付标志代码",
+  "value": "DRDG_RULCRDTBNK_PAYMT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开通小额标志代码",
+  "value": "DRDG_SML_FRHD_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "可电子化标志",
+  "value": "CAN_ELECTRC_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户备注信息操作层级代码",
+  "value": "CUST_REMRK_INFO_OPER_HRCH_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户价值等级代码",
+  "value": "CUST_WORTH_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户负债占比",
+  "value": "CUST_LIAB_PROPTN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "客户确认标志",
+  "value": "CUST_CNFRM_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户提升差距值",
+  "value": "CUST_UPGRADE_DISPART_VAL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户业务类型代码",
+  "value": "CUST_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户状态代码",
+  "value": "CUST_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户总数量",
+  "value": "CUST_TOTL_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "扣划金额",
+  "value": "DCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "扣款账号",
+  "value": "CHRG_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "扣款账户名称",
+  "value": "CHRG_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "跨境支付费用代码",
+  "value": "CRSBDR_PAYMT_FEE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "快捷支付签约标志代码",
+  "value": "QICK_PAYMT_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "垃圾处理费",
+  "value": "RUBISH_DLWTH_FE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利率浮动比例",
+  "value": "INTRT_FLOT_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利息核算方法代码",
+  "value": "INT_ACCTI_MTHD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利息税",
+  "value": "INT_TAX",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "联名人总数量",
+  "value": "JNT_PERSON_TOTL_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联网核查业务类型代码",
+  "value": "NETWKG_CHK_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联系人编号",
+  "value": "CONTR_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "聊天内容",
+  "value": "CHAT_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "领用员工手机号码",
+  "value": "RCVUSE_EMPLY_MOBILE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "流水交易类型代码",
+  "value": "WAST_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "录入柜员号",
+  "value": "ETRG_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "录入日期",
+  "value": "ETRG_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "录入时间",
+  "value": "ETRG_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "满意度说明",
+  "value": "WILLNS_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "每期存取金额",
+  "value": "EVRPRID_ACES_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "门牌编号",
+  "value": "DORPLT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码标志代码",
+  "value": "PWD_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码类型代码",
+  "value": "PWD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码输错次数",
+  "value": "PWD_PRINT_EROR_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码修改客户图片地址",
+  "value": "PWD_MODFY_CUST_PICT_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密码修改输入超时时间",
+  "value": "PWD_MODFY_INPUT_OVER_TM_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "面额",
+  "value": "DNMN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "明细金额",
+  "value": "DTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "明细总笔数",
+  "value": "DTL_TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "模块编号",
+  "value": "MDUL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "模块类型代码",
+  "value": "MDUL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "默认主题标志",
+  "value": "DFLT_THEME_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "目标岗位编号",
+  "value": "TRGT_POST_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "目标机构号",
+  "value": "TRGT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "目标节点代码",
+  "value": "TRGT_NODE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "内部账号",
+  "value": "INTER_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "年代码",
+  "value": "YR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "年费缴费标志",
+  "value": "ANNL_FEE_PAY_FEE_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "农历月代码",
+  "value": "LUNAR_MON_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "农信社贷款证号或卡号",
+  "value": "RCC_LONCRT_NO_OR_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "农信员工标志",
+  "value": "RCU_EMPLY_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "排队序号",
+  "value": "QUEUE_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "赔偿金金额",
+  "value": "RMBRS_MTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "配偶中文姓名",
+  "value": "SPS_CN_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "批次状态代码",
+  "value": "BATCH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面批量备注操作类型代码",
+  "value": "PAGE_BAT_REMRK_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据到期日期",
+  "value": "BILL_MATR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据交易种类代码",
+  "value": "BILL_TX_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据密押",
+  "value": "BILL_AUTCN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据日期",
+  "value": "BILL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据入账方式代码",
+  "value": "BILL_RCRDACCT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据业务状态代码",
+  "value": "BILL_BIZ_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据种类代码",
+  "value": "BILL_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "拼音姓名",
+  "value": "PINYIN_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "平均服务时间",
+  "value": "AVG_SERV_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价状态代码",
+  "value": "APRS_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证名称",
+  "value": "VOUCH_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "凭证起始编号",
+  "value": "VOUCH_START_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证数量",
+  "value": "VOUCH_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证终止编号",
+  "value": "VOUCH_TERMTN_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "其他颜色说明",
+  "value": "OTH_COLR_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "其他原因",
+  "value": "OTH_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "骑缝章编号",
+  "value": "PAG_SEAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "企业名称",
+  "value": "CORP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "企业网银账户类型代码",
+  "value": "CORP_INTBNK_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启停适用范围代码",
+  "value": "STAR_STOP_SUIT_SCP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用操作员柜员号",
+  "value": "ENBL_OPRR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起始角度",
+  "value": "START_ANGLE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "起始日期",
+  "value": "START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起始顺序号",
+  "value": "START_SEQ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "弃号比率",
+  "value": "ABAN_NO_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "弃号数量",
+  "value": "ABAN_NO_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签到状态代码",
+  "value": "SGNIN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签发复核流水号",
+  "value": "ISU_RCHK_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签发柜员号",
+  "value": "ISU_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签退时间",
+  "value": "SGNOUT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约客户名称",
+  "value": "SIGN_CUST_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "签约起始日期",
+  "value": "SIGN_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约手机号码",
+  "value": "SIGN_MOBILE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约业务类型代码",
+  "value": "SIGN_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "欠费金额",
+  "value": "OWE_FE_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "欠费总金额",
+  "value": "OWE_FE_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "清单标志代码",
+  "value": "LST_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清机流水号",
+  "value": "CLEA_MACH_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清算行号",
+  "value": "LIQD_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清算日期",
+  "value": "LIQD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清退原因",
+  "value": "RETIRE_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "请求渠道编号",
+  "value": "REQE_CHNL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "请求修改来源流水号",
+  "value": "REQE_MODFY_SOURCE_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道编号",
+  "value": "CHNL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道日期",
+  "value": "CHNL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "取款金额",
+  "value": "WTHMNY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "取款账号",
+  "value": "WTHMNY_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "券别代码",
+  "value": "CPNTYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "确认结果",
+  "value": "CNFRM_RESULT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行编码",
+  "value": "PBOC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务编号",
+  "value": "MISN_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "任务处理柜员号",
+  "value": "MISN_DLWTH_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务处理机构号",
+  "value": "MISN_DLWTH_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务处理交易码",
+  "value": "MISN_DLWTH_TRAN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务处理结果代码",
+  "value": "MISN_DLWTH_RESULT_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "任务发布类型代码",
+  "value": "MISN_RELS_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务节点号码",
+  "value": "MISN_NODE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务结束时间",
+  "value": "MISN_END_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务内容",
+  "value": "MISN_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "任务执行人编号",
+  "value": "MISN_EXEC_PERSON_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "日累计限额",
+  "value": "DAY_ACCM_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "融资利息",
+  "value": "RSFND_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "叫号配置编号",
+  "value": "CALL_NO_CONF_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上传附件标志",
+  "value": "UPLDG_ATCH_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次交易日期",
+  "value": "LSTTM_TX_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备编号",
+  "value": "EQUIP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备卡箱状态代码",
+  "value": "EQUIP_CARD_BOX_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备模块状态代码",
+  "value": "EQUIP_MDUL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备品牌说明",
+  "value": "EQUIP_BRAND_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "设备通讯状态代码",
+  "value": "EQUIP_CMUNIC_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备物理编号",
+  "value": "EQUIP_PHYS_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "设备型号说明",
+  "value": "EQUIP_MODEL_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "设备状态代码",
+  "value": "EQUIP_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设立员工号",
+  "value": "SETUP_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请方向代码",
+  "value": "APLY_DRCT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请行行号",
+  "value": "APLY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请行行名",
+  "value": "APLY_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "申请内容",
+  "value": "APLY_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "申请人地址",
+  "value": "APPLCT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "申请书日期",
+  "value": "APLY_BOK_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请数量",
+  "value": "APLY_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "身份核查结果代码",
+  "value": "IDTY_CHK_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "身份证阅读器状态代码",
+  "value": "ID_CARD_READR_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "审核柜员编号1",
+  "value": "EXMNVRFY_TELR_NO_1",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "审批日期",
+  "value": "APPRV_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "审批意见说明",
+  "value": "APPRV_SUGSTN_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "审批状态代码",
+  "value": "APPRV_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "生效时间",
+  "value": "EFFT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "省行政区划代码",
+  "value": "PROV_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "剩余人数",
+  "value": "REMAIN_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "失败笔数",
+  "value": "FAIL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "失败原因",
+  "value": "FAIL_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "失效日期",
+  "value": "INVALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "回单印模五打印坐标",
+  "value": "CHCSLP_MODEL_FIVE_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "汇款人电话号码",
+  "value": "RMIT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "活期存款信息",
+  "value": "SVNG_DPST_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "机构地址",
+  "value": "ORG_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "机构名称",
+  "value": "ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "机构属性代码",
+  "value": "ORG_ATTR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "机构税收居民身份类别代码",
+  "value": "ORG_TXRVN_RESDT_IDTY_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "积数变化标志代码",
+  "value": "ACCUM_TRSFRMTN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "激活状态代码",
+  "value": "ACTV_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "集中授权类型代码",
+  "value": "CNTRTN_AUTH_TYP_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "计数起始编号",
+  "value": "CNT_START_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加盾数量",
+  "value": "ADD_SHIELD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加卡时间",
+  "value": "ADD_CARD_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "加密文件名称",
+  "value": "ENCRP_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "监督柜员号",
+  "value": "SUPERV_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "监督柜员密码",
+  "value": "SUPERV_TELR_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "减免金额",
+  "value": "MITGT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "建模复核日期",
+  "value": "MODLNG_RCHK_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "建模录入日期",
+  "value": "MODLNG_ETRG_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交互信息展示超时时间",
+  "value": "ITRCTV_INFO_DISPLAY_OVER_TM_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交款凭证号",
+  "value": "PAY_VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交款人或单位名称",
+  "value": "PAYER_OR_UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "交易步骤",
+  "value": "TX_STEP",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易简称",
+  "value": "TX_ABBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易开始时间",
+  "value": "TX_BGN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易起始日期",
+  "value": "TX_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易时间日期",
+  "value": "TX_TM_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易数据信息",
+  "value": "TX_DATA_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "交易终止日期",
+  "value": "TX_TERMTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "交易组编号",
+  "value": "TX_GROUP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴存标准说明",
+  "value": "DPST_STDD_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "缴存金额",
+  "value": "DPST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "缴费编号",
+  "value": "PAY_FEE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "缴费单位名称",
+  "value": "PAY_FEE_UNIT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "缴费金额",
+  "value": "PAY_FEE_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "缴费总金额",
+  "value": "PAY_FEE_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "缴款书号码",
+  "value": "WARRANT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收柜员号",
+  "value": "RCPTN_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收行行号",
+  "value": "RCPTN_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收级别代码",
+  "value": "RCPTN_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收时间",
+  "value": "RCPTN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收文件名",
+  "value": "RCPTN_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "接收应用编号",
+  "value": "RCPTN_APP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "接收用户编码",
+  "value": "RCPTN_USER_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "节点模板ID",
+  "value": "NODE_TMPL_ID",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "节假日服务时间",
+  "value": "HOLI_SERV_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结清柜员号",
+  "value": "PAY_OFF_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结算账户名称",
+  "value": "STL_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "结算账户账号",
+  "value": "STL_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结息方式代码",
+  "value": "INT_STL_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结息日期",
+  "value": "INT_STL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "结余金额入账方式代码",
+  "value": "CSHSPLS_AMT_RCRDACCT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "截止日期",
+  "value": "EXPIRY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解挂柜员号",
+  "value": "URPTLOSS_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "解挂机构号",
+  "value": "URPTLOSS_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "介质类型代码",
+  "value": "MEDM_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "介质状态代码",
+  "value": "MEDM_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "界面显示标题名称",
+  "value": "BUNDRY_INDCT_HEDLN_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借记卡收回废卡张数",
+  "value": "DBTCRD_TKBCK_SCRP_CARD_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "借据发放状态代码",
+  "value": "DUBIL_GRANT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "进程ID",
+  "value": "PROC_ID",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办人电话号码",
+  "value": "OPRR_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "经办人联系电话号码",
+  "value": "OPRR_CONT_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "旧卡产品码",
+  "value": "OLD_CARD_PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "拒付金额",
+  "value": "REJPY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "拒绝付款金额",
+  "value": "REJ_PAY_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "拒绝信息",
+  "value": "REJ_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "卡BIN号码",
+  "value": "CARD_BIN_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡锁定标志",
+  "value": "CARD_LCKD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡箱现存数量",
+  "value": "CARD_BOX_NOW_STR_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡箱总卡数量",
+  "value": "CARD_BOX_TOTL_CARD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡种代码",
+  "value": "CARD_TYPE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "卡种状态代码",
+  "value": "CARD_TYPE_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户操作员工号",
+  "value": "OPEN_ACCT_OPER_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开户行行名",
+  "value": "OPEN_ACCT_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开户核准限制金额",
+  "value": "OPEN_ACCT_APRVL_LIMIT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "开户机构名称",
+  "value": "OPEN_ACCT_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "开机时间",
+  "value": "BOT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开始时间",
+  "value": "BGN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开通行内支付标志代码",
+  "value": "DRDG_INSDBNK_PAYMT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开通网银互联代码",
+  "value": "DRDG_INTBNK_INTERCONT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "可见标志",
+  "value": "VIS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "可用余额",
+  "value": "AVAL_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "可预约标志",
+  "value": "CAN_RVT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户风险等级代码",
+  "value": "CUST_RISK_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户或代理人手机号码",
+  "value": "CUST_OR_AGENT_MOBILE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户简称",
+  "value": "CUST_ABBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户签约标志",
+  "value": "CUST_SIGN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户姓名",
+  "value": "CUST_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "客户意向描述",
+  "value": "CUST_INTN_DESC",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "客户综合评级代码",
+  "value": "CUST_COMPHSV_RAT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "扣费户名",
+  "value": "DSTRN_FE_ACCTNM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "扣费账号",
+  "value": "DSTRN_FE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "扣税日期",
+  "value": "DDCTTX_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "扣息金额",
+  "value": "DDCTINT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "扣息账号",
+  "value": "DDCTINT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "跨境交易渠道类型代码",
+  "value": "CRSBDR_TX_CHNL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "类型代码",
+  "value": "TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利率",
+  "value": "INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利息标志",
+  "value": "INT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利息入账标志",
+  "value": "INT_RCRDACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "利息余额",
+  "value": "INT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "利息转入账户名称",
+  "value": "INT_TSFIN_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "联名人客户编号",
+  "value": "JNT_PERSON_CUST_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联名人印鉴卡号码",
+  "value": "JNT_PERSON_SALKT_CARD_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联名人支取密码",
+  "value": "JNT_PERSON_DRAW_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "联网核查模式编号",
+  "value": "NETWKG_CHK_MODE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "联系人名称",
+  "value": "CONTR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "两次预约时间间隔",
+  "value": "TWIC_RVT_TM_INTRVL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "聊天日期",
+  "value": "CHAT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "领用生效时间",
+  "value": "RCVUSE_EFFT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "领用用户编号",
+  "value": "RCVUSE_USER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "领用员工名称",
+  "value": "RCVUSE_EMPLY_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "流程名称",
+  "value": "PROCES_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "流程银行交易码",
+  "value": "PROCES_BANK_TRAN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "流程引擎ID",
+  "value": "PROCES_ENGINE_ID",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "流水号",
+  "value": "SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "楼栋名称",
+  "value": "BLDG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "满意比率",
+  "value": "SATSF_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "每期存款金额",
+  "value": "EVRPRID_DPST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "每月存金额",
+  "value": "PERMON_STR_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "每月自动供款日期",
+  "value": "PERMON_ATMTC_CNTRB_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "密押",
+  "value": "AUTCN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "描述",
+  "value": "DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "名字",
+  "value": "FIRST_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "明细汇总金额",
+  "value": "DTL_SUM_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "明细序号",
+  "value": "DTL_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "模块名称",
+  "value": "MDUL_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "抹账标志",
+  "value": "STRK_BAL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "默认标志",
+  "value": "DFLT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "纳税人名称",
+  "value": "PYTX_PERSON_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "内部账户名称",
+  "value": "INTER_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "内存使用量",
+  "value": "INSID_STR_USE_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "内容",
+  "value": "CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "农历日期",
+  "value": "LUNAR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "排队队列名称",
+  "value": "QUEUE_QUEUE_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "排队号码",
+  "value": "QUEUE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "配偶证件类型代码",
+  "value": "SPS_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "批次号",
+  "value": "BCHNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "批次总金额",
+  "value": "BATCH_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "批量处理流水号",
+  "value": "BAT_DLWTH_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据版本编号",
+  "value": "BILL_VER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据操作标志代码",
+  "value": "BILL_OPER_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据打印标志代码",
+  "value": "BILL_PR_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据挂失解挂标志代码",
+  "value": "BILL_RPTLOSS_URPTLOSS_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "票据状态代码",
+  "value": "BILL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平均使用时间",
+  "value": "AVG_USE_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平台处理信息",
+  "value": "PLATFM_DLWTH_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "平台工作日期",
+  "value": "PLATFM_WORK_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平台工作时间",
+  "value": "PLATFM_WORK_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "平台日期",
+  "value": "PLATFM_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价比率",
+  "value": "APRS_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价等级代码",
+  "value": "APRS_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "评价内容描述",
+  "value": "APRS_CONTENT_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "评价时间",
+  "value": "APRS_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证代号",
+  "value": "VOUCH_CDNM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证号段",
+  "value": "VOUCH_SECTNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "凭证类型说明",
+  "value": "VOUCH_TYP_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "凭证模板图片名称",
+  "value": "VOUCH_TMPL_PICT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "七天通知信息",
+  "value": "SEVN_DY_NOTI_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "其他费用",
+  "value": "OTH_FEE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "企业地址",
+  "value": "CORP_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "启用时间",
+  "value": "ENBL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用无线音箱标志",
+  "value": "ENBL_WIRLS_VOICE_BOX_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "启用印章交易名称",
+  "value": "ENBL_SIGNET_TX_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起始金额",
+  "value": "START_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "起始序号",
+  "value": "START_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起息止息日期",
+  "value": "BEGINT_STOPINT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "起止日期",
+  "value": "START_END_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签到日期",
+  "value": "SGNIN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签发日期",
+  "value": "ISU_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约操作代码",
+  "value": "SIGN_OPER_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约产品编码",
+  "value": "SIGN_PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约产品类型代码",
+  "value": "SIGN_PROD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约机构号",
+  "value": "SIGN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约期限日期",
+  "value": "SIGN_PERIOD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约项目说明",
+  "value": "SIGN_PROJ_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "签约账号",
+  "value": "SIGN_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "签约终止日期",
+  "value": "SIGN_TERMTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "强制模式标志",
+  "value": "CMPL_MODE_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "清单类型代码",
+  "value": "LST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道代码",
+  "value": "CHNL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "渠道类型代码",
+  "value": "CHNL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "取号机构号",
+  "value": "GET_NO_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "取款方式代码",
+  "value": "WTHMNY_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "取款账户名称",
+  "value": "WTHMNY_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "取款总笔数",
+  "value": "WTHMNY_TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行国库日间日切状态代码",
+  "value": "PBOC_NTNLTR_DAY_BETN_CTOF_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行国库系统运营状态代码",
+  "value": "PBOC_NTNLTR_SYS_OPRTN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行票据种类代码",
+  "value": "PBOC_BILL_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行同业分类代码",
+  "value": "PBOC_INBNK_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人脸核查结果代码",
+  "value": "FACE_CHK_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务处理说明",
+  "value": "MISN_DLWTH_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "任务反馈信息",
+  "value": "MISN_FDBCK_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "任务类型代码",
+  "value": "MISN_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "任务状态代码",
+  "value": "MISN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "日累计笔数",
+  "value": "DAY_ACCM_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "日期类型代码",
+  "value": "DT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "入账日期",
+  "value": "RCRDACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "入账账户名称",
+  "value": "RCRDACCT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "上次交易柜员号",
+  "value": "LSTTM_TX_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次交易时间",
+  "value": "LSTTM_TX_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次密码绑定时间",
+  "value": "LSTTM_PWD_BIND_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次清机日期",
+  "value": "LSTTM_CLEA_MACH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次清机时间",
+  "value": "LSTTM_CLEA_MACH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上次收费日期",
+  "value": "LSTTM_COLTFE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上浮比例",
+  "value": "UPFLOA_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "上级菜单编号",
+  "value": "SPR_MENU_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "委托人名称",
+  "value": "TRSTR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "未补登账户余额",
+  "value": "UN_SUPLRGISN_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "未登折笔数",
+  "value": "UN_SUPP_PSBOOK_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "未评价数量",
+  "value": "UN_APRS_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "文档描述",
+  "value": "DOC_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "文档名称",
+  "value": "DOC_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "文件路径",
+  "value": "FILE_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "文件总记录数量",
+  "value": "FILE_TOTL_KEPRCD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物品数量",
+  "value": "ARTI_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物品新名称",
+  "value": "ARTI_NEW_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "物品原数量",
+  "value": "ARTI_ORGINL_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物业区域代码",
+  "value": "PROPT_REGN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物业区域地址",
+  "value": "PROPT_REGN_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "系统状态代码",
+  "value": "SYS_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "下个关联任务编号",
+  "value": "NEXT_RELA_MISN_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现场授权日期",
+  "value": "ONSITE_AUTH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现场授权时间",
+  "value": "ONSITE_AUTH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现转标志代码",
+  "value": "CASH_TRAN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "限额终止日期",
+  "value": "LMT_TERMTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "响应信息",
+  "value": "RSPND_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "项目编号",
+  "value": "PROJ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "项目栋数",
+  "value": "PROJ_BLD_CNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息发送类型代码",
+  "value": "MSG_SND_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息类型名称",
+  "value": "MSG_TYP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "消息流水ID",
+  "value": "MSG_WAST_ID",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息内容",
+  "value": "MSG_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "销户方式代码",
+  "value": "CLOS_ACCT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户原因",
+  "value": "CLOS_ACCT_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "销户账户性质代码",
+  "value": "CLOS_ACCT_ACCT_CHARC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销毁柜员号",
+  "value": "DESTRY_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销毁时间",
+  "value": "DESTRY_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销毁原因",
+  "value": "DESTRY_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "销账序号",
+  "value": "CNCLACCT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "小区户名称",
+  "value": "RESQRT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "小区名称",
+  "value": "RESQRT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "协定账户名称",
+  "value": "AGREMT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "协定账户账号",
+  "value": "AGREMT_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协议利率",
+  "value": "AGMT_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "协议起始日期",
+  "value": "AGMT_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协议书编号",
+  "value": "AGMT_BOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协议文件名",
+  "value": "AGMT_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "协议终止日期",
+  "value": "AGMT_TERMTN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协议状态代码",
+  "value": "AGMT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新卡密码",
+  "value": "NEW_CARD_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "新开存单账户名称",
+  "value": "NEW_OPEN_DEPRCP_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "新密码",
+  "value": "NEW_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "新印鉴卡号码",
+  "value": "NEW_SALKT_CARD_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新账号",
+  "value": "NEW_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新账户名称",
+  "value": "NEW_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "信用卡额度",
+  "value": "CRDT_CARD_QTA",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "星期",
+  "value": "WEKND",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "修改柜员号",
+  "value": "MODFY_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "修改日期",
+  "value": "MODFY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "需打印电子印章标志",
+  "value": "NEED_PR_ELEC_SIGNET_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "需求日期",
+  "value": "REQMENT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "要素无修改授权标志",
+  "value": "ELENT_NONE_MODFY_AUTH_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务流水号",
+  "value": "BIZ_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务验证码生成日期",
+  "value": "BIZ_CPTC_GNRT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务状态说明",
+  "value": "BIZ_STUS_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "页面保留原凭据方式标志",
+  "value": "PAGE_KEP_ORGINL_ENVIDC_MANR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面财税库银处理状态代码",
+  "value": "PAGE_TIPS_DLWTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面操作类型代码",
+  "value": "PAGE_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面打印标志代码",
+  "value": "PAGE_PR_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面打印类型代码",
+  "value": "PAGE_PR_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面代收客户签约操作类型代码",
+  "value": "PAGE_INWD_COLL_CUST_SIGN_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面电子验证通过标志",
+  "value": "PAGE_ELEC_VLIDT_PAS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面发起交易信息",
+  "value": "PAGE_LUNCH_TX_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "页面挂失登记操作类型代码",
+  "value": "PAGE_RPTLOSS_RGST_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面交易类型代码",
+  "value": "PAGE_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面签约业务代码",
+  "value": "PAGE_SIGN_BIZ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面水电气缴费操作类型代码",
+  "value": "PAGE_UTILITS_PAY_FEE_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面文件操作类型代码",
+  "value": "PAGE_FILE_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面再次输入新密码",
+  "value": "PAGE_ONCAGN_INPUT_NEW_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "页面支付处理类型代码",
+  "value": "PAGE_PAYMT_DLWTH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一本通标志",
+  "value": "ONEBOK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一本通子账户开立机构号",
+  "value": "ONEBOK_SUB_ACCT_SETUP_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移出卡号或账号",
+  "value": "MOVOUT_CARD_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入或移出日期",
+  "value": "MOV_IN_OR_MOVOUT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入原存单账号",
+  "value": "MOV_IN_ORGINL_DEPRCP_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已核实处理方式代码",
+  "value": "ALRDY_VRFY_DLWTH_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已有附卡数量",
+  "value": "ALRDY_HAVE_ADDTCARD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "以X元倍数转存金额",
+  "value": "?_X_YUAN_MULTI_TSFDEP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "异常处理状态标志",
+  "value": "UNUSL_DLWTH_STUS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "银联在线签约标志代码",
+  "value": "UNINPAY_ONLIN_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印鉴标志代码",
+  "value": "SALKT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印鉴卡冠字号",
+  "value": "SALKT_CARD_CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印鉴卡状态代码",
+  "value": "SALKT_CARD_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印模名称",
+  "value": "MODEL_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章边粗值",
+  "value": "SIGNET_SIDE_THICK_VAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "印章打印坐标",
+  "value": "SIGNET_PR_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章机构名称",
+  "value": "SIGNET_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "印章样式状态代码",
+  "value": "SIGNET_STYLE_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章数据信息",
+  "value": "SIGNET_DATA_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "印章图片路径",
+  "value": "SIGNET_PICT_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "印章验证码",
+  "value": "SIGNET_CPTC",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "英文或拼音出生地址",
+  "value": "ENG_OR_PINYIN_BIRTH_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "英文或拼音姓氏",
+  "value": "ENG_OR_PINYIN_SURNM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "英文中间名字",
+  "value": "ENG_MID_FIRST_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "营销状态代码",
+  "value": "MKTING_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "影像编号",
+  "value": "IMG_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "应答类型代码",
+  "value": "RSPN_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "应取未取金额",
+  "value": "SHOULD_GET_UN_GET_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应收金额",
+  "value": "RECVBL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应用编号",
+  "value": "APP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "映射TAD集合",
+  "value": "MAPG_TAD_ASSMBLG",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用户编号",
+  "value": "USER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用户地址",
+  "value": "USER_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用户名称",
+  "value": "USER_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用户确认方式代码",
+  "value": "USER_CNFRM_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用户状态代码",
+  "value": "USER_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用途或附言描述",
+  "value": "USAGE_OR_MEMO_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用印柜员号",
+  "value": "SEAL_DOC_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "有存折标志代码",
+  "value": "HAVE_DEPBOK_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "余额",
+  "value": "BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "余额变化标志代码",
+  "value": "BAL_TRSFRMTN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "余额输入超时时间",
+  "value": "BAL_INPUT_OVER_TM_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "逾期利率代号",
+  "value": "OVDUE_INTRT_CDNM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预警人数",
+  "value": "WARN_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预期年化收益率",
+  "value": "EXPCT_ANULZD_GAINS_RT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "预授权码",
+  "value": "PRE_ATHCD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预填交易编号",
+  "value": "PRE_FILL_TX_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约编号",
+  "value": "RVT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约码",
+  "value": "RVT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约起始时间",
+  "value": "RVT_START_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工登录方式代码",
+  "value": "EMPLY_LGN_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工类别描述",
+  "value": "EMPLY_CATEG_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "员工职责说明",
+  "value": "EMPLY_RSPBL_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原对账批次号",
+  "value": "ORGINL_CHKACCT_BCHNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原付款人身份证件号码",
+  "value": "ORGINL_DRWE_IDTY_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原付款人账户名称",
+  "value": "ORGINL_DRWE_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原交易对方行行号",
+  "value": "ORGINL_TX_CNTPTY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易对方行号",
+  "value": "ORGINL_TX_CNTPTY_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易对方行名",
+  "value": "ORGINL_TX_CNTPTY_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原交易付款人名称",
+  "value": "ORGINL_TX_DRWE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原交易往来标志代码",
+  "value": "ORGINL_TX_CONT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易账号",
+  "value": "ORGINL_TX_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易支付序号",
+  "value": "ORGINL_TX_PAYMT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原申请人账号",
+  "value": "ORGINL_APPLCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原实际付款人账号",
+  "value": "ORGINL_ACTL_DRWE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原实际付款人账户名称",
+  "value": "ORGINL_ACTL_DRWE_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原收款行行号",
+  "value": "ORGINL_RCVMNY_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原印鉴卡冠字号",
+  "value": "ORGINL_SALKT_CARD_CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原印鉴卡号码",
+  "value": "ORGINL_SALKT_CARD_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原账户名称",
+  "value": "ORGINL_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原支付平台日期",
+  "value": "ORGINL_PAYMT_PLATFM_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "源文件路径",
+  "value": "SRC_FILE_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "远程授权级别代码",
+  "value": "REMOTE_AUTH_LVL_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "远程授权日期",
+  "value": "REMOTE_AUTH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "远程文件名称",
+  "value": "REMOTE_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "约转产品码",
+  "value": "ABOT_GO_PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "月代码",
+  "value": "MON_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "允许远程取号标志",
+  "value": "PMIT_REMOTE_GET_NO_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "运营条件编号",
+  "value": "OPRTN_COND_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "再贷款合同号",
+  "value": "AGN_LN_CTRT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "再贴现结算票据号码",
+  "value": "REDISC_STL_BILL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "增值期限",
+  "value": "ADDVAL_PERIOD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "债券结算已匹配指令号",
+  "value": "BOND_STL_ALRDY_MTCH_ISTRCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "张数",
+  "value": "SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户分类代码",
+  "value": "ACCT_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户附件状态代码",
+  "value": "ACCT_ATCH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户管理密码",
+  "value": "ACCT_MGMT_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "账户内互转标志",
+  "value": "ACCT_INSID_INTER_TRAN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户数量",
+  "value": "ACCT_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户锁定标志代码",
+  "value": "ACCT_LCKD_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账页顺序号",
+  "value": "LDGR_PG_SEQ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "照片地址",
+  "value": "PHOTO_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "征收机关代码",
+  "value": "COLTS_INSTN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "正常浮动比例",
+  "value": "NORML_FLOT_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "证件校验方式代码",
+  "value": "CRTF_CHK_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证书类型代码",
+  "value": "CDTL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付平台日期",
+  "value": "PAYMT_PLATFM_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付业务状态代码",
+  "value": "PAYMT_BIZ_STUS_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "支款类型代码",
+  "value": "PYMT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支取凭证号",
+  "value": "DRAW_VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "知识点编号",
+  "value": "KNOW_PONT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "执行机构号",
+  "value": "EXEC_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "职业说明",
+  "value": "CAREER_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "止付金额",
+  "value": "CRDBK_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "止付日期",
+  "value": "CRDBK_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "止付原因",
+  "value": "CRDBK_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "置换金额",
+  "value": "DSPL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "置换类型代码",
+  "value": "DSPL_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "置换批次号",
+  "value": "DSPL_BCHNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终止编号",
+  "value": "TERMTN_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终止金额",
+  "value": "TERMTN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "重发次数",
+  "value": "RPTSND_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "周",
+  "value": "WEEK",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "周期转账标志代码",
+  "value": "CYC_TSFACCT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主机授权标志",
+  "value": "HOST_AUTH_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主界面显示间隔时间",
+  "value": "MAIN_BUNDRY_INDCT_INTRVL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主卡主账户账号",
+  "value": "MSTCRD_MAIN_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主题图标路径",
+  "value": "THEME_ICON_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主账户名称",
+  "value": "MAIN_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "住宅邮政编码",
+  "value": "RESDC_POST_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册登记类型代码",
+  "value": "REG_RGST_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注销日期",
+  "value": "DEREGIS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "专用账号",
+  "value": "SPCUSE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出账号",
+  "value": "TSFOUT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出账户开户行代码",
+  "value": "TSFOUT_ACCT_OPEN_ACCT_RW_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出账户子账户序号",
+  "value": "TSFOUT_ACCT_SUB_ACCT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出子账户名称",
+  "value": "TSFOUT_SUB_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "转存标志代码",
+  "value": "TSFDEP_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "时段内预约最大人数",
+  "value": "TM_PERIOD_INSID_RVT_MAX_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实收金额",
+  "value": "ACTL_RECV_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "使用第三方缴费编号标志",
+  "value": "USE_THIRD_PTY_PAY_FEE_NO_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "市或县行政区划代码",
+  "value": "CITY_OR_CNTY_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "事务种类标志代码",
+  "value": "TRSCTN_KIND_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "试算手续费",
+  "value": "TNCALC_COMM_FEE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "视频日期",
+  "value": "VIDEO_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "视频样式代码",
+  "value": "VIDEO_STYLE_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收发时间",
+  "value": "RCVSND_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收费标准金额",
+  "value": "COLTFE_STDD_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收费名称",
+  "value": "COLTFE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收回本金",
+  "value": "TKBCK_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收回累计金额",
+  "value": "TKBCK_ACCM_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收回利息",
+  "value": "TKBCK_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收款行号",
+  "value": "RCVMNY_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款人地址",
+  "value": "RECVR_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款人名称",
+  "value": "RECVR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款人账号",
+  "value": "RECVR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收款账户名称",
+  "value": "RCVMNY_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款账户余额",
+  "value": "RCVMNY_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收入合计金额",
+  "value": "INCOME_TOT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收入调出张数",
+  "value": "INCOME_CALOUT_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手机验证码",
+  "value": "MOBILE_CPTC",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "手续费收取方式代码",
+  "value": "COMM_FEE_GTHR_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "首次打印柜员号",
+  "value": "FSTTM_PR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "受理流水号",
+  "value": "ACPTE_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "受益方式代码",
+  "value": "BEFTD_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权机构号",
+  "value": "AUTH_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权级别代码",
+  "value": "AUTH_LVL_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权描述",
+  "value": "AUTH_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "授权员柜员号",
+  "value": "AUTH_MEM_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权原因",
+  "value": "AUTH_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "售出数量",
+  "value": "WORKOFF_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "数量",
+  "value": "QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "刷卡可见标志",
+  "value": "PYCRD_VIS_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "双热线验证人信息",
+  "value": "DOBL_HOT_LINE_VLIDT_PERSON_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "税种名称",
+  "value": "TXCTGY_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "税种条数",
+  "value": "TXCTGY_NBRCH",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所属机构名称",
+  "value": "BLNGTO_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "台账账号",
+  "value": "ACCTBOK_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提钞核准金额",
+  "value": "WTHDRW_MNY_APRVL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "提交日期",
+  "value": "SBMT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提前可激活时间阈值",
+  "value": "ADV_CAN_ACTV_TM_THLD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提前利率",
+  "value": "ADV_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "提取日期",
+  "value": "XTRC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "天然气缴费签约标志代码",
+  "value": "NATRL_GAS_PAY_FEE_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "填单号",
+  "value": "FILL_BILL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "填单结束时间",
+  "value": "FILL_BILL_END_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "条件表达式内容",
+  "value": "COND_EXPS_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "条目名称",
+  "value": "ENTR_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "条屏厂商处理类型代码",
+  "value": "BAR_SRC_MANUFAC_DLWTH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "条屏设备编号",
+  "value": "BAR_SRC_EQUIP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调出柜员流水号",
+  "value": "CALOUT_TELR_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调出金额",
+  "value": "CALOUT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "调出张数",
+  "value": "CALOUT_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调来机构号",
+  "value": "CALL_OUT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调入张数",
+  "value": "CALL_IN_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "停用审批员柜员号",
+  "value": "DISUSE_APPRV_MEM_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知单号",
+  "value": "NOTICE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知金额",
+  "value": "NOTI_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "通知类型代码",
+  "value": "NOTI_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知批次号",
+  "value": "NOTI_BCHNO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "通知日期",
+  "value": "NOTI_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "同步异步标志",
+  "value": "SYNC_ASYNC_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "透支浮动利率",
+  "value": "OVDR_FLOT_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "图片文件路径",
+  "value": "PICT_FILE_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "图片验证码",
+  "value": "PICT_CPTC",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "退款原因",
+  "value": "REFND_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "退款原因代码",
+  "value": "REFND_RSN_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "吞卡标志代码",
+  "value": "SWA_CARD_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "托收凭证编号",
+  "value": "ENTSTINCM_VOUCH_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "外币账户类别代码",
+  "value": "FRNCRCY_ACCT_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "网点单个时段预约最大人数",
+  "value": "BRCH_SINGL_TM_PERIOD_RVT_MAX_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "网络状态代码",
+  "value": "NTW_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "微信内容模板",
+  "value": "WECHAT_CONTENT_TMPL",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "维护机构号",
+  "value": "MATN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "维护时间",
+  "value": "MATN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "维护原因",
+  "value": "MATN_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "尾箱号",
+  "value": "BOX_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "委托人开户类型代码",
+  "value": "TRSTR_OPEN_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "委托人账号",
+  "value": "TRSTR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "委托人账户名称",
+  "value": "TRSTR_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "未处理利息",
+  "value": "UN_DLWTH_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "未发起评价数量",
+  "value": "UN_LUNCH_APRS_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "文档类型代码",
+  "value": "DOC_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "文件导入状态代码",
+  "value": "FILE_IMPT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "文件名",
+  "value": "FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "文件上传状态代码",
+  "value": "FILE_UPLDG_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "文字样式代码",
+  "value": "WORD_STYLE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "我方机构代码",
+  "value": "ORPRT_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物理设备序号",
+  "value": "PHYS_EQUIP_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物品类型代码",
+  "value": "ARTI_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物品原名称",
+  "value": "ARTI_ORGINL_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "物品状态代码",
+  "value": "ARTI_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物业区域名称",
+  "value": "PROPT_REGN_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "喜爱标志",
+  "value": "FAVORITE_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "下拉映射字典名称",
+  "value": "PULDW_MAPG_DICTRY_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "现场机构号",
+  "value": "ONSITE_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现场级别代码",
+  "value": "ONSITE_LVL_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "现场授权原因代码",
+  "value": "ONSITE_AUTH_RSN_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "限额起始日期",
+  "value": "LMT_START_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "详细查询内容",
+  "value": "DTL_QRY_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "消息对象编号",
+  "value": "MSG_OBJ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息时间",
+  "value": "MSG_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息状态代码",
+  "value": "MSG_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户核准件号",
+  "value": "CLOS_ACCT_APPRVL_LETTER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户资金去向代码",
+  "value": "CLOS_ACCT_FUND_WHRABT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "小票模板编号",
+  "value": "TICKE_TMPL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "小区代码",
+  "value": "RESQRT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协定解除日期",
+  "value": "AGREMT_REMOVE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协定签约日期",
+  "value": "AGREMT_SIGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协定生效日期",
+  "value": "AGREMT_EFFT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协定失效日期",
+  "value": "AGREMT_INVALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协议标题",
+  "value": "AGMT_HEDLN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "协议类型代码",
+  "value": "AGMT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新产品码",
+  "value": "NEW_PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新存单号",
+  "value": "NEW_DEPRCP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新存单或存折号",
+  "value": "NEW_DEPRCP_OR_STR_DEPBOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新开户标志",
+  "value": "NEW_OPEN_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新开子账户序号",
+  "value": "NEW_OPEN_SUB_ACCT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新凭证号",
+  "value": "NEW_VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新印鉴卡冠字号",
+  "value": "NEW_SALKT_CARD_CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新增时间",
+  "value": "NEWADD_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "姓氏",
+  "value": "SURNM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "修改渠道编号",
+  "value": "MODFY_CHNL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "修改时间",
+  "value": "MODFY_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "序号",
+  "value": "SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "询证账户名称",
+  "value": "CONFIRME_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "验印方式代码",
+  "value": "VERIFY_SEAL_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "验证码模板名称",
+  "value": "CPTC_TMPL_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "验证人姓名",
+  "value": "VLIDT_PERSON_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "业务场景说明",
+  "value": "BIZ_SCENE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "业务类型代码",
+  "value": "BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务名称代码",
+  "value": "BIZ_NM_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务前缀字母",
+  "value": "BIZ_PREFX_ALBT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务验证码",
+  "value": "BIZ_CPTC",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面财税库银项目代码",
+  "value": "PAGE_TIPS_PROJ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面操作密码类型代码",
+  "value": "PAGE_OPER_PWD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面查询类型代码",
+  "value": "PAGE_QRY_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面密码一致标志",
+  "value": "PAGE_PWD_IDNTL_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面签名框图片路径",
+  "value": "PAGE_AUTOGR_FRAME_PICT_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "Ⅱ类户和绑定账户转账限额标志",
+  "value": "CLS2_ACCT_AND_BIND_ACCT_TSFACCT_LMT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面维修资金交易类型代码",
+  "value": "PAGE_REPAIR_FUND_TX_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面账户状态代码",
+  "value": "PAGE_ACCT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面重置支取密码标志",
+  "value": "PAGE_RSET_DRAW_PWD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一般满意比率",
+  "value": "GENL_SATSF_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一年存款信息",
+  "value": "YRLY_DPST_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "移出账号",
+  "value": "MOVOUT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移交柜员号",
+  "value": "DELVR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移交时间",
+  "value": "DELVR_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入卡号或账号",
+  "value": "MOV_IN_CARD_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入移出标志代码",
+  "value": "MOV_IN_MOVOUT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入移出存单标志代码",
+  "value": "MOV_IN_MOVOUT_DEPRCP_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入移出日期",
+  "value": "MOV_IN_MOVOUT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已错账控制或解控金额",
+  "value": "ALRDY_ERACCT_CTRL_OR_UNCNTRL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "已减值本金",
+  "value": "ALRDY_DVAL_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "已解控金额",
+  "value": "ALRDY_UNCNTRL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "音频样式代码",
+  "value": "AUDIO_STYLE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "音箱编号",
+  "value": "VOICE_BOX_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "银行卡挂失申请书编号",
+  "value": "BANK_CARD_RPTLOSS_APLY_BOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印鉴类型代码",
+  "value": "SALKT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章类型代码",
+  "value": "SIGNET_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章开启使用日期",
+  "value": "SIGNET_OPEN_USE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营销线索编号",
+  "value": "MKTING_CLUE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "应答标志代码",
+  "value": "RSPN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "应答信息",
+  "value": "RSPN_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "应付汇款资金处理方式代码",
+  "value": "PYBL_RTM_FUND_DLWTH_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "应付利息",
+  "value": "PYBL_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应付利息税",
+  "value": "PYBL_INT_TAX",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应缴未扣服务费",
+  "value": "PYBL_UN_DSTRN_SERV_FE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应缴未扣年费",
+  "value": "PYBL_UN_DSTRN_ANNL_FEE",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应配钞金额",
+  "value": "SHOULD_ALCT_BNKNT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应取未取余额",
+  "value": "SHOULD_GET_UN_GET_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应收利息",
+  "value": "RECVBL_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应用名称",
+  "value": "APP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "硬盘使用状态代码",
+  "value": "HARD_DISK_USE_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用户柜员号",
+  "value": "USER_TELR_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用户确认信息",
+  "value": "USER_CNFRM_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用户姓名",
+  "value": "USER_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用途说明",
+  "value": "USAGE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用印日期",
+  "value": "SEAL_DOC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "有效日期",
+  "value": "VALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "余额变化标志",
+  "value": "BAL_TRSFRMTN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "余额方向代码",
+  "value": "BAL_DRCT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "语音呼叫顺序号",
+  "value": "PRNCTN_CALL_SEQ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "语音设备编号",
+  "value": "PRNCTN_EQUIP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预存标志",
+  "value": "ADVCDEP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预留手机号码",
+  "value": "RSVD_MOBILE_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预售证编号",
+  "value": "PRSLCNS_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约标志",
+  "value": "RVT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约地点GPS坐标",
+  "value": "RVT_SITE_GPS_CORDT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约结束时间",
+  "value": "RVT_END_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约网点机构号",
+  "value": "RVT_BRCH_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约业务代码",
+  "value": "RVT_BIZ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工英文名称",
+  "value": "EMPLY_ENG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原包报文编号",
+  "value": "ORGINL_PKG_MSG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原包发起机构代码",
+  "value": "ORGINL_PKG_LUNCH_ORG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原包流水号",
+  "value": "ORGINL_PKG_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原出票金额",
+  "value": "ORGINL_TICOUT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "原存单号",
+  "value": "ORGINL_DEPRCP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原对账日期",
+  "value": "ORGINL_CHKACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原付款人证件类型代码",
+  "value": "ORGINL_DRWE_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原岗位编号",
+  "value": "ORGINL_POST_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原交易收款人名称",
+  "value": "ORGINL_TX_RECVR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原交易账户名称",
+  "value": "ORGINL_TX_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "上级清算中心机构号",
+  "value": "SPR_LIQD_CENT_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上缴流水号",
+  "value": "TURNIN_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备端口号码",
+  "value": "EQUIP_PORT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备分类代码",
+  "value": "EQUIP_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备归还时间",
+  "value": "EQUIP_RMND_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备归还用户编码",
+  "value": "EQUIP_RMND_USER_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设备密码",
+  "value": "EQUIP_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "设备描述",
+  "value": "EQUIP_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "设备运行状态代码",
+  "value": "EQUIP_RUN_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "设立日期",
+  "value": "SETUP_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "社保客户图片地址",
+  "value": "SOCI_SECU_CUST_PICT_ADDR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请机构号",
+  "value": "APLY_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请来源代码",
+  "value": "APLY_SOURCE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请人名称",
+  "value": "APPLCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "申请人账户名称",
+  "value": "APPLCT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "申请日期",
+  "value": "APLY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "申请文件名",
+  "value": "APLY_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "身份认证方式代码",
+  "value": "IDTY_ATHTCTN_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "审核柜员编号2",
+  "value": "EXMNVRFY_TELR_NO_2",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "审批员柜员号",
+  "value": "APPRV_MEM_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "升级间隔时间",
+  "value": "UPGRD_INTRVL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "升降级标志代码",
+  "value": "ASC_DSC_RANK_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "生成日期",
+  "value": "GNRT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "省或直辖市行政区划代码",
+  "value": "PROV_OR_MNCPLTY_ADMIN_CMPRMNT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "省名称",
+  "value": "PROV_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "剩余未入账金额",
+  "value": "REMAIN_UN_RCRDACCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "失败总笔数",
+  "value": "FAIL_TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "失败总金额",
+  "value": "FAIL_TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "失效时间",
+  "value": "INVALID_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实际调入金额",
+  "value": "ACTL_CALL_IN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实际用印次数",
+  "value": "ACTL_SEAL_DOC_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "实缴金额",
+  "value": "PAID_IN_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实收合计金额",
+  "value": "ACTL_RECV_TOT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "实转本金",
+  "value": "REAL_TURN_PRIN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "事务类别代码",
+  "value": "TRSCTN_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "事务书编号",
+  "value": "TRSCTN_BOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "适用值",
+  "value": "SUIT_VAL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收报行收费金额",
+  "value": "RCVRPT_RW_COLTFE_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收费编号",
+  "value": "COLTFE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收费类型代码",
+  "value": "COLTFE_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收付标志代码",
+  "value": "RCPTPYMT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收回金额",
+  "value": "TKBCK_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "收款行行名",
+  "value": "RCVMNY_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款人姓名",
+  "value": "RECVR_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款人账户名称",
+  "value": "RECVR_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "收款账号",
+  "value": "RCVMNY_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "收入兑付张数",
+  "value": "INCOME_CSHNG_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "首次应缴存金额",
+  "value": "FSTTM_SHOULD_DPST_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "受理时间",
+  "value": "ACPTE_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "授权金额",
+  "value": "AUTH_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "授权金额说明",
+  "value": "AUTH_AMT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "授权状态代码",
+  "value": "AUTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "售出张数",
+  "value": "WORKOFF_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "蜀信卡快捷支付标志",
+  "value": "SHUXIN_E_QICK_PAYMT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "水电气费签约查询方式代码",
+  "value": "UTILITS_FE_SIGN_QRY_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "税款类型代码",
+  "value": "TAX_MNY_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "四川农信签发标志",
+  "value": "SC_RCU_ISU_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "随机码",
+  "value": "RNDM_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "所得利息",
+  "value": "GAIN_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "所属日期",
+  "value": "BLNGTO_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "套内居住面积",
+  "value": "INSD_DWLG_AREA",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "提交柜员号",
+  "value": "SBMT_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提前提醒人数",
+  "value": "ADV_RMNDR_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提前预约最大天数",
+  "value": "ADV_RVT_MAX_DAYS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提示付款日期",
+  "value": "HINT_PAY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提醒日期",
+  "value": "RMNDR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "提醒时间",
+  "value": "RMNDR_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "天数",
+  "value": "DAYS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "填单开始时间",
+  "value": "FILL_BILL_BGN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "填单时间",
+  "value": "FILL_BILL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "填单状态代码",
+  "value": "FILL_BILL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "条屏显示样式编号",
+  "value": "BAR_SRC_INDCT_STYLE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "条屏样式编号",
+  "value": "BAR_SRC_STYLE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调出差额金额",
+  "value": "CALOUT_DIFCAMT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "调出数量",
+  "value": "CALOUT_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "调入差额金额",
+  "value": "CALL_IN_DIFCAMT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "调往机构号",
+  "value": "TSFR_TO_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "停用操作员柜员号",
+  "value": "DISUSE_OPRR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "停用日期",
+  "value": "DISUSE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通讯流水号",
+  "value": "CMUNIC_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知等待客户顺位",
+  "value": "NOTI_STAY_CUST_CIS-POSIT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "通知序号",
+  "value": "NOTI_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "统计周期说明",
+  "value": "STATS_CYC_COMNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "统一验证密码标志",
+  "value": "UNIFIED_VLIDT_PWD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "图片样式代码",
+  "value": "PICT_STYLE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "退货标志",
+  "value": "RTN_GOOD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "吞卡处理标志代码",
+  "value": "SWA_CARD_DLWTH_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "托收凭证日期",
+  "value": "ENTSTINCM_VOUCH_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "外币存款利率",
+  "value": "FRNCRCY_DPST_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "外部申报电子序号",
+  "value": "EXTNL_RPTG_ELEC_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "网点预约最大人数",
+  "value": "BRCH_RVT_MAX_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "网上银行签约标志",
+  "value": "ONLN_BANK_SIGN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "网上银行签约标志代码",
+  "value": "ONLN_BANK_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "网银状态代码",
+  "value": "INTBNK_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "围栏半径值",
+  "value": "FENCE_RADIUS_VAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "维护柜员号",
+  "value": "MATN_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "维护机构名称",
+  "value": "MATN_ORG_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "维护日期",
+  "value": "MATN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "维护员工号",
+  "value": "MATN_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "维修基金账户类型代码",
+  "value": "REPAIR_FUNDS_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "委托日期",
+  "value": "ENTRST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "未发起评价比率",
+  "value": "UN_LUNCH_APRS_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "未评价比率",
+  "value": "UN_APRS_RATE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "文件播放间隔时间",
+  "value": "FILE_PLAY_INTRVL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "文件大小标志",
+  "value": "FILE_SIZE_FLG",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "无纳税人识别号原因代码",
+  "value": "NONE_PYTX_PERSON_IDTFY_NO_RSN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物品编号",
+  "value": "ARTI_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "物品名称",
+  "value": "ARTI_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "物品新数量",
+  "value": "ARTI_NEW_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "系统编号",
+  "value": "SYS_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "显示提示信息标志",
+  "value": "INDCT_HINT_INFO_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "县市清算中心资金授权时间",
+  "value": "CNTY_CITY_LIQD_CENT_FUND_AUTH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现场柜员号",
+  "value": "ONSITE_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现场类型代码",
+  "value": "ONSITE_TYP_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "现金分析码",
+  "value": "CASH_ANLYZ_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现金调拨类型代码",
+  "value": "CASH_ALLOC_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "现居住地址",
+  "value": "NOW_DWLG_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "限制额度金额",
+  "value": "LIMIT_QTA_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "项目名称",
+  "value": "PROJ_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "消息处理方式代码",
+  "value": "MSG_DLWTH_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息类型代码",
+  "value": "MSG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息流水号",
+  "value": "MSG_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "消息内容模板描述",
+  "value": "MSG_CONTENT_TMPL_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "销户本息金额",
+  "value": "CLOS_ACCT_PRNCPINT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "销户标志代码",
+  "value": "CLOS_ACCT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户操作员柜员号",
+  "value": "CLOS_ACCT_OPRR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销户利息",
+  "value": "CLOS_ACCT_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "销户子账号序号",
+  "value": "CLOS_ACCT_SUB_ACCT_NO_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "销卡类型代码",
+  "value": "CLSCRD_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "小区地址",
+  "value": "RESQRT_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "小区账号",
+  "value": "RESQRT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "协定最大值金额",
+  "value": "AGREMT_MAX_VAL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "协定最小值金额",
+  "value": "AGREMT_MIN_VAL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "协议号",
+  "value": "AGMT_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "协议或合同号",
+  "value": "AGMT_OR_CTRT_NO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "新冠字号",
+  "value": "NEW_CORONAL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新卡产品码",
+  "value": "NEW_CARD_PROD_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新卡号或账号",
+  "value": "NEW_CARD_NO_OR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新卡卡号",
+  "value": "NEW_CARD_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新增操作员柜员号",
+  "value": "NEWADD_OPRR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新增柜员号",
+  "value": "NEWADD_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新增日期",
+  "value": "NEWADD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "新增审批员柜员号",
+  "value": "NEWADD_APPRV_MEM_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "姓名",
+  "value": "NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "修改用户编号",
+  "value": "MODFY_USER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "虚拟柜员号",
+  "value": "VRTL_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "需领入标志",
+  "value": "NEED_TAKE_IN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "需要日期",
+  "value": "NED_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "学历代码",
+  "value": "EDCTBKG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "询证函编号",
+  "value": "CONFIRME_LETTER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "延后可激活时间阈值",
+  "value": "DLYD_CAN_ACTV_TM_THLD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务编号",
+  "value": "BIZ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务编码种类代码",
+  "value": "BIZ_CD_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业务回执状态代码",
+  "value": "BIZ_RETNRCPT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业主身份证号码",
+  "value": "PRPIT_ID_CARD_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "业主姓名",
+  "value": "PRPIT_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "页面财税库银查询类型代码",
+  "value": "PAGE_TIPS_QRY_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面财税库银处理结果代码",
+  "value": "PAGE_TIPS_DLWTH_RESULT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面操作标志代码",
+  "value": "PAGE_OPER_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面读卡操作标志代码",
+  "value": "PAGE_RDCRD_OPER_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面房屋维修基金处理标志代码",
+  "value": "PAGE_HS_REPAIR_FUNDS_DLWTH_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面挂失补卡业务类型代码",
+  "value": "PAGE_RPTLOSS_PTHCRD_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面挂账处理类型代码",
+  "value": "PAGE_PNGDGACCT_DLWTH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面行名关键字",
+  "value": "PAGE_BANK_NAME_KEYWD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面合法性效验标志",
+  "value": "PAGE_LGTMCY_CHEK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面介质更换操作类型代码",
+  "value": "PAGE_MEDM_REPL_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面批次查询处理操作类型代码",
+  "value": "PAGE_BATCH_QRY_DLWTH_OPER_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面凭证打印标志",
+  "value": "PAGE_VOUCH_PR_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "页面维修基金查询类型代码",
+  "value": "PAGE_REPAIR_FUNDS_QRY_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一般满意数量",
+  "value": "GENL_SATSF_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一般数量",
+  "value": "GENL_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "一本通账号",
+  "value": "ONEBOK_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入或移出存单日期",
+  "value": "MOV_IN_OR_MOVOUT_DEPRCP_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "移入账号",
+  "value": "MOV_IN_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已读标志",
+  "value": "READ_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已开主卡数量",
+  "value": "ALRDY_OPEN_MSTCRD_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "已收还息金额",
+  "value": "ALRDY_PUTAWY_RPYINT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "已收利息",
+  "value": "ALRDY_PUTAWY_INT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "银行票据查询书号",
+  "value": "BANK_BILL_QRY_ISBN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "银联在线支付标志",
+  "value": "UNINPAY_ONLIN_PAYMT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印鉴卡号码",
+  "value": "SALKT_CARD_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印鉴卡注销日期",
+  "value": "SALKT_CARD_DEREGIS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章编号",
+  "value": "SIGNET_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章名称",
+  "value": "SIGNET_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "印章模型编号",
+  "value": "SIGNET_MODEL_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "印章模型描述文件名称",
+  "value": "SIGNET_MODEL_DESC_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "印章模型文字描述",
+  "value": "SIGNET_MODEL_WORD_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "印章形状信息",
+  "value": "SIGNET_SHAPE_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "印章状态代码",
+  "value": "SIGNET_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "英文或拼音名字",
+  "value": "ENG_OR_PINYIN_FIRST_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "英文或拼音企业名称",
+  "value": "ENG_OR_PINYIN_CORP_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "英文或拼音现居地址",
+  "value": "ENG_OR_PINYIN_CURR_RESDNCE_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "英文机构名称",
+  "value": "ENG_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "英文名称",
+  "value": "ENG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "营业结束时间",
+  "value": "BIZ_END_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业执照号码",
+  "value": "BIZ_LIC_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "应答行行号",
+  "value": "RSPN_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "应答行行名",
+  "value": "RSPN_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "应付本息合计金额",
+  "value": "PYBL_PRNCPINT_TOT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "应用标志",
+  "value": "APP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "映射类型代码",
+  "value": "MAPG_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "映射字典集合",
+  "value": "MAPG_DICTRY_ASSMBLG",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用电缴费签约标志代码",
+  "value": "CSMELEC_PAY_FEE_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转存期数",
+  "value": "TSFDEP_PRIDNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转入方账户余额",
+  "value": "TSFPTY_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转入账号",
+  "value": "TSFIN_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "状态代码",
+  "value": "STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "幢名称",
+  "value": "BUILD_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "资金授权结果说明",
+  "value": "FUND_AUTH_RESULT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "子卡密码",
+  "value": "SUB_CARD_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "子卡张数",
+  "value": "SUB_CARD_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子序号",
+  "value": "SUB_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户类型代码",
+  "value": "SUB_ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户账号或序号",
+  "value": "SUB_ACCT_ACCT_NO_OR_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户状态代码",
+  "value": "SUB_ACCT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自定义序号",
+  "value": "UDF_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自动解付日期",
+  "value": "ATMTC_UFRZPY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自动解挂日期",
+  "value": "ATMTC_URPTLOSS_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自助缴费限额",
+  "value": "SLFSERV_PAY_FEE_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "字典数据信息",
+  "value": "DICTRY_DATA_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "字体效果代码",
+  "value": "FONT_EFCT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总UKEY数量",
+  "value": "TOTL_UKEY_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总单元户数量",
+  "value": "TOTL_UNITELE_ACCT_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总人数",
+  "value": "TOTL_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总项数量",
+  "value": "TOTL_ITEM_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总余额",
+  "value": "TOTL_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "纵向位移",
+  "value": "PORTRAIT_DSPLMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "最低转存金额",
+  "value": "LOWEST_TSFDEP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "最后持票人开户行行名",
+  "value": "FINL_BILHLDR_OPEN_ACCT_RW_BANK_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "最后打印时间",
+  "value": "FINL_PR_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "关闭日期",
+  "value": "CLOSE_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "毕业日期",
+  "value": "GRDUT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "上岗日期",
+  "value": "MTGUAR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易种类代码",
+  "value": "ORGINL_TX_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原来张数",
+  "value": "FORMER_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原密码",
+  "value": "ORGINL_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原签发日期",
+  "value": "ORGINL_ISU_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原委托日期",
+  "value": "ORGINL_ENTRST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原业务支付平台流水号",
+  "value": "ORGINL_BIZ_PAYMT_PLATFM_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原因",
+  "value": "RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原因代码",
+  "value": "RSN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原支付汇路代码",
+  "value": "ORGINL_PAYMT_REMITWY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原支付平台流水号",
+  "value": "ORGINL_PAYMT_PLATFM_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原支付业务类型代码",
+  "value": "ORGINL_PAYMT_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "源文件名称",
+  "value": "SRC_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "远程授权柜员号",
+  "value": "REMOTE_AUTH_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "远程授权时间",
+  "value": "REMOTE_AUTH_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "远程文件路径",
+  "value": "REMOTE_FILE_PATH",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "约期利率",
+  "value": "FXDT_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "约转日期",
+  "value": "ABOT_GO_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "允许实习柜员复核标志",
+  "value": "PMIT_PRACT_TELR_RCHK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "再次输入新密码",
+  "value": "ONCAGN_INPUT_NEW_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "账号后四位号码",
+  "value": "ACCT_NO_AFT_FOUR_BIT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账号生成标志代码",
+  "value": "ACCT_NO_GNRT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户查询类型代码",
+  "value": "ACCT_QRY_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户机构名称",
+  "value": "ACCT_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "账户解付方式代码",
+  "value": "ACCT_UFRZPY_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户名称",
+  "value": "ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "账户名构成标志代码",
+  "value": "ACCNT_ACCTNM_CNST_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户锁定标志",
+  "value": "ACCT_LCKD_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户支付方式代码",
+  "value": "ACCT_PAYMT_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账页号",
+  "value": "LDGR_PG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件号码字典名称",
+  "value": "CRTF_NBR_DICTRY_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件类型代码",
+  "value": "CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件长期有效标志",
+  "value": "CRTF_LTRM_VALID_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支持预存标志",
+  "value": "SUPT_ADVCDEP_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付处理方式代码",
+  "value": "PAYMT_DLWTH_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付第三方状态代码",
+  "value": "PAYMT_THIRD_PTY_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付交易状态代码",
+  "value": "PAYMT_TX_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付结算签约类型代码",
+  "value": "PAYMT_STL_SIGN_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付金额",
+  "value": "PAYMT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "支付业务类型代码",
+  "value": "PAYMT_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支票签约标志",
+  "value": "CHQE_SIGN_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支取标志",
+  "value": "DRAW_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支取摘要",
+  "value": "DRAW_SUMMARY",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "支取周期代码",
+  "value": "DRAW_CYC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支用柜员号",
+  "value": "FORSPRT_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支用张数",
+  "value": "FORSPRT_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "止付机构号",
+  "value": "CRDBK_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "止付解付代码",
+  "value": "CRDBK_UFRZPY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "止付类型代码",
+  "value": "CRDBK_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "止息日期",
+  "value": "STOPINT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "智能产品签约类型代码",
+  "value": "SMRT_PROD_SIGN_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终保日期",
+  "value": "FINAL_INSRC_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "终止凭证号",
+  "value": "TERMTN_VOUCH_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "重复类型代码",
+  "value": "REPET_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主管部门编号",
+  "value": "DIROR_DEPT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主机交易码",
+  "value": "HOST_TRAN_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主界面显示标志",
+  "value": "MAIN_BUNDRY_INDCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主卡密码",
+  "value": "MSTCRD_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主题名称",
+  "value": "THEME_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主题图片内容",
+  "value": "THEME_PICT_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主账户管理密码",
+  "value": "MAIN_ACCT_MGMT_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主子卡标志代码",
+  "value": "MAIN_SUB_CARD_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册登记日期",
+  "value": "REG_RGST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "注册机构号",
+  "value": "REG_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "专用账户账号",
+  "value": "SPCUSE_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出子账户余额",
+  "value": "TSFOUT_SUB_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转存次数",
+  "value": "TSFDEP_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转换后文件名称",
+  "value": "CONVT_AFT_FILE_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "转入账户证件号码",
+  "value": "TSFIN_ACCT_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转入账户子账户序号",
+  "value": "TSFIN_ACCT_SUB_ACCT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转账金额",
+  "value": "TSFACCT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转账日期",
+  "value": "TSFACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转账限额",
+  "value": "TSFACCT_LMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转账限额说明",
+  "value": "TSFACCT_LMT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "转账周期代码",
+  "value": "TSFACCT_CYC_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "资料名称",
+  "value": "MTRLS_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "子卡卡号",
+  "value": "SUB_CARD_CARD_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子卡主账户属性代码",
+  "value": "SUB_CARD_MAIN_ACCT_ATTR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账号序号",
+  "value": "SUB_ACCT_NO_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户开立标志代码",
+  "value": "SUB_ACCT_SETUP_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户名称",
+  "value": "SUB_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "子账户账号",
+  "value": "SUB_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户止付类型代码",
+  "value": "SUB_ACCT_CRDBK_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自动销户标志",
+  "value": "ATMTC_CLOS_ACCT_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自来水缴费签约标志代码",
+  "value": "WATER_PAY_FEE_SIGN_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "自助缴费限额说明",
+  "value": "SLFSERV_PAY_FEE_LMT_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "字号",
+  "value": "FONT_SIZE",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总笔数",
+  "value": "TOTL_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总等待时间",
+  "value": "TOTL_STAY_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总服务人数",
+  "value": "TOTL_SERV_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总服务时间",
+  "value": "TOTL_SERV_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总评价数量",
+  "value": "TOTL_APRS_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总使用时间",
+  "value": "TOTL_USE_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最高资产金融时点日期",
+  "value": "HIGH_ASST_FIN_WHEN_DOT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最高综合金融资产金额",
+  "value": "HIGH_COMPHSV_FIN_ASST_AMT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后维护用户编号",
+  "value": "FINL_MATN_USER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后修改时间",
+  "value": "FINL_MODFY_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最小转存金额",
+  "value": "MIN_TSFDEP_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "作废金额",
+  "value": "CANCL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "作废数量",
+  "value": "CANCL_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "入学日期",
+  "value": "ENROL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用户密码",
+  "value": "USER_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "用户密码有效日期",
+  "value": "USER_PWD_VALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用户渠道状态代码",
+  "value": "USER_CHNL_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用印模式代码",
+  "value": "SEAL_DOC_MODE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "用印状态代码",
+  "value": "SEAL_DOC_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "优先级代码",
+  "value": "PRIT_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "邮件模板内容",
+  "value": "MAIL_TMPL_CONTENT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "逾期浮动比例",
+  "value": "OVDUE_FLOT_RATIO",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "逾期原因",
+  "value": "OVDUE_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "预计发布时间",
+  "value": "EXPC_RELS_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约币种代码",
+  "value": "RVT_CUR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约标志代码",
+  "value": "RVT_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约查询状态代码",
+  "value": "RVT_QRY_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约处理状态代码",
+  "value": "RVT_DLWTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约日期",
+  "value": "RVT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约入账日期",
+  "value": "RVT_RCRDACCT_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "预约时段信息",
+  "value": "RVT_TM_PERIOD_INFO",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "预约时间",
+  "value": "RVT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工人数",
+  "value": "EMPLY_PEO_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "员工职责描述",
+  "value": "EMPLY_RSPBL_DESC",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原报文编号",
+  "value": "ORGINL_MSG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原存单或存折号",
+  "value": "ORGINL_DEPRCP_OR_STR_DEPBOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原错账控制或解控金额",
+  "value": "ORGINL_ERACCT_CTRL_OR_UNCNTRL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "原发起行行号",
+  "value": "ORGINL_LUNCH_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原付款人身份证件类型代码",
+  "value": "ORGINL_DRWE_IDTY_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原付款人账号",
+  "value": "ORGINL_DRWE_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原付款人证件号码",
+  "value": "ORGINL_DRWE_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原柜员流水号",
+  "value": "ORGINL_TELR_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原机构号",
+  "value": "ORGINL_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易柜员流水号",
+  "value": "ORGINL_TX_TELR_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原交易金额",
+  "value": "ORGINL_TX_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "原接收行行号",
+  "value": "ORGINL_RCPTN_RW_BNKNO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原申请人账户名称",
+  "value": "ORGINL_APPLCT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原收款人名称",
+  "value": "ORGINL_RECVR_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原收款人账号",
+  "value": "ORGINL_RECVR_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原收款人账户名称",
+  "value": "ORGINL_RECVR_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "原托收金额",
+  "value": "ORGINL_ENTSTINCM_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "原业务支付平台日期",
+  "value": "ORGINL_BIZ_PAYMT_PLATFM_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "原支付交易序号",
+  "value": "ORGINL_PAYMT_TX_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "远程授权机构号",
+  "value": "REMOTE_AUTH_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "远程授权结果代码",
+  "value": "REMOTE_AUTH_RESULT_CD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "约转频率",
+  "value": "ABOT_GO_FRQNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "运营规则编号",
+  "value": "OPRTN_RULE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "灾备机构号",
+  "value": "DSTR_RCVR_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "摘要",
+  "value": "SUMMARY",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "账户分类标识代码",
+  "value": "ACCT_CLSF_IND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户类型代码",
+  "value": "ACCT_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账户状态代码",
+  "value": "ACCT_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "账务日期",
+  "value": "ACTNG_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "正常浮动利率",
+  "value": "NORML_FLOT_INTRT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "证件类型字典名称",
+  "value": "CRTF_TYP_DICTRY_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证件有效日期",
+  "value": "CRTF_VALID_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "证书号码",
+  "value": "CDTL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付查询类别代码",
+  "value": "PAYMT_QRY_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付汇路代码",
+  "value": "PAYMT_REMITWY_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付交易序号",
+  "value": "PAYMT_TX_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付交易种类代码",
+  "value": "PAYMT_TX_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付密码",
+  "value": "PAYMT_PWD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付平台流水号",
+  "value": "PAYMT_PLATFM_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "人行支付流水号",
+  "value": "PBOC_PAYMT_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "统一支付平台流水号",
+  "value": "UNIFIED_PAYMT_PLATFM_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付系统流水号",
+  "value": "PAYMT_SYS_SN",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付业务处理状态代码",
+  "value": "PAYMT_BIZ_DLWTH_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支付业务种类代码",
+  "value": "PAYMT_BIZ_KIND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支款金额",
+  "value": "PYMT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "支票签约日期",
+  "value": "CHQE_SIGN_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支取类型代码",
+  "value": "DRAW_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "支取密码",
+  "value": "DRAW_PWD",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "支取原因",
+  "value": "DRAW_RSN",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "知识点标题描述",
+  "value": "KNOW_PONT_HEDLN_DESC",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "知识点类别代码",
+  "value": "KNOW_PONT_CATEG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "直径",
+  "value": "DIAM",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "止付柜员号",
+  "value": "CRDBK_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "止付书编号",
+  "value": "CRDBK_BOK_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "止付状态代码",
+  "value": "CRDBK_STUS_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "指定发送对象编号",
+  "value": "SPCY_SND_OBJ_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "质押融资合同号或债券代码",
+  "value": "IMPN_RSFND_CTRT_NO_OR_BOND_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "质押债券总面额",
+  "value": "IMPN_BOND_TOTL_DNMN",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "置换标志代码",
+  "value": "DSPL_FLG_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "置换日期",
+  "value": "DSPL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "中间名字",
+  "value": "MID_FIRST_NAME",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "中文居住地址",
+  "value": "CN_DWLG_ADDR",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "重发时间间隔",
+  "value": "RPTSND_TM_INTRVL",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "重呼限制时间",
+  "value": "RECALL_LIMIT_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主机返回记录数",
+  "value": "HOST_RETN_KEPRCD_ENMERT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主机名称",
+  "value": "HOST_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主机日期",
+  "value": "HOST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主机时间",
+  "value": "HOST_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主机授权类型代码",
+  "value": "HOST_AUTH_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主卡账户名称",
+  "value": "MSTCRD_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主卡主账户名称",
+  "value": "MSTCRD_MAIN_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主卡主账户属性代码",
+  "value": "MSTCRD_MAIN_ACCT_ATTR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主题编号",
+  "value": "THEME_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "主题说明",
+  "value": "THEME_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "主账户账号",
+  "value": "MAIN_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "住宅电话号码",
+  "value": "RESDC_TEL_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "专用账户名称",
+  "value": "SPCUSE_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "转出金额",
+  "value": "TSFOUT_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转出账户卡折标志",
+  "value": "TSFOUT_ACCT_CRDBOK_FLG",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出账户名称",
+  "value": "TSFOUT_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "转出账户证件号码",
+  "value": "TSFOUT_ACCT_CRTF_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出账户证件类型代码",
+  "value": "TSFOUT_ACCT_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转出子账户账号",
+  "value": "TSFOUT_SUB_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转存方式代码",
+  "value": "TSFDEP_MANR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转介日期",
+  "value": "REFERRAL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转介时间",
+  "value": "REFERRAL_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转入机构号",
+  "value": "TSFIN_ORG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转入机构名称",
+  "value": "TSFIN_ORG_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "转入账户名称",
+  "value": "TSFIN_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "转入账户证件类型代码",
+  "value": "TSFIN_ACCT_CRTF_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转入子账户余额",
+  "value": "TSFIN_SUB_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "转账扣款账号",
+  "value": "TSFACCT_CHRG_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "转账用途说明",
+  "value": "TSFACCT_USAGE_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "资金分类代码",
+  "value": "FUND_CLSF_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "资金来源代码",
+  "value": "FUND_SOURCE_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子卡主账户名称",
+  "value": "SUB_CARD_MAIN_ACCT_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "子卡主账户账号",
+  "value": "SUB_CARD_MAIN_ACCT_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账号",
+  "value": "SUB_ACCT_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户冻结类型代码",
+  "value": "SUB_ACCT_FRZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户序号",
+  "value": "SUB_ACCT_SER_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "子账户余额",
+  "value": "SUB_ACCT_BAL",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "自动约转业务类型代码",
+  "value": "ATMTC_ABOT_GO_BIZ_TYP_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "字典名称",
+  "value": "DICTRY_NM",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "字典条件说明",
+  "value": "DICTRY_COND_COMNT",
+  "isFullRow": true,
+  "isAmt": false
+}, {
+  "label": "字体名称",
+  "value": "FONT_NM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "字体颜色代码",
+  "value": "FONT_COLR_CD",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "综合屏设备编号",
+  "value": "INTGRD_SCRN_EQUIP_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "综合屏样式编号",
+  "value": "INTGRD_SCRN_STYLE_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总单元数量",
+  "value": "TOTL_UNITELE_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总叫号数量",
+  "value": "TOTL_CALL_NO_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "总金额",
+  "value": "TOTL_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "总客户数量",
+  "value": "TOTL_CUST_QTY",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最大笔数",
+  "value": "MAX_STKCNT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最大用印次数",
+  "value": "MAX_SEAL_DOC_TMS",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最大账页号",
+  "value": "MAX_LDGR_PG_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后打印柜员号",
+  "value": "FINL_PR_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后打印日期",
+  "value": "FINL_PR_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后更新日期",
+  "value": "FINL_UPD_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后接收柜员号",
+  "value": "FINL_RCPTN_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后维护柜员号",
+  "value": "FINL_MATN_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后修改柜员号",
+  "value": "FINL_MODFY_TELR_NO",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后修改日期",
+  "value": "FINL_MODFY_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最后修改员工号",
+  "value": "FINL_MODFY_EMPNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "最小发送金额",
+  "value": "MIN_SND_AMT",
+  "isFullRow": false,
+  "isAmt": true
+}, {
+  "label": "作废凭证待上缴张数",
+  "value": "CANCL_VOUCH_WAIT_TURNIN_SHETNBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "作废日期",
+  "value": "CANCL_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "坐席号码",
+  "value": "SEAT_NBR",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "成立日期",
+  "value": "FOUND_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "开业日期",
+  "value": "STRTBIZ_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "离岗日期",
+  "value": "LVPST_DT",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业开始时间",
+  "value": "BIZ_BGN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}, {
+  "label": "营业终止时间",
+  "value": "BIZ_TERMTN_TM",
+  "isFullRow": false,
+  "isAmt": false
+}]

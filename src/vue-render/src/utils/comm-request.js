@@ -1,4 +1,6 @@
 import axios from "axios";
+import fetchStandardFieldsRes from "./fetchStandardFieldsRes.js";
+import queryAllStandardFieldsRes from "./queryAllStandardFieldsRes.js";
 
 
 function fetchStandardFields(){
@@ -103,7 +105,8 @@ function fetchStandardFields(){
       }
     })
     .catch(res => {
-      resolve({isSuccess:false,data:[]})
+      // resolve({isSuccess:false,data:[]})
+      resolve({isSuccess:true,data:fetchStandardFieldsRes})
     })
   });
 }
@@ -196,13 +199,15 @@ function queryAllStandardFields(){
           return obj;
         });
         window.standardAllFields = data;
+        debugger
         resolve({isSuccess:true,data:data})
       }else{
         resolve({isSuccess:false,data:data})
       }
     })
     .catch(res => {
-      resolve({isSuccess:false,data:[]})
+      // resolve({isSuccess:false,data:[]})
+      resolve({isSuccess:true,data:queryAllStandardFieldsRes})
     })
   });
 }

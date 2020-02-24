@@ -72,8 +72,8 @@ export default {
   data(){
     return {
       TradeData:{
-        <%_ dataFieldsAll.forEach(function(field){ _%>
-        <%-field%>:"",
+        <%_ dataFieldsAll.forEach(function(dataFieldItem){ _%>
+        <%-dataFieldItem.value%>:<%-dataFieldItem.defaultValue%>,
         <%_ }); _%>
       },
       <%_ tDataFields.forEach(function(tFieldItem){ _%>
