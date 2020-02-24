@@ -1,13 +1,118 @@
-export default [{
-  "label": "IMEI序列号",
-  "value": "IMEI_SER_NUM",
-  "isFullRow": false,
-  "tagName": "custom-input",
-  "compAttr": [{
-    "name": "v-model",
-    "attrPosition": "data"
-  }]
-}, {
+
+/**
+账号
+户名
+余额
+可用余额
+开户证实书凭证号
+支取方式
+密码
+印鉴卡号码
+证件类型
+证件号码
+冠字号
+存单号
+
+ */
+export default [
+  {
+    "label": "账号",
+    "value": "FIELD_1",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "户名",
+    "value": "FIELD_2",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "余额",
+    "value": "FIELD_3",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "可用余额",
+    "value": "FIELD_4",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "开户证实书凭证号",
+    "value": "FIELD_5",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "支取方式",
+    "value": "FIELD_6",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "密码",
+    "value": "FIELD_7",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "印鉴卡号码",
+    "value": "FIELD_8",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "证件类型",
+    "value": "FIELD_9",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "证件号码",
+    "value": "FIELD_10",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "冠字号",
+    "value": "FIELD_11",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+  {
+    "label": "存单号",
+    "value": "FIELD_12",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{"name": "v-model","attrPosition": "data"}]
+  },
+
+
+
+  {
+    "label": "IMEI序列号",
+    "value": "IMEI_SER_NUM",
+    "isFullRow": false,
+    "tagName": "custom-input",
+    "compAttr": [{
+      "name": "v-model",
+      "attrPosition": "data"
+    }]
+  },
+{
   "label": "SIM卡序列号",
   "value": "SIM_CARD_SER_NUM",
   "isFullRow": false,
