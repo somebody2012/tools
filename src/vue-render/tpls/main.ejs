@@ -31,12 +31,6 @@ Vue.use(StorageManager, StorageName);
 Vue.config.productionTip = false
 
 
-//需要动态create的组件--begin
-import VueCreateAPI from "@/common/utils/vue-create-api";
-import SignFlow from "./SignFlow.vue";
-Vue.use(VueCreateAPI);
-Vue.createAPI(SignFlow);
-//需要动态create的组件--end
 
 
 new Vue({
