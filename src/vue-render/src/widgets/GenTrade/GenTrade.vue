@@ -252,9 +252,9 @@ export default {
   methods:{
     saveTmpExcel(){
       let dataArr = [
-        {"组名称(trade-group)":""},
-        {"栏位名称":""},
-        {"必输(Q)|不可用(D)|只读(R)|不可见(V)":""}
+        {"组名称(trade-group)":"","栏位名称":"","必输(Q)|不可用(D)|只读(R)|不可见(V)":""},
+        {"组名称(trade-group)":"","栏位名称":"","必输(Q)|不可用(D)|只读(R)|不可见(V)":""},
+        {"组名称(trade-group)":"","栏位名称":"提交","必输(Q)|不可用(D)|只读(R)|不可见(V)":""},
       ];
       FileUtils.exportJsonToExcel(dataArr,"生成交易模板.xls");
     },
@@ -276,6 +276,17 @@ export default {
       }
       let res = await FileUtils.readExcelAsync(file);
       let Sheet1 = res.data.Sheet1.slice(1);
+      Sheet1 = Sheet1.filter(v=>{
+        if(v.B.trim() == "提交"){
+          return true;
+        }else{
+          if(v.A.trim() == "" && v.B.trim() == "" && v.C.trim() == ""){
+            return false;
+          }else{
+            return true;
+          }
+        }
+      });
       let excelData = Sheet1.map(v => {
         let C = String(v.C).toUpperCase();
         let requisite = C.includes("Q");
@@ -402,7 +413,7 @@ export default {
           compTpl:v.compTpl,
         }
       });
-      let buttomObj = genTpls.genAll(this,this.buttomArea);
+      let buttomObj = genTpls.genAll(this,this.buttomArea,true);
       let excelFieldsAllB = buttomObj.excelFieldsAll;
       let methodsAllB = buttomObj.methodsAll;
       let dataFieldsAllB = buttomObj.dataFieldsAll;
@@ -419,7 +430,7 @@ export default {
       let distTplDataB = genTpls.twoDimensionalArray(this,excelFieldsAllB);
       methodsAll = methodsAll.concat(methodsAllB);
       dataFieldsAll = dataFieldsAll.concat(dataFieldsAllB);
-      dataFieldsAll = dataFieldsAll.filter((v,i)=>dataFieldsAll.indexOf(v) == i);
+      dataFieldsAll = dataFieldsAll.filter((v,i)=>dataFieldsAll.findIndex(v1 => v1.value == v.value) == i);
       methodsAll = methodsAll.filter((v,i)=>methodsAll.indexOf(v) == i);
       this.writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll,importArr});
     },
@@ -472,7 +483,6 @@ export default {
         buttomGroup:distTplDataB,
         importArr:importArr
       };
-      debugger
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();
       let srcAppPath = this.buildPath("src/vue-render/tpls/App.ejs");

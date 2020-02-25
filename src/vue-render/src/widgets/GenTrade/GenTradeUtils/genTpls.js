@@ -3,6 +3,7 @@ import compImport from "./comp-import.js";
 // 转换成大驼峰
 function transBigCamel(str=""){
   if(str.length == 0) return "";
+  str = str.replace(/-childtype-\w+$/,"");
   str = str.charAt(0).toUpperCase() + str.substring(1)
   let bigCamel = str.replace(/-(\w)/g,(a,b,c)=>b.toUpperCase());
   return bigCamel;
@@ -31,12 +32,12 @@ function genDatas(vueIns,dataFieldsAll){
   return dataFieldsStr;
 }
 
-function genCommonCompBack(vueIns,stdFieldObj){
+function genCommonCompBack(vueIns,stdFieldObj,isButtom){
   /**
    * [{attrPosition: "tag",default: false,name: ":disabled",value: true}]
    */
   let compAttr = stdFieldObj.compAttr;
-  let tagName = stdFieldObj.tagName;
+  let tagName = stdFieldObj.tagName.replace(/-childtype-\w+$/,"");
   let exculedKeys = [":visible"];//为false的值默认排除，除了这些key
   compAttr = compAttr.filter(v => {
     if(v.value === false){
@@ -50,8 +51,11 @@ function genCommonCompBack(vueIns,stdFieldObj){
     }
     // return Boolean(v.value);
   });
+  if(isButtom){
+    // 提交按钮下面不要ref
+    compAttr = compAttr.filter(v => v.name !="ref");
+  }
   compAttr = compAttr.map(item => {
-    // debugger
     if(item.name.includes(".sync")){
       let curObj = compAttr.find(v => v.name == "v-model");
       let fieldName = "noVmodelField";
@@ -90,7 +94,7 @@ function genCommonCompBack(vueIns,stdFieldObj){
  * }
  * @returns {String}
  */
-function genCommonComp(vueIns,stdFieldObj){
+function genCommonComp(vueIns,stdFieldObj,isButtom){
   let methods = [];//[{name:"",args:[]}]
   let dataFields = [];//["xxx"]
   let allHasPosi = stdFieldObj.compAttr.every(v => Boolean(v.attrPosition));
@@ -112,7 +116,8 @@ function genCommonComp(vueIns,stdFieldObj){
           compAttrItem.value = `TradeData.${stdFieldObj.value}`;
           dataFields.push({
             value:stdFieldObj.value,
-            defaultValue:stdFieldObj.defaultValue || '""'
+            defaultValue:stdFieldObj.defaultValue || '""',
+            label:stdFieldObj.label
           });
           // dataFields.push(stdFieldObj.value);
         }else{
@@ -127,13 +132,14 @@ function genCommonComp(vueIns,stdFieldObj){
             obj.defaultValue = JSON.stringify(compAttrItem.value || "");
             obj.value = compAttrItem.name.replace(/^:/g,"") + "Var";
           }
+          obj.label = stdFieldObj.label;
           
           dataFields.push(obj);
         }
       }
     }
     //生成tpl挂在compTpl 字段上
-    genCommonCompBack(vueIns,stdFieldObj);
+    genCommonCompBack(vueIns,stdFieldObj,isButtom);
   }
   return {methods,dataFields};
 }
@@ -147,7 +153,7 @@ function genTableComp(stdFieldObj){
     dataFields:[]
   }
 }
-function genComps(vueIns,standardFields){
+function genComps(vueIns,standardFields,isButtom){
   let methodsAll = [];//[{name:"",args:[]}]
   let dataFieldsAll = [];//["xxx"]
   //交易import 信息
@@ -162,16 +168,16 @@ function genComps(vueIns,standardFields){
       methodsAll = methodsAll.concat(methods);
       dataFieldsAll = dataFieldsAll.concat(dataFields);
     }else{
-      let {methods,dataFields} = genCommonComp(vueIns,stdFieldObj);
+      let {methods,dataFields} = genCommonComp(vueIns,stdFieldObj,isButtom);
       methodsAll = methodsAll.concat(methods);
       dataFieldsAll = dataFieldsAll.concat(dataFields);
     }
-    if(compImport[stdFieldObj.tagName]){
+    if(compImport[stdFieldObj.tagName.replace(/-childtype-\w+$/,"")]){
       let bigCamel = transBigCamel(stdFieldObj.tagName);
       let isExsit = importArr.components.find(v => v == bigCamel);
       if(!isExsit){
         importArr.components.push(bigCamel);
-        importArr.import.push(compImport[stdFieldObj.tagName]);
+        importArr.import.push(compImport[stdFieldObj.tagName.replace(/-childtype-\w+$/,"")]);
       }
     }else{
       console.log(`comp-import 未配置${stdFieldObj.tagName}`);
@@ -183,8 +189,8 @@ function genComps(vueIns,standardFields){
 /**
  * 生成所有
  */
-function genAll(vueIns,standardFieldsExcelData){
-  let {standardFields,methodsAll,dataFieldsAll,importArr} = genComps(vueIns,standardFieldsExcelData);
+function genAll(vueIns,standardFieldsExcelData,isButtom){
+  let {standardFields,methodsAll,dataFieldsAll,importArr} = genComps(vueIns,standardFieldsExcelData,isButtom);
   return {
     excelFieldsAll:standardFields,
     methodsAll,

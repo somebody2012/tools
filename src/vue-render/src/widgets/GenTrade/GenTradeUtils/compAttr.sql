@@ -44,22 +44,25 @@ INSERT INTO `pub_db`.`IB_IP_COMPS_DESC`(`COMP_TAG`, `COMP_DESC`) VALUES
 ('custom-escrow-num', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-plate-num', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-debit-credit-account-type', '[{attrPosition:"data",name:"v-model"}]'),
--- 不存在的组件
 ('custom-voucher-num', '[{attrPosition:"data",name:"v-model"}]'),
+('custom-crown-num', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-payment-code', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-voucher-interval', '[{attrPosition:"data",name:"v-model"}]'),
-('custom-certification-level', '[{attrPosition:"data",name:"v-model"}]'),
-('custom-equity-account', '[{attrPosition:"data",name:"v-model"}]'),
-('custom-agent', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-ip-addr', '[{attrPosition:"data",name:"v-model"}]'),
+('custom-etc-card-status', '[{attrPosition:"data",name:"v-model"}]'),
+('custom-pinying-name', '[{attrPosition:"data",name:"v-model"}]'),
+('custom-cust-type', '[{attrPosition:"data",name:"v-model"}]'),
+-- 不存在的组件
+('custom-certification-level', '[{attrPosition:"data",name:"v-model"}]'),
+('custom-agent', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-plate-color', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-etc-card-brand', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-vehicle-classification', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-etc-blacklist-type', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-etc-blacklist-reason', '[{attrPosition:"data",name:"v-model"}]'),
-('custom-etc-card-status', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-product-code', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-remark-code', '[{attrPosition:"data",name:"v-model"}]'),
-('custom-customer-type', '[{attrPosition:"data",name:"v-model"}]'),
-('custom-pinying-name', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-water-elec-product-code', '[{attrPosition:"data",name:"v-model"}]');
+
+
+

@@ -73,6 +73,7 @@ export default {
     return {
       TradeData:{
         <%_ dataFieldsAll.forEach(function(dataFieldItem){ _%>
+        // <%-dataFieldItem.label%>
         <%-dataFieldItem.value%>:<%-dataFieldItem.defaultValue%>,
         <%_ }); _%>
       },
