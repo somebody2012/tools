@@ -191,8 +191,8 @@ function queryAllStandardFields(){
         let Result = JSON.parse(res.result.Rslt).Result;
         let data = Result.map(v => {
           let obj = {
-            label:v.COLM_DESC,
-            value:v.COLM_NM,
+            label:(v.COLM_DESC || "").trim(),
+            value:(v.COLM_NM || "").trim(),
             isFullRow:(v.DGIT || 0) >= 60,
             isAmt:(v.DEC_DGIT || 0) != 0
           }
