@@ -223,7 +223,7 @@ function twoDimensionalArrayItem(group){
       if(lastRow.length == 2){
         newGroup.push([curComp]);
       }else{
-        if(lastRowLastComp.isFullRow){
+        if(lastRowLastComp.isFullRow || curComp.isFullRow){
           newGroup.push([curComp]);
         }else{
           lastRow.push(curComp);

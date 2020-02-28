@@ -26,7 +26,7 @@ export default {
   "custom-sealcard-num":'import CustomSealcardNum from "@/components/bank/account/custom-seal-card-num/CustomSealcardNum.vue"',
   "custom-coronal-num":'import CustomCoronalNum from "@/components/bank/account/custom-coronal-num/CustomCoronalNum.vue"',
   "custom-deposit-type":'import CustomDepositType from "@/components/bank/customer/custom-deposit-type/CustomDepositType.vue"',
-  "custom-voucher-num":'import CustomVoucherNum from "@/components/bank/customer/custom-voucher-num/CustomVoucherNum.vue"',
+  "custom-voucher-num":'import CustomVoucherNum from "@/components/bank/account/custom-voucher-num/CustomVoucherNum.vue"',
   "custom-payment-code":'import CustomPaymentCode from "@/components/bank/account/custom-payment-code/CustomPaymentCode.vue"',
   "custom-account-classification":'import CustomAccountClassification from "@/components/bank/account/custom-account-classification/CustomAccountClassification.vue"',
   "custom-debit-credit-mark":'import CustomDebitCreditMark from "@/components/bank/account/custom-debit-credit-mark/CustomDebitCreditMark.vue"',

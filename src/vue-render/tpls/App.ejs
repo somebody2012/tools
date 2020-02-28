@@ -62,7 +62,7 @@ HISTORY:
 <script>
 import {TradeFlow,ServiceConfig,TradeMessage} from "@/FCClient/common/constants/trade-import.js";
 <%_ importArr.import.forEach(function(importItem){ _%>
-<%-importItem%>
+<%-importItem%>;
 <%_ }); _%>
 export default {
   mixins: [TradeFlow,TradeMessage],
