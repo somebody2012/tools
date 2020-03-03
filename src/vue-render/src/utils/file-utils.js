@@ -1,17 +1,17 @@
 let XLSX = window.m.xlsx;
 
-
-const exportJsonToExcel = (dataArr,fileName) => {
+let colsStyle = [
+  {wch:30},
+  {wch:20},
+  {wch:40},
+  {wch:20},
+];
+const exportJsonToExcel = (dataArr,fileName,colsStyle=colsStyle) => {
   const now = new Date()
   const wopts = { bookType: 'xlsx', bookSST: false, type: 'binary' };//这里的数据是用来定义导出的格式类型
   const wb = { SheetNames: ['Sheet1'], Sheets: {}, Props: {} };
   wb.Sheets['Sheet1'] = XLSX.utils.json_to_sheet(dataArr);//通过json_to_sheet转成单页(Sheet)数据
-  wb.Sheets.Sheet1["!cols"]=[
-    {wch:30},
-    {wch:20},
-    {wch:40},
-    {wch:20},
-  ]
+  wb.Sheets.Sheet1["!cols"]=colsStyle;
   fileName = fileName || "模板.xls";
   saveAs(new Blob([s2ab(XLSX.write(wb, wopts))], { type: "application/octet-stream" }), fileName);
 }
