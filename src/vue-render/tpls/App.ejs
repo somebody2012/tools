@@ -65,6 +65,7 @@ import {TradeFlow,ServiceConfig,TradeMessage} from "@/common/constants/trade-imp
 <%-importItem%>;
 <%_ }); _%>
 export default {
+  name:<%=tradeCode%>,
   mixins: [TradeFlow,TradeMessage],
   components:{<%_ importArr.components.forEach(function(compItem){ _%><%-compItem%>,<%_ }); _%>},
   validators: {},

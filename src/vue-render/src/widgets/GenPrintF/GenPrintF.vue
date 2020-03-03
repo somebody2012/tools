@@ -170,7 +170,7 @@ export default {
           let lastItemArr = distArr[distArr.length-1];
           if(lastItemArr.length == 1){
             let lastItemArrOfLast = lastItemArr[lastItemArr.length-1];
-            if(lastItemArrOfLast.isFullRow || lastItemArrOfLast.isAmt){
+            if(lastItemArrOfLast.isFullRow || lastItemArrOfLast.isAmt || curItem.isFullRow || curItem.isAmt){
               distArr.push([curItem]);
             }else{
               lastItemArr.push(curItem);

@@ -4,6 +4,7 @@ import Home from '@/home/Home.vue'
 import GenTrade from "@/widgets/GenTrade/GenTrade.vue"
 import GenPrintF from "@/widgets/GenPrintF/GenPrintF.vue"
 import GenInterface from "@/widgets/GenInterface/GenInterface.vue"
+import GenStandardFieldSql from "@/widgets/GenStandardFieldSql/GenStandardFieldSql.vue"
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/GenInterface',
       name: 'GenInterface',
       component: GenInterface
+    },
+    {
+      path: '/GenStandardFieldSql',
+      name: 'GenStandardFieldSql',
+      component: GenStandardFieldSql
     },
   ]
 })

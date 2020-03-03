@@ -199,7 +199,6 @@ function queryAllStandardFields(){
           return obj;
         });
         window.standardAllFields = data;
-        debugger
         resolve({isSuccess:true,data:data})
       }else{
         resolve({isSuccess:false,data:data})
