@@ -1,6 +1,7 @@
 export default {
   // 'custom-selector':'import CustomSelector from "@/common/utils/custom-selector.vue"',
   // 'custom-input':'import CustomInput from "@/common/utils/custom-input.vue"',
+  "custom-user-num-project":'import CustomUserNumProject from "@/components/project/teller/custom-user-num-project/CustomUserNumProject.vue"',
   "custom-amount":'import CustomAmount from "@/components/bank/account/custom-amount/CustomAmount.vue"',
   "custom-user-num":'import CustomUserNum from "@/components/bank/teller/custom-user-num/CustomUserNum.vue"',
   "custom-user-pwd":'import CustomUsePwd from "@/components/bank/teller/custom-user-pwd/CustomUsePwd.vue"',
@@ -51,7 +52,7 @@ export default {
   "custom-trade-flow-num":'import CustomTradeFlowNum "@/components/bank/flow/custom-trade-flow-num/CustomTradeFlowNum.vue"',
   "custom-teller-flow-num":'import CustomTellerFlowNum "@/components/bank/flow/custom-teller-flow-num/CustomTellerFlowNum.vue"',
   "custom-host-flow-num":'import CustomTellerFlowNum "@/components/bank/flow/custom-host-flow-num/CustomTellerFlowNum.vue"',
-  "custom-user-num-project":'import CustomUserNumProject from "@/components/project/teller/custom-user-num-project/CustomUserNumProject.vue"',
+  
   "custom-user-pwd-project":'import CustomUserPwdProject from "@/components/project/teller/custom-user-pwd-project/CustomUserPwdProject.vue"',
   "custom-account-project":'import CustomAccountProject from "@/components/project/account/custom-account-project/CustomAccountProject.vue"',
   "custom-product-code":'import CustomProductCode from "@/components/project/account/custom-product-code/CustomProductCode.vue"',

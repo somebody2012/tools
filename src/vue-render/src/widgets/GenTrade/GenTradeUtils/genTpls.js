@@ -69,7 +69,7 @@ function genCommonCompBack(vueIns,stdFieldObj,isButtom){
     }else{
       let value = item.value;
       if(Array.isArray(value)){
-        value = JSON.stringify(value);
+        value = JSON.stringify(value).replace(/"/g,"'");
       }
       if(Object.prototype.toString.call(value) == "[object Object]"){
         value = JSON.stringify(value).replace(/"/g,"'");
