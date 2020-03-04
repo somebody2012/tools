@@ -461,7 +461,9 @@ export default {
       let html = "/index.html";
       MENU_PATH = "modules/trade/" + devGroup + devGroupChild + tradeCodeT + html;
       let sql = `INSERT INTO \`pub_db\`.\`IB_UPM_MENU_INFO\`(\`APP_NO\`, \`MENU_VIEW_NO\`, \`MENU_NO\`, \`MENU_NM\`, \`MENU_ICON_PATH\`, \`MENU_PATH\`, \`MENU_TYP_CD\`, \`QUNG_SEQ_NO\`, \`PARE_RANK_MENU_NO\`, \`VIS_FLG\`, \`SYNC_ASYNC_FLG\`, \`BLNG_LPR_CD\`, \`MATN_ORG_NO\`, \`MATN_TM\`, \`MATN_DT\`, \`REMRK_1\`, \`REMRK_2\`, \`REMRK_3\`, \`MATN_TELR_NO\`, \`SGNIN_VIS_FLG_CD\`, \`CLNT_MENU_FLG\`, \`IS_BPMN_FLG\`, \`MENU_SIZE\`, \`ACTIVE_CLASS\`, \`BCKGRND_COLR_CD\`, \`BCKGRND_PICT_PATH\`, \`LAYOUT_ROW\`, \`LAYOUT_COL\`, \`MENU_ENG_NM\`, \`BIZ_MENU_NO\`, \`BIZ_MENU_NM\`, \`STRK_BAL_FLG\`, \`NEED_PR_ELEC_SIGNET_FLG\`, \`UPLDG_ATCH_FLG\`) VALUES ('TE', '${MENU_VIEW_NO}', '${MENU_NO}', '${MENU_NM}', '${MENU_ICON_PATH}', '${MENU_PATH}', '02', 100, '${PARE_RANK_MENU_NO}', '${VIS_FLG}', '1', '0000', '0000', NULL, NULL, NULL, NULL, NULL, NULL, '${SGNIN_VIS_FLG_CD}', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '${BIZ_MENU_NO}', '${BIZ_MENU_NM}', NULL, NULL, NULL);`;
-      this.menuSqlStr = sql;
+      let sql1 = `INSERT INTO \`pub_db\`.\`IB_UPM_PRIVLEGES_RLT\`(\`PRVLG_ID\`, \`APP_NO\`, \`MENU_VIEW_NO\`, \`ENTITY_TYP_CD\`, \`ENTITY_NO\`, \`PARE_RANK_PRVLG_NO\`, \`MATN_ORG_NO\`, \`MATN_TELR_NO\`, \`MATN_DT\`, \`MATN_TM\`) VALUES ('${MENU_NO}', 'TE', '001', 'T', '${MENU_NO}', 'TER023', '0000', '000000', '2019-10-22', '16:26:08');`
+      let sql2 = `INSERT INTO \`pub_db\`.\`IB_UPM_PRIVLEGES_RLT\`(\`PRVLG_ID\`, \`APP_NO\`, \`MENU_VIEW_NO\`, \`ENTITY_TYP_CD\`, \`ENTITY_NO\`, \`PARE_RANK_PRVLG_NO\`, \`MATN_ORG_NO\`, \`MATN_TELR_NO\`, \`MATN_DT\`, \`MATN_TM\`) VALUES ('${MENU_NO}', 'TE', '001', 'T', '${MENU_NO}', 'TETG00022', '0000', '000000', '2019-10-22', '16:25:07');`;
+      this.menuSqlStr = [sql,sql1,sql2].join("\n");
       this.dialogVisiable = true;
     },
     writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll,importArr}){

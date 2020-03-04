@@ -125,7 +125,10 @@ export default {
           let COLM_DESC = curExcelRow.A;
           let COLM_ARCHT_INFO = curExcelRow.A;
           let COLM_NM = this.findEnFieldFromWordRoot(curExcelRow.A,this.allWordRoot);
-          if(!COLM_NM) notFindEnfieldArr.push(COLM_DESC);
+          if(!COLM_NM) {
+            notFindEnfieldArr.push(COLM_DESC);
+            continue;
+          }
           let ENG_FULLNAME = "";
           let CLSF = curExcelRow.A;
           let DATA_TYP = curExcelRow.A;
