@@ -210,6 +210,7 @@ export default {
       methodsAll:[],
       distTplData:[],
       standardFields:[],
+      standardFieldsBackup:[],//标准字段备份
       standardFieldsButtom:[],
       excelDataRender:[],//页面显示字段 提交按钮上面 下面区域
       paraFileOptions:[],//下拉框
@@ -326,6 +327,7 @@ export default {
         return;
       }
       this.standardFields = JSON.parse(JSON.stringify(res.data));
+      this.standardFieldsBackup = JSON.parse(JSON.stringify(res.data));
       this.standardFieldsButtom = JSON.parse(JSON.stringify(res.data));
     },
     parseExcel(excelData1){
@@ -433,6 +435,8 @@ export default {
       dataFieldsAll = dataFieldsAll.filter((v,i)=>dataFieldsAll.findIndex(v1 => v1.value == v.value) == i);
       methodsAll = methodsAll.filter((v,i)=>methodsAll.indexOf(v) == i);
       this.writeToFile({distTplData,distTplDataB,methodsAll,dataFieldsAll,importArr});
+      // 重置数据
+      this.resetData();
     },
     async gentTradeMenu(){
       let passed = await this.validateForm();
@@ -612,6 +616,23 @@ export default {
           value:v.MENU_NO
         }
       });
+    },
+    resetData(){
+      this.collapseValues = [];
+      this.collapseValuesButtom = [];
+      this.excelFieldsAll = [];
+      this.methodsAll = [];
+      this.distTplData = [];
+      this.standardFields = JSON.parse(JSON.stringify(this.standardFieldsBackup));
+      this.standardFieldsButtom = [];
+      this.excelDataRender = [];
+      this.tMethods = [];
+      this.tDataFields = [];
+      this.tableTpls = [];
+      this.buttomArea = [];
+      this.excelData = [];
+      this.cascaderGroup = [];
+      this.cascaderGroupOptions = [];
     }
   },
   computed:{

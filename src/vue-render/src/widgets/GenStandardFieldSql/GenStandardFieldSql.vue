@@ -9,25 +9,29 @@
       <el-button @click="exportExcelTpl" type="primary" size="mini">导出统计模板</el-button>
       <el-button @click="importExcel" type="primary" size="mini">导入数据</el-button>
       <el-button @click="genSql" type="primary" size="mini">生成sql</el-button>
+      <el-button @click="reset" type="primary" size="mini">重置</el-button>
     </el-row>
-    <div>
-      <div>已经存在的字段：</div>
+    <el-divider content-position="left">已经存在的字段：</el-divider>
+    <el-card class="box-card">
       <div>
         <span v-for="(item,i) in existFields" :key="i" style="margin:0 2px 0 2px;">{{item.A}}</span>
+        <div v-if="existFields.length == 0">无</div>
       </div>
-    </div>
-    <div>
-      <div>数据不完整字段：</div>
+    </el-card>
+    <el-divider content-position="left">数据不完整字段：</el-divider>
+    <el-card class="box-card">
       <div>
         <span v-for="(item,i) in notCompletionFields" :key="i" style="margin:0 2px 0 2px;">{{item.A}}</span>
+        <div v-if="notCompletionFields.length == 0">无</div>
       </div>
-    </div>
-    <div>
-      <div>有效字段：</div>
+    </el-card>
+    <el-divider content-position="left">有效字段：</el-divider>
+    <el-card class="box-card">
       <div>
         <span v-for="(item,i) in sqlFields" :key="i" style="margin:0 2px 0 2px;">{{item.COLM_DESC}}</span>
+        <div v-if="sqlFields.length == 0">无</div>
       </div>
-    </div>
+    </el-card>
     <input type="file" @change="inputFileChange" ref="inputFile" style="display:none;" accept="application/vnd.ms-excel">
   </div>
 </template>
@@ -48,6 +52,7 @@ export default {
       sqlFields:[],//剩余字段
       allFieldsData:[],//[{label:"",value:""}]
       filepath:"",
+      allWordRoot:[{label:"中文",value:"CHINESE"},{label:"人",value:"PERSON"}],//所有词根[{label:"中文",value:"chinese"}]
     }
   },
   computed:{},
@@ -63,9 +68,9 @@ export default {
         {wch:30},
       ];
       let dataArr = [
-        {"字段中文名称":"","字段长度(默认0)":"","小数位长度(默认0)":"","组件标签":""}
+        {"字段中文名称":"","字段长度(默认0)":"","小数位长度(默认0)":"","组件标签":"","英文字段":""}
       ];
-      let filename = `缺失字段统计模板_${this.userName||""}_${new Date().getTime()}.xls`;
+      let filename = `缺失字段统计模板_${this.userName||""}.xls`;
       FileUtils.exportJsonToExcel(dataArr,filename,colsStyle);
     },
     async importExcel(){
@@ -94,7 +99,7 @@ export default {
         }
       });
       let notEmptyData = Sheet1.filter(v => {
-        let values = [v.A,v.D,v.E];
+        let values = [v.A,v.D];
         let isNotEmpty = values.every(v => v);
         if(!isNotEmpty){
           this.notCompletionFields.push(v);
@@ -105,11 +110,12 @@ export default {
     },
     // 查找转换英文字段
     findAndTransFields(excelData,allFieldsData){
-      
+      let notFindEnfieldArr = [];
       for(let i=0;i<excelData.length;i++){
         let curExcelRow = excelData[i];// {A:"",B:"",C:"",D:"",E:""}
-        if(curExcelRow.A || curExcelRow.D || curExcelRow.E){
+        if(!curExcelRow.A || !curExcelRow.D){
           this.notCompletionFields.push(curExcelRow);
+          continue;
         }
         let cnField = curExcelRow.A;
         let isExistObj = this.findEnField(cnField,allFieldsData);
@@ -118,7 +124,8 @@ export default {
         }else{
           let COLM_DESC = curExcelRow.A;
           let COLM_ARCHT_INFO = curExcelRow.A;
-          let COLM_NM = curExcelRow.E;
+          let COLM_NM = this.findEnFieldFromWordRoot(curExcelRow.A,this.allWordRoot);
+          if(!COLM_NM) notFindEnfieldArr.push(COLM_DESC);
           let ENG_FULLNAME = "";
           let CLSF = curExcelRow.A;
           let DATA_TYP = curExcelRow.A;
@@ -143,12 +150,17 @@ export default {
           this.sqlFields.push(obj);
         }
       }
+      if(notFindEnfieldArr.length!=0){
+        let str = notFindEnfieldArr.join("  ");
+        this.alert(`${str}`,"一下字段无法由词根生成");
+      }
     },
     findEnField(cnField,allFieldsData){
       let isExist = allFieldsData.find(v => v.label == cnField);
       return isExist;
     },
     genSql(){
+
       let sqlsArr = this.sqlFields.map(v => {
         let str = `INSERT INTO \`pub_db\`.\`IB_IP_DICTRY_STMT\`(\`COLM_DESC\`, \`COLM_ARCHT_INFO\`, \`COLM_NM\`, \`ENG_FULLNAME\`, \`CLSF\`, \`DATA_TYP\`, \`DGIT\`, \`DEC_DGIT\`, \`COMNT\`, \`COMP_TAG\`, \`ALISE\`) VALUES ('${v.COLM_DESC}', '${v.COLM_ARCHT_INFO}', '${v.COLM_NM}', '${v.ENG_FULLNAME}', '${v.CLSF}', '${v.DATA_TYP}', ${v.DGIT}, ${v.DEC_DGIT}, '${v.COMNT}', '${v.COMP_TAG}', '');`
         return str;
@@ -168,14 +180,55 @@ export default {
           this.allFieldsData = res.data;
         });
     },
+    fetchWordRoot(){
+      commRequest.fetchWordRoot()
+        .then(res => {
+          let data = res.data.map(v => {
+            return {
+              label:v.COMNT,
+              value:v.DATA_DICTRY
+            }
+          });
+          this.allWordRoot = data;
+        });
+    },
     reset(){
       this.notCompletionFields = [];
       this.existFields = [];
       this.sqlFields = [];
+      this.active = 1;
+    },
+    // 从词根表中找单词
+    findEnFieldFromWordRoot(cnField,allWordRoot){
+      let fieldCharsArr = cnField.split("");
+      let curField = "";
+      let fieldItems = [];
+      for(let i=0;i<fieldCharsArr.length;i++){
+        let char = fieldCharsArr[i];
+        curField += char;
+        let res = this.findWord(curField,allWordRoot);
+        if(res){
+          fieldItems.push(res);
+          curField = "";
+        }else{
+          if(i == fieldCharsArr.length -1){
+            return "";
+          }
+        }
+      }
+      return fieldItems.join("_");
+    },
+    findWord(curField,allWordRoot){
+      let resObj =  allWordRoot.find(v => v.label == curField);
+      if(resObj){
+        return resObj.value;
+      }
     }
   },
   mounted(){
+    this.fetchWordRoot();
     this.fetchStandardAllFields();
+    
     let {child_process} = window.m;
     child_process.exec('git config --global user.name',{encoding:"utf-8"},(err,stdout,stderr)=>{
       let userName = stdout.replace(/[\n\s]/g,'');
