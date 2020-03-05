@@ -295,8 +295,8 @@ export default {
         let readonly = C.includes("R");
         let visible = C.includes("V"); 
         let obj = {
-          "groupTitle":v.A,
-          "label":v.B,
+          "groupTitle":String(v.A).trim(),
+          "label":String(v.B).trim(),
           ":requisite":requisite,
           ":disabled":disabled,
           ":readonly":readonly,
