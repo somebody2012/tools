@@ -203,6 +203,8 @@ export default {
     },
     // 从词根表中找单词
     findEnFieldFromWordRoot(cnField,allWordRoot){
+      let isExistObj = allWordRoot.find(v => v.label == cnField);
+      if(isExistObj) return isExistObj.value;
       let fieldCharsArr = cnField.split("");
       let curField = "";
       let fieldItems = [];
