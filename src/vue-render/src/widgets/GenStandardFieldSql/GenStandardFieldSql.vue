@@ -14,21 +14,21 @@
     <el-divider content-position="left">已经存在的字段：</el-divider>
     <el-card class="box-card">
       <div>
-        <span v-for="(item,i) in existFields" :key="i" style="margin:0 2px 0 2px;">{{item.A}}</span>
+        <span v-for="(item,i) in existFields" :key="i" >{{item.A}} </span>
         <div v-if="existFields.length == 0">无</div>
       </div>
     </el-card>
     <el-divider content-position="left">数据不完整字段：</el-divider>
     <el-card class="box-card">
       <div>
-        <span v-for="(item,i) in notCompletionFields" :key="i" style="margin:0 2px 0 2px;">{{item.A}}</span>
+        <span v-for="(item,i) in notCompletionFields" :key="i" >{{item.A}} </span>
         <div v-if="notCompletionFields.length == 0">无</div>
       </div>
     </el-card>
     <el-divider content-position="left">有效字段：</el-divider>
     <el-card class="box-card">
       <div>
-        <span v-for="(item,i) in sqlFields" :key="i" style="margin:0 2px 0 2px;">{{item.COLM_DESC}}</span>
+        <span v-for="(item,i) in sqlFields" :key="i" >{{item.COLM_DESC}} </span>
         <div v-if="sqlFields.length == 0">无</div>
       </div>
     </el-card>
@@ -52,7 +52,7 @@ export default {
       sqlFields:[],//剩余字段
       allFieldsData:[],//[{label:"",value:""}]
       filepath:"",
-      allWordRoot:[{label:"中文",value:"CHINESE"},{label:"人",value:"PERSON"}],//所有词根[{label:"中文",value:"chinese"}]
+      allWordRoot:[],//所有词根[{label:"中文",value:"chinese"}]
     }
   },
   computed:{},
@@ -203,25 +203,26 @@ export default {
     },
     // 从词根表中找单词
     findEnFieldFromWordRoot(cnField,allWordRoot){
-      let isExistObj = allWordRoot.find(v => v.label == cnField);
-      if(isExistObj) return isExistObj.value;
       let fieldCharsArr = cnField.split("");
-      let curField = "";
-      let fieldItems = [];
-      for(let i=0;i<fieldCharsArr.length;i++){
-        let char = fieldCharsArr[i];
-        curField += char;
-        let res = this.findWord(curField,allWordRoot);
-        if(res){
-          fieldItems.push(res);
-          curField = "";
-        }else{
-          if(i == fieldCharsArr.length -1){
-            return "";
+      let curIndex = 0;
+      let enFields = [];
+      while(curIndex < fieldCharsArr.length){
+        let enFieldItems = [];
+        for(let i=curIndex;i<fieldCharsArr.length;i++){
+          let cnFieldItem = fieldCharsArr.slice(curIndex,i+1).join("");
+          let tempEnField = this.findWord(cnFieldItem,allWordRoot);
+          if(tempEnField){
+            enFieldItems.push({cnField:tempEnField,index:i});
           }
         }
+        if(enFieldItems.length == 0) return "";// 没根据词根找到单词
+        let indexs = enFieldItems.map(v => v.index);
+        let maxIndex = Math.max.apply(null,indexs);
+        curIndex = maxIndex+1;
+        let maxIndexObj = enFieldItems.find(v => v.index == maxIndex);
+        enFields.push(maxIndexObj.cnField);
       }
-      return fieldItems.join("_");
+      return enFields.join("_");
     },
     findWord(curField,allWordRoot){
       let resObj =  allWordRoot.find(v => v.label == curField);

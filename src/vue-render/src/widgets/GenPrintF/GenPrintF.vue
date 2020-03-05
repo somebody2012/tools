@@ -200,7 +200,7 @@ export default {
       let tplStr = fs.readFileSync(srcAftPath,{encoding:"utf-8"});
       let appTpl = ejs.render(tplStr,renderData);
       let distAppPath = path.resolve(this.tradeRoot,"print",this.fTableName);
-      // distAppPath = path.resolve("D:\\ABIDE-20180302\\ABIDE-20180302\\print\\test\\printType",this.fTableName)
+      // let distAppPath = path.resolve("D:\\ABIDE-20180302\\ABIDE-20180302\\print\\test\\printType",this.fTableName)
       console.log("生成F表：",distAppPath);
       fs.writeFileSync(distAppPath,appTpl,{encoding:"utf-8"});
       this.alert(`生成F表成功\n${distAppPath}`);

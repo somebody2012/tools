@@ -60,13 +60,13 @@ HISTORY:
 </template>
 
 <script>
-import {TradeFlow,ServiceConfig,TradeMessage} from "@/common/constants/trade-import.js";
+import {<%_ if (tradeFlow == 1) { _%>TradeFlow<%_ } _%><%_ if (tradeFlow == 2) { _%>QueryFlow<%_ } _%>,ServiceConfig,TradeMessage} from "@/common/constants/trade-import.js";
 <%_ importArr.import.forEach(function(importItem){ _%>
 <%-importItem%>;
 <%_ }); _%>
 export default {
   name:"<%=tradeCode%>",
-  mixins: [TradeFlow,TradeMessage],
+  mixins: [<%_ if (tradeFlow == 1) { _%>TradeFlow<%_ } _%><%_ if (tradeFlow == 2) { _%>QueryFlow<%_ } _%>,TradeMessage],
   components:{<%_ importArr.components.forEach(function(compItem){ _%><%-compItem%>,<%_ }); _%>},
   validators: {},
   props:{},

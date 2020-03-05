@@ -30,14 +30,14 @@
     <%_ var ideId = rowIndex + '' + colIndex %>
       <%_ 
         <!-- 英文 1.90 中文 3.81 冒号2.38 -->
-        var enLen = (item.label.match(/[a-zA-Z0-9]/g)||[]).length;
+        var enLen = (item.label.match(/[a-zA-Z0-9\/]/g)||[]).length;
         var cnLen = (item.label.match(/[\u4e00-\u9fa5]/g)||[]).length;
         var totalWidth = 84.6;
         if(item.isFullRow || item.isAmt){
           totalWidth = 173;
         }
         <!-- var labelWidth = Number(labelWidth1); -->
-        var labelWidth = Number((enLen*1.90+cnLen*3.81+3.88).toFixed(2));
+        var labelWidth = Number((enLen*1.90+cnLen*3.81+2.41).toFixed(2));
         var col1VarLeft = 37.57+(labelWidth-17.5);
         var col2VarLeft = 126.12+(labelWidth-17.5);    
         labelWidth = labelWidth.toFixed(2);
@@ -66,7 +66,7 @@
       LineSeparate="5.14" Pos="Absolute" TextAlign="Align_Left"
       Top="<%=labelTop%>" Tripleheight="false" Triplewidth="false"
       VerticalAlign="Align_Middle" Width="<%=labelWidth%>" border-bottom="0"
-      border-left="0" border-right="0" border-top="0"><%=item.label%>：</Constant>
+      border-left="0" border-right="0" border-top="0"><%=item.label%>:</Constant>
     <Variable AddHeightOfLine="0.0" Bold="false"
       BoundTableIdOfAft="" CcyFlag="" CodeTitle="" Comment=""
       DefaultValue="" Doubleheight="false" Doublewidth="false"
@@ -88,7 +88,7 @@
       LineSeparate="5.14" Pos="Absolute" TextAlign="Align_Left"
       Top="<%=Top%>" Tripleheight="false" Triplewidth="false"
       VerticalAlign="Align_Middle" Width="<%=labelWidth%>" border-bottom="0"
-      border-left="0" border-right="0" border-top="0"><%=item.label%>：</Constant>
+      border-left="0" border-right="0" border-top="0"><%=item.label%>:</Constant>
     <Variable AddHeightOfLine="0.0" Bold="false"
       BoundTableIdOfAft="" CcyFlag="" CodeTitle="" Comment=""
       DefaultValue="" Doubleheight="false" Doublewidth="false"
@@ -111,7 +111,7 @@
       LineSeparate="5.14" Pos="Absolute" TextAlign="Align_Left"
       Top="<%=Top%>" Tripleheight="false" Triplewidth="false"
       VerticalAlign="Align_Middle" Width="<%=labelWidth%>" border-bottom="0"
-      border-left="0" border-right="0" border-top="0"><%=item.label%>：</Constant>
+      border-left="0" border-right="0" border-top="0"><%=item.label%>:</Constant>
     <Variable AddHeightOfLine="0.0" Bold="false"
       BoundTableIdOfAft="" CcyFlag=""
       CodeTitle="APLY_DRCT_CD_option" Comment="" DefaultValue=""

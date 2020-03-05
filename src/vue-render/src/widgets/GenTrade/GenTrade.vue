@@ -51,6 +51,14 @@
           </el-form-item>
         </el-col>
       </el-row>
+      <el-row>
+        <el-col :span="8">
+          <el-form-item label="交易流程" :rules="titleRule" prop="tradeFlow">
+            <el-radio v-model="tradeAttrArea.tradeFlow" :label="1">TradeFlow</el-radio>
+            <el-radio v-model="tradeAttrArea.tradeFlow" :label="2">QueryFlow</el-radio>
+          </el-form-item>
+        </el-col>
+      </el-row>
     <el-divider content-position="left">菜单属性</el-divider>
     <el-row>
       <el-col :span="6">
@@ -181,6 +189,7 @@ export default {
         tradeName:"测试交易生成",
         userName:"",
         email:"",
+        tradeFlow:1,//交易流程 1->tradeflow 2->queryflow
         tradeCodeBiz:"010101",
         menuPosition:"001",//菜单位置
         menuIcon:"inner-gird-maintain.svg",//菜单icon
@@ -487,7 +496,9 @@ export default {
         tableTpls:this.tableTpls,
         // 提交按钮下面区域
         buttomGroup:distTplDataB,
-        importArr:importArr
+        importArr:importArr,
+        // 使用哪一个流程 tradeFlow queryflow
+        tradeFlow:this.tradeAttrArea.tradeFlow,//1->tradeflow 2->queryflow
       };
       let {path,fs,process,ejs} = window.m;
       let root = window.m.process.cwd();
