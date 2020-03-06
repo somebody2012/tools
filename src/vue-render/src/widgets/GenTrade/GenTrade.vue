@@ -523,7 +523,7 @@ export default {
       this.$notify({type:"success",title:"成功",message:"写入模板成功"});
     },
     tradeRootChange(){
-      if(!/FCClient$/.test(this.tradeAttrArea.tradeRoot)){
+      if(!/(FCClient$)|(FCClient2$)/.test(this.tradeAttrArea.tradeRoot)){
         this.alert("必须以FCClient结尾");
         return;
       }
@@ -558,7 +558,7 @@ export default {
     },
     fetchParaFileOptions(){
       let {fs,path} = window.m;
-      let paraFilePath = path.resolve(this.tradeAttrArea.tradeRoot,"static/para/selector-config");
+      let paraFilePath = path.resolve(this.tradeAttrArea.tradeRoot.replace(/2$/,""),"static/para/selector-config");
       let jsonFiles = fs.readdirSync(paraFilePath);
       jsonFiles = jsonFiles.filter(v => /\.json/.test(v));
       this.paraFileOptions = jsonFiles.map(v=>({label:v,value:v}))
@@ -571,7 +571,7 @@ export default {
         console.log("不存在listName",compAttr);
         return;
       }
-      let listNamePath = path.resolve(this.tradeAttrArea.tradeRoot,"static/para/selector-config",value);
+      let listNamePath = path.resolve(this.tradeAttrArea.tradeRoot.replace(/2$/,""),"static/para/selector-config",value);
       let jsonStr = fs.readFileSync(listNamePath);
       let itemKeys = Object.keys(JSON.parse(jsonStr));
       listNameObj.listNameOptions = itemKeys.map(v => ({label:v,value:v}));
