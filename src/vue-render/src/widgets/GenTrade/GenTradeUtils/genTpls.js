@@ -116,7 +116,7 @@ function genCommonComp(vueIns,stdFieldObj,isButtom){
           compAttrItem.value = `TradeData.${stdFieldObj.value}`;
           dataFields.push({
             value:stdFieldObj.value,
-            defaultValue:stdFieldObj.defaultValue || '""',
+            defaultValue:compAttrItem.defaultValue || '""',
             label:stdFieldObj.label
           });
           // dataFields.push(stdFieldObj.value);
