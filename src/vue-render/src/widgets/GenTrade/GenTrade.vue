@@ -275,6 +275,7 @@ export default {
       this.fetchParaFileOptions();
       this.$refs.inputFile.value = "";
       this.$refs.inputFile.click();
+      this.resetData();
     },
     async inputFileChange(e){
       let file = e.target.files[0];
@@ -637,7 +638,7 @@ export default {
       this.methodsAll = [];
       this.distTplData = [];
       this.standardFields = JSON.parse(JSON.stringify(this.standardFieldsBackup));
-      this.standardFieldsButtom = [];
+      this.standardFieldsButtom = JSON.parse(JSON.stringify(this.standardFieldsBackup));
       this.excelDataRender = [];
       this.tMethods = [];
       this.tDataFields = [];
