@@ -55,6 +55,8 @@ function genCommonCompBack(vueIns,stdFieldObj,isButtom){
     // 提交按钮下面不要ref
     compAttr = compAttr.filter(v => v.name !="ref");
   }
+  // 去重
+  compAttr = compAttr.filter((v,i)=>compAttr.findIndex(x=>x.name == v.name) == i);
   compAttr = compAttr.map(item => {
     if(item.name.includes(".sync")){
       let curObj = compAttr.find(v => v.name == "v-model");
