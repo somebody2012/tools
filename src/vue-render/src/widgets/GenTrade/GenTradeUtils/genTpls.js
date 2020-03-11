@@ -306,7 +306,7 @@ function handleTableInfo(tableInfo,standardFields){
     tDataFields.push({label:`tableHeadData${i}`,value:JSON.stringify(tableHeadData)});
     tDataFields.push({label:`tableData${i}`,value:JSON.stringify([])});
     tDataFields.push({label:`btnGroup${i}`,value:JSON.stringify([])});
-    let tableTpl = `<custom-table ref="customTable${i}" :tableHeadData="tableHeadData${i}" :tableData="tableData${i}" :btnGroup="btnGroup${i}"/>`;
+    let tableTpl = `<custom-table ref="customTable${i}" ifOperate :tableHeadData="tableHeadData${i}" :tableData="tableData${i}" :btnGroup="btnGroup${i}"/>`;
     tableTpls.push(tableTpl);
   })
   

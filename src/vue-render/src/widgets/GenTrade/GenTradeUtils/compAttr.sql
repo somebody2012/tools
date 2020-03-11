@@ -4,6 +4,7 @@
 DELETE FROM `IB_IP_COMPS_DESC`;
 
 INSERT INTO `pub_db`.`IB_IP_COMPS_DESC`(`COMP_TAG`, `COMP_DESC`) VALUES 
+('custom-input-interval', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-input', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-date', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-date-childtype-range', '[{attrPosition:"data",name:"v-model",defaultValue:"[]"},{attrPosition:"tag",name:"type",value:"datarange"}]'),
