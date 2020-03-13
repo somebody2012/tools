@@ -82,8 +82,9 @@ export default {
     };
   },
   methods:{
-    <%_ methodsAll.forEach(function(method){ _%>
-    <%-method%>,
+    <%_ methodsAll.forEach(function(item){ _%>
+    // <%-item.label%>,
+    <%-item.method%>,
     <%_ }); _%>
   }
 };

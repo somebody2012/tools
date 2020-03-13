@@ -18,7 +18,11 @@ function genMethods(vueIns,methodsAll){
   methodsAll = methodsAll.map(v => {
     let methodName = v.value;
     let argsStr = (v.args || []).join(",");
-    return `async ${methodName}(${argsStr}){}`
+    let label = v.label + " " + (methodName.includes("uccess") ? "成功" : "失败")
+    return {
+      label:label,
+      method:`async ${methodName}(${argsStr}){}`
+    }
   });
   return methodsAll;
 }
@@ -112,7 +116,7 @@ function genCommonComp(vueIns,stdFieldObj,isButtom){
     for(let i=0;i<stdFieldObj.compAttr.length;i++){
       let compAttrItem = stdFieldObj.compAttr[i];
       if(compAttrItem.attrPosition == "methods"){
-        methods.push({name:compAttrItem.name,args:compAttrItem.args,value:compAttrItem.value});
+        methods.push({name:compAttrItem.name,args:compAttrItem.args,value:compAttrItem.value,label:stdFieldObj.label});
       }else if(compAttrItem.attrPosition == "data"){
         if(compAttrItem.name == "v-model"){
           compAttrItem.value = `TradeData.${stdFieldObj.value}`;
@@ -296,6 +300,7 @@ function handleTableInfo(tableInfo,standardFields){
   });
   
   newFields.forEach((tableItem,i) => {
+    i = i || "";
     let tableHeadData = tableItem.map((v) => {
       return {
         label: v.label,
