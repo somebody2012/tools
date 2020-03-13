@@ -66,7 +66,7 @@ function genCommonCompBack(vueIns,stdFieldObj,isButtom){
       }
       let optName = item.name.replace(/(^:)|(\.sync$)/g,"");
       optName = optName.charAt(0).toUpperCase() + optName.substring(1);
-      let value = fieldName + optName + "Sync";
+      let value = "TradeData." + fieldName + optName + "Sync";
       return `${item.name}="${value}"`;
     }else{
       let value = item.value;
