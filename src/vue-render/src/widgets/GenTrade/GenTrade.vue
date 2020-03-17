@@ -56,6 +56,7 @@
           <el-form-item label="交易流程" :rules="titleRule" prop="tradeFlow">
             <el-radio v-model="tradeAttrArea.tradeFlow" :label="1">TradeFlow</el-radio>
             <el-radio v-model="tradeAttrArea.tradeFlow" :label="2">QueryFlow</el-radio>
+            <el-radio v-model="tradeAttrArea.tradeFlow" :label="3">TradeConfigFlow</el-radio>
           </el-form-item>
         </el-col>
       </el-row>

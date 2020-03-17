@@ -38,6 +38,7 @@
 <script>
 import FileUtils from "@/utils/file-utils.js";
 import commRequest from "@/utils/comm-request.js";
+import CommUtils from "@/utils/comm-utils.js";
 export default {
   name:"GenStandardFieldSql",
   mixins:[],
@@ -124,7 +125,7 @@ export default {
         }else{
           let COLM_DESC = curExcelRow.A;
           let COLM_ARCHT_INFO = curExcelRow.A;
-          let COLM_NM = this.findEnFieldFromWordRoot(curExcelRow.A,this.allWordRoot);
+          let COLM_NM = CommUtils.findEnFieldFromWordRoot(curExcelRow.A,this.allWordRoot);
           if(!COLM_NM) {
             notFindEnfieldArr.push(COLM_DESC);
             continue;
