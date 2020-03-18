@@ -166,7 +166,7 @@ export default {
     genSql(){
 
       let sqlsArr = this.sqlFields.map(v => {
-        let str = `INSERT INTO \`pub_db\`.\`IB_IP_DICTRY_STMT\`(\`COLM_DESC\`, \`COLM_ARCHT_INFO\`, \`COLM_NM\`, \`ENG_FULLNAME\`, \`CLSF\`, \`DATA_TYP\`, \`DGIT\`, \`DEC_DGIT\`, \`COMNT\`, \`COMP_TAG\`, \`ALISE\`) VALUES ('${v.COLM_DESC}', '${v.COLM_ARCHT_INFO}', '${v.COLM_NM}', '${v.ENG_FULLNAME}', '${v.CLSF}', '${v.DATA_TYP}', ${v.DGIT}, ${v.DEC_DGIT}, '${v.COMNT}', '${v.COMP_TAG}', '');`
+        let str = `INSERT INTO \`pub_db\`.\`TP_CIP_DICTRY_STMT\`(\`COLM_DESC\`, \`COLM_ARCHT_INFO\`, \`COLM_NM\`, \`ENG_FULLNAME\`, \`CLSF\`, \`DATA_TYP\`, \`DGIT\`, \`DEC_DGIT\`, \`COMNT\`, \`COMP_TAG\`, \`ALISE\`) VALUES ('${v.COLM_DESC}', '${v.COLM_ARCHT_INFO}', '${v.COLM_NM}', '${v.ENG_FULLNAME}', '${v.CLSF}', '${v.DATA_TYP}', ${v.DGIT}, ${v.DEC_DGIT}, '${v.COMNT}', '${v.COMP_TAG}', '');`
         return str;
       });
       let sqls = sqlsArr.join("\n");

@@ -1,9 +1,9 @@
 -- label prototype ref disabled requisite 默认有，不用统计
 -- attrPosition 标签位置 tag（标签上） data (data域) method （method域）
 
-DELETE FROM `IB_IP_COMPS_DESC`;
+DELETE FROM `TP_CIP_COMPS_DESC`;
 
-INSERT INTO `pub_db`.`IB_IP_COMPS_DESC`(`COMP_TAG`, `COMP_DESC`) VALUES 
+INSERT INTO `pub_db`.`TP_CIP_COMPS_DESC`(`COMP_TAG`, `COMP_DESC`) VALUES 
 ('custom-input-interval', '[{attrPosition:"data",name:"v-model",defaultValue:"[]"},{attrPosition:"data",name:":startNum.sync"},{attrPosition:"data",name:":endNum.sync"},{attrPosition:"tag",name:"labelStart",value:"起始"},{attrPosition:"tag",name:"labelEnd",value:"结束"}]'),
 ('custom-input', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-date', '[{attrPosition:"data",name:"v-model"}]'),
