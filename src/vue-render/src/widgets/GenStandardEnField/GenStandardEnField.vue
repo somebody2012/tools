@@ -84,7 +84,7 @@ export default {
       if(enField1Obj){
         return enField1Obj.value;
       }else{
-        let enField = CommUtils.findEnFieldFromWordRoot(cnField,this.allWordRoot);
+        let {enField} = CommUtils.findEnFieldFromWordRoot(cnField,this.allWordRoot);
         if(enField){
           return enField;
         }else{

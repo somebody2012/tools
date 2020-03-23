@@ -4,13 +4,14 @@ export default {
     let fieldCharsArr = cnField.split("");
     let curIndex = 0;
     let enFields = [];
+    let cnFields = [];
     while(curIndex < fieldCharsArr.length){
       let enFieldItems = [];
       for(let i=curIndex;i<fieldCharsArr.length;i++){
         let cnFieldItem = fieldCharsArr.slice(curIndex,i+1).join("");
-        let tempEnField = this.findWord(cnFieldItem,allWordRoot);
-        if(tempEnField){
-          enFieldItems.push({cnField:tempEnField,index:i});
+        let tempEnFieldObj = this.findWord(cnFieldItem,allWordRoot);
+        if(tempEnFieldObj){
+          enFieldItems.push({cnField:tempEnFieldObj.value,index:i,label:tempEnFieldObj.label});
         }
       }
       if(enFieldItems.length == 0) return "";// 没根据词根找到单词
@@ -19,13 +20,20 @@ export default {
       curIndex = maxIndex+1;
       let maxIndexObj = enFieldItems.find(v => v.index == maxIndex);
       enFields.push(maxIndexObj.cnField);
+      cnFields.push(maxIndexObj.label);
     }
-    return enFields.join("_");
+    return {
+      enField:enFields.join("_"),
+      cnField:cnFields.join("+")
+    };
   },
   findWord(curField,allWordRoot){
     let resObj =  allWordRoot.find(v => v.label == curField);
     if(resObj){
-      return resObj.value;
+      return {
+        label:resObj.label,
+        value:resObj.value
+      };
     }
   }
 }

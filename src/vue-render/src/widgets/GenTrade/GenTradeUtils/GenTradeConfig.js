@@ -1,4 +1,5 @@
 import commRequest from "@/utils/comm-request.js";
+import syncFieldsInfo from "./syncFieldsInfo.js";
 
 /**
  * {
@@ -110,6 +111,7 @@ export default {
     let msgs = [];//没有找到英文的label
     for(let i=0;i<excelData.length;i++){
       let rowObj = excelData[i];//{groupId:0,groupTitle:"客户信息",label:"账号",requisite:true,}
+      
       let standardFieldObj = standardFields.find(v => v.label == rowObj.label);
       if(standardFieldObj){
         rowObj.value = standardFieldObj.value;
@@ -175,6 +177,27 @@ export default {
         let compAttrLabel = compAttr.find(v => v.name == "label");
       }else{
         msgs.push(rowObj.label);
+      }
+      debugger
+      if(syncFieldsInfo[rowObj.tagName] && !rowObj.labelExt){
+        rowObj.labelExt = syncFieldsInfo[rowObj.tagName].join("|");
+      }
+      let labelExtArr = (rowObj.labelExt || "").split("|").filter(v => v);
+      for(let j=0;j<labelExtArr.length;j++){
+        let curLabel = labelExtArr[j];
+        let curLabelObj = standardFields.find(v => v.label == curLabel);
+        if(curLabelObj){
+          for(let k=0;k<rowObj.compAttr.length;k++){
+            let curAttr = rowObj.compAttr[k];
+            if(curAttr.name.includes(".sync") && !curAttr.value){
+              curAttr.value = curLabelObj.value;
+              curAttr.cnName = curLabel;
+              break;
+            }
+          }
+        }else{
+          msgs.push(curLabel);
+        }
       }
     }
     // excelData [{groupId:0,groupTitle:"客户信息",label:"账号",requisite:true,compAttr:compAttr}]

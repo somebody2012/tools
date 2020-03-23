@@ -1,12 +1,13 @@
 let XLSX = window.m.xlsx;
 
-let colsStyle = [
+let colsStyle1 = [
   {wch:30},
   {wch:20},
   {wch:40},
-  {wch:20},
+  {wch:40},
 ];
-const exportJsonToExcel = (dataArr,fileName,colsStyle=colsStyle) => {
+const exportJsonToExcel = (dataArr,fileName,colsStyle) => {
+  colsStyle=colsStyle||colsStyle1;
   const now = new Date()
   const wopts = { bookType: 'xlsx', bookSST: false, type: 'binary' };//这里的数据是用来定义导出的格式类型
   const wb = { SheetNames: ['Sheet1'], Sheets: {}, Props: {} };

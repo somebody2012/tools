@@ -40,6 +40,8 @@ function genCommonCompBack(vueIns,stdFieldObj,isButtom){
   /**
    * [{attrPosition: "tag",default: false,name: ":disabled",value: true}]
    */
+  stdFieldObj.labelExt = stdFieldObj.labelExt || "";
+  let syncLabelArr = stdFieldObj.labelExt.split("|").filter(v=>v);
   let compAttr = stdFieldObj.compAttr;
   let tagName = stdFieldObj.tagName.replace(/-childtype-\w+$/,"");
   let exculedKeys = [":visible"];//为false的值默认排除，除了这些key
@@ -63,14 +65,8 @@ function genCommonCompBack(vueIns,stdFieldObj,isButtom){
   compAttr = compAttr.filter((v,i)=>compAttr.findIndex(x=>x.name == v.name) == i);
   compAttr = compAttr.map(item => {
     if(item.name.includes(".sync")){
-      let curObj = compAttr.find(v => v.name == "v-model");
-      let fieldName = "noVmodelField";
-      if(curObj){
-        fieldName = curObj.value.replace("TradeData.","");
-      }
-      let optName = item.name.replace(/(^:)|(\.sync$)/g,"");
-      optName = optName.charAt(0).toUpperCase() + optName.substring(1);
-      let value = "TradeData." + fieldName + optName + "Sync";
+      // let curObj = compAttr.find(v => v.name == "v-model");
+      let value = `TradeData.${item.value||""}`;
       return `${item.name}="${value}"`;
     }else{
       let value = item.value;
@@ -130,17 +126,24 @@ function genCommonComp(vueIns,stdFieldObj,isButtom){
           // dataFields.push(compAttrItem.value);
           let obj = {};
           if(/\.sync$/.test(compAttrItem.name)){
-            let optName = compAttrItem.name.replace(/(^:)|(\.sync$)/g,"");
-            optName = optName.charAt(0).toUpperCase() + optName.substring(1);
-            obj.defaultValue = JSON.stringify(compAttrItem.value || "");
-            obj.value = fieldName + optName + "Sync";
+            let obj = {
+              defaultValue:JSON.stringify(compAttrItem.defaultValue || ""),
+              value:compAttrItem.value,
+              label:compAttrItem.cnName,
+            };
+            if(obj.label)
+              dataFields.push(obj);
           }else{
-            obj.defaultValue = JSON.stringify(compAttrItem.value || "");
-            obj.value = compAttrItem.name.replace(/^:/g,"") + "Var";
+            let obj = {
+              defaultValue:JSON.stringify(compAttrItem.value || ""),
+              value:compAttrItem.name.replace(/^:/g,"") + "Var",
+              label:stdFieldObj.label,
+            };
+            dataFields.push(obj);
           }
-          obj.label = stdFieldObj.label;
           
-          dataFields.push(obj);
+          
+          
         }
       }
     }

@@ -125,7 +125,8 @@ export default {
         }else{
           let COLM_DESC = curExcelRow.A;
           let COLM_ARCHT_INFO = curExcelRow.A;
-          let COLM_NM = CommUtils.findEnFieldFromWordRoot(curExcelRow.A,this.allWordRoot);
+          let {enField,cnField} = CommUtils.findEnFieldFromWordRoot(curExcelRow.A,this.allWordRoot);
+          let COLM_NM = enField;
           if(!COLM_NM) {
             notFindEnfieldArr.push(COLM_DESC);
             continue;
@@ -140,7 +141,7 @@ export default {
           let ALISE = "";
           let obj = {
             COLM_DESC:COLM_DESC,
-            COLM_ARCHT_INFO:COLM_ARCHT_INFO,
+            COLM_ARCHT_INFO:cnField,
             COLM_NM:COLM_NM,
             ENG_FULLNAME:ENG_FULLNAME,
             CLSF:CLSF,
