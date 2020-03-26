@@ -85,7 +85,7 @@ export default {
         let fieldObj = this.findEnField(v);
         return {
           label:v,
-          value:fieldObj.value,
+          value:`TradeData.${fieldObj.value}`,
           isAmt:fieldObj.isAmt,
           isFullRow:fieldObj.isFullRow,
         }
@@ -96,7 +96,7 @@ export default {
           let fieldObj = this.findEnField(v1);
           return {
             label:v1,
-            value:fieldObj.value,
+            value:`TradeData.${fieldObj.value}`,
             isAmt:fieldObj.isAmt,
             isFullRow:fieldObj.isFullRow,
           }
