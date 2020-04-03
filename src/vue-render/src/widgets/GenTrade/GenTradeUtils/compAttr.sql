@@ -7,7 +7,7 @@ INSERT INTO `pub_db`.`TP_CIP_COMPS_DESC`(`COMP_TAG`, `COMP_DESC`) VALUES
 ('custom-input-interval', '[{attrPosition:"data",name:"v-model",defaultValue:"[]"},{attrPosition:"data",name:":startNum.sync"},{attrPosition:"data",name:":endNum.sync"},{attrPosition:"tag",name:"label",value:"起止日期"}]'),
 ('custom-input', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-date', '[{attrPosition:"data",name:"v-model"}]'),
-('custom-date-childtype-range', '[{attrPosition:"data",name:"v-model",defaultValue:"[]"},{attrPosition:"tag",name:"type",value:"datarange"},{attrPosition:"data",name:":startDate.sync"},{attrPosition:"data",name:":endDate.sync"}]'),
+('custom-date-childtype-range', '[{attrPosition:"data",name:"v-model",defaultValue:"[]"},{attrPosition:"tag",name:"type",value:"daterange"},{attrPosition:"data",name:":startDate.sync"},{attrPosition:"data",name:":endDate.sync"}]'),
 ('custom-selector', '[{attrPosition:"data",name:"v-model"},{name:"paraFile",attrPosition:"tag",value:""},{name:"listName",attrPosition:"tag",value:""}]'),
 ('custom-user-num', '[{attrPosition:"data",name:"v-model"}]'),
 ('custom-user-pwd', '[{attrPosition:"data",name:"v-model"}]'),
