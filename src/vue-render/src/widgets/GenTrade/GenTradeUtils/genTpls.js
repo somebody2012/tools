@@ -61,6 +61,17 @@ function genCommonCompBack(vueIns,stdFieldObj,isButtom){
     // 提交按钮下面不要ref
     compAttr = compAttr.filter(v => v.name !="ref");
   }
+  // 加picture
+  if(stdFieldObj.tagName == 'custom-input'){
+    let length = stdFieldObj.length || 0;
+    let picture = "-"+ length +"'X'";
+    let pictureAttr = {
+      attrPosition:"tag",
+      name:"picture",
+      value:picture
+    };
+    compAttr.push(pictureAttr);
+  }
   // 去重
   compAttr = compAttr.filter((v,i)=>compAttr.findIndex(x=>x.name == v.name) == i);
   compAttr = compAttr.map(item => {

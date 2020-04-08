@@ -93,6 +93,7 @@ function fetchStandardFields(){
             label:v.COLM_DESC,
             value:v.COLM_NM,
             isFullRow:v.DGIT > 60,
+            length:v.DGIT,
             tagName:v.COMP_TAG,
             compAttr:compAttr,
           }

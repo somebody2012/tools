@@ -118,6 +118,7 @@ export default {
         rowObj.compAttr = standardFieldObj.compAttr;
         rowObj.isFullRow = standardFieldObj.isFullRow;
         rowObj.tagName = standardFieldObj.tagName;
+        rowObj.length = standardFieldObj.length;
         for(let j=0;j<rowObj.compAttr.length;j++){
           let compAttrItem = standardFieldObj.compAttr[j];
           if(compAttrItem.attrPosition == "methods"){
@@ -178,7 +179,6 @@ export default {
       }else{
         msgs.push(rowObj.label);
       }
-      debugger
       if(syncFieldsInfo[rowObj.tagName] && !rowObj.labelExt){
         rowObj.labelExt = syncFieldsInfo[rowObj.tagName].join("|");
       }
