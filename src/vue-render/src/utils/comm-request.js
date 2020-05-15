@@ -73,7 +73,7 @@ function fetchStandardFields(){
     }
     axios({
       method: 'post',
-      url: 'http://10.16.2.228/abside/abs-ib-dbcomm/dbComm',
+      url: 'http://10.16.58.138:8341/abs-te-services/comm',
       headers:headers,
       data: data
     })
@@ -182,7 +182,7 @@ function queryAllStandardFields(){
     }
     axios({
       method: 'post',
-      url: 'http://10.16.2.228/abside/abs-ib-dbcomm/dbComm',
+      url: 'http://10.16.58.138:8341/abs-te-services/comm',
       headers:headers,
       data: data
     })
@@ -280,7 +280,7 @@ function getParentMenuInfo(){
     }
     axios({
       method: 'post',
-      url: 'http://10.16.2.228/abside/abs-ib-dbcomm/dbComm',
+      url: 'http://10.16.58.138:8341/abs-te-services/comm',
       headers:headers,
       data: data
     })
@@ -369,7 +369,8 @@ function fetchWordRoot(){
     }
     axios({
       method: 'post',
-      url: 'http://10.16.2.228/abside/abs-ib-dbcomm/dbComm',
+      // url: 'http://10.16.2.228/abside/abs-ib-dbcomm/dbComm',
+      url: 'http://10.16.58.138:8341/abs-te-services/comm',
       headers:headers,
       data: data
     })
